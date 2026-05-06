@@ -56,6 +56,7 @@ class MainActivity : ComponentActivity() {
 
         // Voice manager
         voiceManager = VoiceManager(this, speechLauncher)
+        voiceManager.startListening()
 
         setContent {
             AtminiTheme {
