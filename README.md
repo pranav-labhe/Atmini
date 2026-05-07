@@ -1,4 +1,4 @@
-# Atmini Custom Agent Specification (v0.3 — Engineering-Grade Formal Architecture)
+# Atmini Specification
 
 ---
 
