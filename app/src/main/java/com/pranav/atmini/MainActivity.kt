@@ -12,7 +12,8 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
-import com.pranav.atmini.feature.action.ActionDispatcher
+import com.pranav.atmini.core.l0.AtminiAction
+import com.pranav.atmini.core.l0.L0ReflexSystem
 import com.pranav.atmini.feature.app.AppDiscovery
 import com.pranav.atmini.feature.home.HomeScreen
 import com.pranav.atmini.feature.home.HomeViewModel
@@ -32,6 +33,7 @@ class MainActivity : ComponentActivity() {
 
         // ViewModel
         val viewModel = HomeViewModel()
+        val reflex = L0ReflexSystem()
 
         // Voice result handler
         speechLauncher =
@@ -50,7 +52,8 @@ class MainActivity : ComponentActivity() {
                     viewModel.onVoiceInput(text)
 
                     // 🔥 NEW: dispatch action automatically
-                    ActionDispatcher.dispatch(this, viewModel.state.value.lastAction)
+                    val result = reflex.execute(this, viewModel.state.value.lastAction)
+                    viewModel.onActionExecuted(result)
                 }
             }
 
@@ -68,7 +71,8 @@ class MainActivity : ComponentActivity() {
                             voiceManager.startListening()
                         },
                         onMapsClick = {
-                            openMaps()
+                            val action = AtminiAction.OpenMaps
+                            reflex.execute(this, action)
                         },
                         modifier = Modifier.padding(padding)
                     )
@@ -77,11 +81,4 @@ class MainActivity : ComponentActivity() {
         }
     }
 
-    private fun openMaps() {
-        val intent = Intent(
-            Intent.ACTION_VIEW,
-            Uri.parse("geo:0,0?q=Nagpur")
-        )
-        startActivity(intent)
-    }
 }

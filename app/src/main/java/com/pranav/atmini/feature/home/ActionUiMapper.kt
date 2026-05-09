@@ -1,10 +1,10 @@
 package com.pranav.atmini.feature.home
 
-import com.pranav.atmini.feature.action.AtminiAction
+import com.pranav.atmini.core.l0.AtminiAction
 
 object ActionUiMapper {
 
-    fun toUiText(action: AtminiAction): String {
+    fun toUiText(action: AtminiAction, spokenText: String): String {
 
         return when (action) {
 
@@ -15,7 +15,7 @@ object ActionUiMapper {
                 "🤖 Let me think about that..."
 
             is AtminiAction.OpenApp ->
-                "🚀 Opening ${action.appName}..."
+                "🚀 ${spokenText}..."
 
             AtminiAction.None ->
                 "🟢 Ready"

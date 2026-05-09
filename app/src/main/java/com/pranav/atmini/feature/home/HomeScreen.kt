@@ -42,7 +42,7 @@ fun HomeScreen(
 
         Text(text = "🎤 Heard: ${state.lastHeard}")
         Text(
-            text = ActionUiMapper.toUiText(state.lastAction),
+            text = ActionUiMapper.toUiText(state.lastAction, state.spokenText),
             style = MaterialTheme.typography.bodyLarge
         )
 

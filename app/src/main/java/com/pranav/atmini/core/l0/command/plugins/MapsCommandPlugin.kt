@@ -1,7 +1,7 @@
-package com.pranav.atmini.feature.command.plugins
+package com.pranav.atmini.core.l0.command.plugins
 
-import com.pranav.atmini.feature.action.AtminiAction
-import com.pranav.atmini.feature.command.CommandPlugin
+import com.pranav.atmini.core.l0.AtminiAction
+import com.pranav.atmini.core.l0.command.CommandPlugin
 
 class MapsCommandPlugin : CommandPlugin {
 

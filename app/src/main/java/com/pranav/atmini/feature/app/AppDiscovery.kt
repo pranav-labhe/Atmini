@@ -6,6 +6,21 @@ import android.content.pm.PackageManager
 
 object AppDiscovery {
 
+    fun resolveAppPackage(
+        context: Context,
+        query: String
+    ): String? {
+
+        val apps = getInstalledApps(context)
+        val normalizedQuery = query.lowercase().trim()
+
+        return apps.firstOrNull { app ->
+            app.name.contains(normalizedQuery) ||
+                    app.appName.contains(normalizedQuery) ||
+                    normalizedQuery.contains(app.name)
+        }?.packageName
+    }
+
     fun getInstalledApps(context: Context): List<InstalledApp> {
 
         val pm: PackageManager = context.packageManager

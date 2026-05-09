@@ -5,9 +5,10 @@ import android.content.Intent
 import android.os.IBinder
 import android.util.Log
 import androidx.activity.result.ActivityResultLauncher
-import androidx.activity.result.contract.ActivityResultContracts
+import com.pranav.atmini.core.l0.L0ReflexSystem
+import com.pranav.atmini.core.l0.AtminiBrain
 import com.pranav.atmini.feature.app.AppDiscovery
-import com.pranav.atmini.feature.command.CommandRegistry
+import com.pranav.atmini.core.l0.command.CommandRegistry
 
 class AtminiVoiceService : Service() {
 
@@ -32,10 +33,11 @@ class AtminiVoiceService : Service() {
 
             Log.d("AtminiService", "Command: $state")
 
-            val intent = Intent(this, MainActivity::class.java).apply {
-                addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-            }
-            startActivity(intent)
+            val brain = AtminiBrain()
+
+            val action = brain.process(text, apps)
+            val reflex = L0ReflexSystem()
+            reflex.execute(this, action)
         }
 
         return START_STICKY

@@ -1,6 +1,6 @@
-package com.pranav.atmini.feature.command
+package com.pranav.atmini.core.l0.command
 
-import com.pranav.atmini.feature.action.AtminiAction
+import com.pranav.atmini.core.l0.AtminiAction
 
 interface CommandPlugin {
     fun matches(input: String): Boolean
