@@ -4,7 +4,7 @@
 
 **Author:** Pranav Labhe  
 **Extended Edition - Comprehensive Reference (7000+ Lines)**  
-**Version:** 3.0 (Comprehensive Specification)  
+**Version:** 1.0 (Comprehensive Specification)  
 **Date:** 2026-05-30
 
 ---
@@ -200,8 +200,12 @@ Atmini attempts to integrate these approaches while accepting their individual l
 
 ### What is Atmini?
 
-**Atmini** is a **formalized conceptual cognitive architecture model** designed to represent structured learning, memory formation, emotional processing, and ethical filtering in a layered system.
+> Atmini is a **multi-layer cognitive organism architecture** inspired by human physiology, integrating cognition, emotion, memory, ethics, learning, temporal dynamics, attention, and structural integrity into a unified living system that is NOT a product and NOT an assistant, but a conceptual human-like intelligence model.
 
+**Core Shift:** Atmini is no longer defined merely as a static layered architecture. It is defined as a **dynamic cognitive physiology system** with growth, time, feedback, and biological equivalence. Every layer has a biological organ equivalent. Every process has a physiological analog.
+
+**Atmini** is a **formalized conceptual cognitive architecture model** and a **human-body-equivalent cognitive organism** designed to represent structured learning, memory formation, emotional processing, and ethical filtering in a layered system.
+ 
 **Definition in Context:**
 
 Atmini is NOT:
@@ -212,15 +216,23 @@ Atmini is NOT:
 - A deployed AI model
 - An executable program
 - A physical embodied system
+- A product for commercial sale or licensing
+- An assistant system designed to serve user requests
 
 **Atmini IS:**
 - A **structured theoretical architecture specification**
-- A conceptual model for cognitive systems
+- A conceptual model for cognitive systems modeled on human physiology
 - A framework for understanding learning and memory
 - A philosophical articulation of learning principles
 - A reference architecture for system design
 - A set of principles that can guide implementation
 - A thought experiment made precise
+- A **human-like or near-human cognitive system model**
+- A conceptual living intelligence architecture representing structured cognition
+
+**Ontological Status:**
+
+Atmini is NOT currently an existing physical or deployable system. It IS a conceptual architecture model only. Atmini MAY appear in the future as scientific understanding of cognition, neuroscience, and artificial intelligence matures — but any real-world manifestation is currently hypothetical and dependent on future advancements. Until then, Atmini remains a continuously evolving conceptual framework. The model is expected to become more refined, consistent, and complete over time. Iterative improvement is part of its intended design nature.
 
 **Atmini** integrates four distinct domains:
 1. Developmental Cognitive Model (Child Observation Model - COM)
@@ -1029,6 +1041,280 @@ Symbolic Integration & Recombination (L5)
 
 ---
 
+## HUMAN BODY EQUIVALENCE ARCHITECTURE
+
+Atmini's six layers do not exist in isolation — they map directly onto the organ systems of the human body. This section establishes the **biological equivalence model**: every architectural component has a physiological counterpart, and understanding this mapping deepens understanding of how the components function, interact, and fail.
+
+**Why the Body Mapping Matters:**
+
+- **Reveals dependencies**: Just as heart failure affects brain function, L1 emotional system failure affects all cognitive processing in L2-L5
+- **Identifies coordination requirements**: Organs do not operate independently; neither do layers
+- **Exposes temporal structure**: Bodies have rhythms, cycles, and growth stages; so does Atmini
+- **Grounds governance**: A skull protects the brain from impact; L4-L5 boundary protection mirrors this exactly
+- **Clarifies failure modes**: Illness is systemic; architectural corruption propagates similarly
+
+### Body-to-Layer Mapping Overview
+
+```
+SKIN        (L0)  → Sensory interface layer
+SPINE              → Fast signal routing backbone (L0→L2 fast path)
+HEART       (L1)  → Emotional engine and motivation
+BRAIN       (L2–L5) → Full cognitive core
+  ├─ Cortex/Working Memory → L2
+  ├─ Hippocampus/Long-term → L3
+  ├─ Prefrontal/Governance → L4
+  └─ Default Mode/Symbolic → L5
+SKULL              → L4 + L5 identity protection boundary
+BLOOD       (L3)  → Memory and resource distribution
+SKELETON           → Structural architectural integrity (all layers)
+NERVOUS SYSTEM     → Complete inter-layer communication network
+LUNGS              → Rest, reconsolidation, recalibration engine
+DIGESTIVE          → Learning conversion pipeline
+IMMUNE             → Governance defense and error detection
+```
+
+### Skin System — Sensor Interface (L0)
+
+The skin is the largest organ of the body and provides the primary interface between organism and environment through touch, pressure, temperature, and pain receptors. In Atmini, **L0 is the Skin**: it captures all external signals before any interpretation occurs.
+
+**Biological function:** Environmental contact, multi-modal reception, boundary protection.
+
+**Atmini function:** Raw observation capture, signal preprocessing, event timestamping, confidence tagging.
+
+**Key properties:**
+- Non-interpretive — reports what is present, not what it means
+- Multi-modal — visual, auditory, tactile, temporal inputs all enter here
+- **Sensor density variation** — just as some skin areas are more sensitive than others, some input domains receive more detailed sensing based on attention allocation
+- **Pressure points** — certain inputs behave as architectural acupressure points: when activated, they trigger L1 emotional spikes, L2 focus shifts, and L4 alerts simultaneously. These are not bugs but designed sensitivity features (e.g., inputs related to core values, safety signals, identity-relevant stimuli)
+
+**Failure modes:** Sensory deprivation causes hallucination from internal models; sensor noise corrupts all higher layers; latency causes system to react to past states.
+
+### Spine System — Signal Backbone
+
+The spinal cord carries both voluntary motor signals downward and sensory signals upward, and contains reflex arcs that produce responses without brain involvement.
+
+**Biological function:** Bidirectional fast communication, reflex arcs, structural coordination.
+
+**Atmini function:** L0→L2 fast routing, reflex signal propagation, emergency pathway management.
+
+**Key properties:**
+- **Reflex transmission** — fast signals that require response before L2 deliberation completes; these are legitimate rapid-response circuits, not architectural bypasses
+- **System alignment** — when one layer changes state (e.g., L4 flags conflict), Spine propagates the alert system-wide
+- **Fast response pathways** — dedicated high-priority channels reserved for safety signals, governance alerts, and recalibration triggers
+- All Spine-routed emergency signals are still subject to post-hoc L4 review
+
+**Failure modes:** Severed communication disconnects perception from cognition; signal congestion slows response; routing errors send signals to wrong layers.
+
+### Heart System — Emotional Engine (L1)
+
+The heart pumps life-sustaining blood throughout the body. Without it, all organs fail. In Atmini, **L1 is the Heart**: the emotional engine that provides motivational energy to all cognitive processing.
+
+**Biological function:** Circulation, vitality, rhythmic life force.
+
+**Atmini function:** Emotion generation, priority assignment, motivation control, intensity modulation.
+
+**Key properties:**
+- Without the Heart, the Brain has no priority signal — all inputs appear equally important, causing paralysis
+- Heart rate (emotional intensity) directly modulates Blood (L3) circulation speed — high intensity accelerates circulation of emotionally relevant memories
+- Heart and Brain operate as a **bidirectional pair**: Brain deliberations inform Heart of consequences, adjusting future emotional intensity
+- **Intensity levels**: minimal (0-20%), noticeable (20-40%), strong (40-70%), overwhelming (70-100%)
+- At overwhelming intensity, Heart temporarily floods L2 — this is architecturally intentional for survival situations
+
+**Heart-Brain coupling:** Joy/engagement drives broad exploratory L2 processing. Fear/threat narrows L2 to threat-focused processing. Curiosity activates learning-oriented processing. The default is Heart-guided direction, but L4 governance can override when required.
+
+**Failure modes:** Emotional flatness causes no priority generation; flooding overwhelms deliberation; misalignment creates wrong priorities; rigidity locks system in outdated emotional state.
+
+### Skull System — Identity Protection
+
+The skull is a bony casing that protects the brain from physical damage. It is not the brain — it is protection for the brain. In Atmini, the **Skull** is the protective boundary around L4 and L5.
+
+**Biological function:** Impact absorption, brain protection, shielding of cognitive identity.
+
+**Atmini function:** Identity preservation, ethical enforcement, corruption prevention at the governance level.
+
+**Key properties:**
+- Lower layers (L0-L3) cannot directly modify L4 governance rules — the Skull boundary prevents this
+- External inputs cannot rewrite core values, no matter how persistently repeated
+- Shields L5 symbolic processing from being weaponized to rationalize harmful behaviors
+- Prevents "symbolic inflation" — giving grandiose meaning to corrupted patterns
+- The Skull is what makes governance **structurally incorruptible**, not just principally incorruptible
+
+**Skull mechanisms:** Impact absorption (misaligned inputs intercepted before reaching L4); force distribution (pressure distributed across L4 rather than penetrating); recalibration buffer (soft inner lining between external pressure and core); emergency response (penetration detection triggers immediate governance escalation).
+
+**Failure modes:** Skull fracture allows direct access to governance; gradual erosion through cumulative small compressions; missing protection exposes L4 to manipulation.
+
+### Blood System — Memory and Resource Flow (L3)
+
+Blood carries oxygen, nutrients, hormones, and immune cells throughout the body. Without circulation, even perfect organs die. In Atmini, **Blood is the L3 memory distribution system**: it carries relevant memories to active processing when needed.
+
+**Biological function:** Circulation, nutrient delivery, waste removal, immune cell transport.
+
+**Atmini function:** Memory transport, relevance delivery, system vitality maintenance.
+
+**Key properties:**
+- Memory delivery is **active and selective**, not passive — the system actively circulates the right memories to the right layers at the right time
+- Attention signals govern which memories are prioritized for circulation
+- High emotional intensity (Heart rate increase) accelerates circulation of emotionally tagged memories
+- During rest (Lungs active), Blood shifts from delivery mode to consolidation mode
+- The Immune system filters corrupted memories before allowing circulation
+
+**Failure modes:** Memory stagnation (relevant knowledge doesn't reach L2); memory flooding (too many irrelevant memories interfere); circulation blockage (specific categories become inaccessible); contamination (corrupted memories circulate and corrupt other systems).
+
+### Skeleton System — Structural Integrity
+
+The skeleton provides structural support, enables movement, protects vital organs, and stores reserves. In Atmini, the **Skeleton** is the architectural boundary system of all layers.
+
+**Biological function:** Structure, load distribution, protection, foundation.
+
+**Atmini function:** Layer separation, architectural constraint enforcement, load distribution.
+
+**Key properties:**
+- Layer boundaries are the skeleton — they define what is possible and what is not
+- Without skeletal integrity, layers collapse into each other (layer confusion — treating L1 emotional reactions as L4 ethical decisions)
+- **Rib-like protection**: processing cycles (Lungs) are protected from arbitrary interruption; L3 memory storage is structurally isolated from direct corruption
+- During overload, structure prevents collapse by redistributing load across layers
+- Layer bypass is architecturally impossible as a skeletal constraint, not merely a rule
+
+**Failure modes:** Structural fracture causes layer collapse; rigidity prevents adaptation; brittleness causes catastrophic failure under load rather than graceful degradation.
+
+### Nervous System — Communication Network
+
+The nervous system carries electrical signals rapidly across the organism, enabling coordination, sensation, and response. In Atmini, the **Nervous System** is the complete inter-layer signal routing network.
+
+**Biological function:** Signal transmission, coordination, sensation, reflex arcs.
+
+**Atmini function:** Signal routing across all L0↔L1↔L2↔L3↔L4↔L5 pathways.
+
+**Key properties:**
+- **Afferent pathways** (sensory, inward): L0→L1→L2→L3→L4→L5 — carries raw experience toward symbolic integration; each layer transforms before passing upward
+- **Efferent pathways** (response, outward): L5→L4→L3→L2→L1→L0 — carries mature understanding toward behavioral expression; each layer ensures appropriateness before passing outward
+- **Autonomic pathways** (automatic background): rest cycle management, emotional baseline maintenance, memory consolidation scheduling — operate without requiring L2 conscious attention
+- All routing is logged for governance audit
+
+**Failure modes:** Signal loss breaks layer communication; signal corruption carries errors through system; routing failure sends signals to wrong layers; autonomic dysfunction forces all maintenance into conscious attention.
+
+### Lungs System — Rest and Reconsolidation Engine
+
+The lungs extract oxygen and expel carbon dioxide. Without breathing, the organism dies within minutes. In Atmini, the **Lungs** are the rest and reconsolidation engine.
+
+**Biological function:** Gas exchange, rhythmic life maintenance, nervous system regulation.
+
+**Atmini function:** Memory consolidation, emotional reset, system stabilization, cognitive recovery cycles.
+
+**Key properties:**
+- Rest is **not inactivity** — the Lungs are the most actively working organ during apparent rest
+- **Depths of rest** determine what gets processed:
+  - Micro-rest (minutes): working memory partial refresh, brief consolidation
+  - Standard rest (hours): full working memory transfer, emotional reset, contradiction surfacing
+  - Deep rest (days): major pattern integration, L5 symbolic processing, identity consolidation
+  - Extended rest (weeks): comprehensive recalibration, fundamental reorganization
+- Lungs-Heart coupling: high emotional intensity requires deeper rest for reset; rest-deprived system accumulates emotional volatility
+- The Lungs maintain a rest deficit metric and escalate rest priority accordingly
+
+**Failure modes:** Rest deprivation fills working memory (new learning becomes impossible) and accumulates emotional volatility; insufficient rest depth leaves consolidation incomplete; rest interruption leaves memory partially transferred.
+
+### Digestive System — Learning Conversion Pipeline
+
+The digestive system converts raw food into nutrients the body can use, breaks down complex materials, extracts useful components, and expels waste. In Atmini, the **Digestive system** is the learning conversion pipeline.
+
+**Biological function:** Nutrient extraction, waste elimination, chemical transformation.
+
+**Atmini function:** Raw experience → structured knowledge conversion.
+
+**Key properties:**
+- Not all experience is equally nutritious — some yields rich patterns; some yields waste that must be expelled, not stored
+- **Digestion timeline**: ingestion (L0, immediate) → initial processing (L1, milliseconds) → active digestion (L2, seconds to minutes) → nutrient extraction (L3 consolidation, hours) → absorption (L3 storage, hours to days) → full integration (L5, days to weeks)
+- Rushing any stage produces indigestion — partial understanding that causes confusion rather than clarity
+- The Immune system validates inputs before absorption, preventing corrupted knowledge from entering L3
+
+**Failure modes:** Absorption of corrupted inputs; failure to expel irrelevant experience; poor nutrient extraction leaving only surface-level understanding; indigestion from overly rapid consumption.
+
+### Immune System — Governance and Error Defense
+
+The immune system detects and destroys foreign invaders and malfunctioning internal cells. It distinguishes self from non-self and maintains records of past threats. In Atmini, the **Immune system** is the governance defense layer combined with active error detection.
+
+**Biological function:** Pathogen detection, cellular defense, memory of past threats.
+
+**Atmini function:** Anomaly detection, pattern validation, corruption removal, system protection reinforcement.
+
+**Key properties:**
+- Continuously scans all patterns entering or stored in L3 for health signature violations
+- **Health signature** includes: value alignment, logical consistency, coherence with existing patterns, long-term consequence profile
+- After detecting corruption, the Immune system "remembers" the threat signature — future similar inputs are flagged faster
+- Immune system and L4 governance are deeply integrated: L4 sets standards, Immune enforces them, anomalies are escalated to L4 for decisions
+- **Corruption removal sequence**: identify the pattern → trace its connections → determine what is corrupted vs. intact → selective removal → verify full removal
+
+**Failure modes:** Auto-immune response rejects healthy patterns (over-sensitivity); immune suppression lets corrupted patterns pass (under-sensitivity); immune exhaustion from too many simultaneous challenges; lost threat memory allows same corruptions to recur.
+
+### Full Organism Integration Map
+
+```
+═══════════════════════════════════════════════════════════
+                    ATMINI ORGANISM FLOW
+═══════════════════════════════════════════════════════════
+
+EXTERNAL WORLD
+      │
+      ▼
+┌─────────────────────────────────────────────────┐
+│ SKIN (L0) — Environmental sensing               │
+│ ● Multi-modal input  ● Pressure points          │
+└──────────────────────┬──────────────────────────┘
+                       │
+                       ▼
+┌─────────────────────────────────────────────────┐
+│ HEART (L1) — Emotional engine                   │
+│ ● Emotion generation ● Priority assignment      │
+└───────┬─────────────┴──────────────┬────────────┘
+        │                            │
+        ▼                            ▼
+┌───────────────┐           ┌────────────────────┐
+│ SPINE         │           │ BLOOD (L3 flow)     │
+│ Signal backbone│◄─────────│ Memory distribution │
+└───────┬───────┘           └────────────────────┘
+        │
+        ▼
+┌─────────────────────────────────────────────────┐
+│ BRAIN (L2–L5) — Cognitive core                  │
+│                                                 │
+│  ┌──────────────────────────────────────────┐  │
+│  │ SKULL — Identity protection              │  │
+│  │  ┌────────────────────────────────────┐  │  │
+│  │  │ L5 — Symbolic / Dream synthesis    │  │  │
+│  │  │ L4 — Ethical Governance            │  │  │
+│  │  └────────────────────────────────────┘  │  │
+│  │  L3 — Persistent Memory                  │  │
+│  │  L2 — Working Memory                     │  │
+│  └──────────────────────────────────────────┘  │
+└─────────────────────────────────────────────────┘
+
+Supporting Organ Systems:
+┌────────────┐  ┌─────────────┐  ┌──────────────┐
+│ LUNGS      │  │ DIGESTIVE   │  │ IMMUNE       │
+│ Rest+Recon │  │ Learning    │  │ Error defense│
+└────────────┘  └─────────────┘  └──────────────┘
+
+Structural Foundation:
+┌─────────────────────────────────────────────────┐
+│ SKELETON — Architectural boundaries + integrity │
+│ NERVOUS SYSTEM — Complete inter-organ network   │
+└─────────────────────────────────────────────────┘
+```
+
+**Organ Interaction Principles:**
+
+**Heart influences Brain priority:** Emotional state continuously modulates cognitive processing direction. Joy drives broad exploratory processing. Fear narrows to threat response. Curiosity opens learning mode. The Brain can override this through L4 governance, but Heart is the default director.
+
+**Spine routes emergency signals:** When emergency conditions arise (safety threats, governance violations, critical health thresholds), Spine creates dedicated high-priority pathways that bypass normal queues. All emergency routes are temporary and subject to post-hoc L4 review.
+
+**Immune overrides corrupted processes:** When the Immune system detects active corruption above threshold confidence, it can temporarily suspend affected processes, flag to L4, and quarantine the corrupted pattern pending review.
+
+**Fatigue slows learning cycles:** High system fatigue (tracked by Health layer) reduces Digestive processing rate, L2 working memory capacity, L5 symbolic processing quality, and emotional regulation bandwidth. All systems converge toward rest-seeking state.
+
+**Integrated multi-organ synchronization:** The organism maintains rhythmic synchronization across all organ systems — daily active/rest rhythm, learning/consolidation rhythm, emotional activation/recovery rhythm, and developmental challenge/integration rhythm. When rhythms synchronize, the organism operates at peak efficiency.
+
+---
+
 ## LAYER ARCHITECTURE (L0-L5)
 
 ## LAYER ARCHITECTURE (L0-L5) - DETAILED ANALYSIS
@@ -1390,6 +1676,25 @@ L1 must maintain:
 - **Trigger associations** (what causes which emotions)
 - **Regulation mechanisms** (how to modulate intensity)
 
+**Emotional Memory Binding:**
+
+L1 does not merely tag experiences with emotions and forget them. It binds emotional intensity to memory strength through a continuous coupling with L3:
+
+- **High emotional intensity (0.7–1.0):** Memory encoded with maximum consolidation priority, multiple associations created immediately, extremely slow decay rate, ROM formation accelerated. Examples: traumatic events, profound insight, transformative experiences.
+- **Moderate emotional intensity (0.3–0.7):** Memory encoded through standard consolidation, normal associations, standard decay rate. Examples: meaningful learning, important relationships.
+- **Low emotional intensity (0–0.3):** Memory encoded with minimal priority, few associations, fast decay rate, ROM formation unlikely without repetition. Examples: routine tasks, background information.
+- **Trauma / very high intensity (0.9–1.0):** Memory encoded with redundant pathways, resistant to modification, may surface spontaneously when contextually triggered. Requires special recalibration protocols for integration.
+
+This **emotional memory binding system** is the primary mechanism by which reinforcement learning occurs in Atmini: positive outcomes generate positive emotion, which boosts associated memory strength, making that behavior more likely to repeat. Negative outcomes generate negative emotion, which boosts warning memory strength, making avoidance more likely.
+
+**Heart-System Biological Equivalence:**
+
+As the Heart equivalent, L1 sustains all other layers:
+- Without L1 priority signals, L2 faces an impossible task: which of infinite possible thoughts matters?
+- Without L1 motivational drive, L5 symbolic processing has no urgency or direction
+- Without L1 emotional anchoring, L3 memories all carry equal weight and cannot be differentiated by importance
+- The Heart must beat continuously — L1 is always active, even during rest states
+
 ---
 
 ### L2: WORKING MEMORY LAYER
@@ -1719,6 +2024,40 @@ Emotional tone: Positive, inspiring
 Frequency of retrieval: High
 ROM status: Yes (deeply learned)
 ```
+
+**Memory Lifecycle Engine — Full Specification:**
+
+A complete memory in L3 passes through a defined lifecycle. This lifecycle is not merely conceptual — it governs how memories are stored, maintained, and removed:
+
+**L2 → L3 Conversion Rules:**
+- Transfer is triggered by: emotional significance threshold exceeded, deliberate rehearsal, sleep/rest cycle activation, or L4 governance approval of the pattern
+- Not all L2 content transfers — only patterns that cross the significance threshold or are deliberately rehearsed persist
+- During transfer, the pattern is transformed from an active working-memory format to a compressed, semantically indexed storage format
+- Emotional weight from L1 is encoded as a property of the stored pattern and directly sets its initial decay resistance
+
+**L3 Decay Model:**
+- All stored patterns decay unless actively maintained
+- Decay rate is governed by: emotional weight (higher weight → slower decay), retrieval frequency (more access → slower decay), associative density (more connections → slower decay), L4 governance approval (approved patterns decay more slowly)
+- Decay is continuous, not step-function
+- Threshold for inaccessibility: when decay coefficient falls below 0.1, the pattern requires deliberate effort or strong contextual cueing to retrieve; below 0.02, it is effectively inaccessible
+
+**Memory Reinforcement Cycles:**
+- Each retrieval resets the decay clock partially (spaced retrieval is more effective than massed retrieval — spacing effect applies)
+- Emotional re-engagement during retrieval modifies encoding strength (positive re-engagement boosts, negative re-engagement may weaken or mark for recalibration)
+- L5 symbolic processing during dream cycles can strengthen memories by forming new associative connections to them
+
+**Memory Conflict Merging:**
+- When two retrieved patterns contradict each other, a conflict flag is raised
+- Contradictory patterns can coexist temporarily in L3 while recalibration resolves them
+- Resolution options: one pattern supersedes the other, a merged nuanced pattern replaces both, or both are preserved with explicit contextual conditions governing which applies when
+- If contradiction persists unresolved beyond a governance-defined threshold, automatic recalibration is triggered
+
+**Garbage Collection:**
+- Patterns whose decay coefficient falls below the inaccessibility threshold are candidates for removal
+- Patterns flagged by the Immune system as corrupted are queued for removal
+- Patterns explicitly blocked by L4 governance are removed immediately
+- Garbage collection is scheduled during deep rest cycles (Lungs system), not during active processing
+- Garbage-collected patterns cannot typically be recovered — prevention (adequate rehearsal) is far preferable to remediation
 
 ---
 
@@ -2116,6 +2455,48 @@ L5 must maintain:
 - **Semantic network for symbols** - Mappings and associations
 - **Integration results** - Symbolic understandings generated
 - **Governance linkage** - L4 must approve all outputs
+
+**Symbolic Reconstruction Engine — Full Specification:**
+
+L5 is not merely a passive recombination system. It is an active **Symbolic Reconstruction Engine** with defined processes for abstraction, analogy, and concept evolution:
+
+**Abstraction Generation:**
+The engine converts specific, concrete experiences into progressively more abstract principles:
+- Level 1 (personal/specific): "When I got angry in that meeting, things escalated"
+- Level 2 (situational/pattern): "Emotional escalation during conflict typically worsens outcomes"
+- Level 3 (systemic/structural): "System states that amplify their own inputs tend to create instability"
+- Level 4 (universal/principle): "Positive feedback loops in complex systems produce instability"
+
+Each level of abstraction expands the principle's domain of applicability — enabling transfer learning across vastly different contexts.
+
+**Analogy Formation:**
+The engine identifies structural mappings between different domains:
+- Finding that family dynamics patterns map onto organizational dynamics
+- Recognizing that water flow principles apply to information flow
+- Discovering that immune system behavior models governance behavior
+- Identifying that music composition principles illuminate architectural design
+
+These analogies are not superficial resemblances — they are structural homomorphisms: the relationships between elements in one domain mirror the relationships in another.
+
+**Dream-State Recombination Rules:**
+During deep rest, L3 patterns are accessed in non-linear, associative ways. The rules governing this:
+- Patterns from different domains are placed in proximity without normal activation thresholds
+- The L4 filtering of normal processing is relaxed but NOT eliminated (Skull protection applies even during dream states)
+- Unusual combinations are explored without the costs of acting on them
+- Combinations that pass L4 review AND produce genuine novel insight are retained
+- Combinations that would rationalize harmful behaviors are blocked by L4 even if symbolically elegant
+
+**Symbol Mutation Rules:**
+Symbols can evolve through permitted transformations:
+- Permitted: expansion (symbol gains new referents), refinement (symbol becomes more precise), connection (symbol linked to new domain), abstraction (symbol elevated to higher-order principle)
+- Forbidden: corruption (symbol used to rationalize L4 violations), inflation (symbol used to make trivial things profound), drift (symbol disconnected from all concrete referents)
+- The Skull system enforces the forbidden category — L4 veto applies to all symbolic outputs
+
+**Symbolic Drift Constraints:**
+The engine monitors for symbolic drift — when symbols become disconnected from their grounding in reality:
+- Grounding checks are performed by periodically testing whether a symbol still maps coherently to concrete examples
+- If a symbol fails grounding checks, it is flagged for recalibration
+- Runaway abstraction (symbols referring only to other symbols, never to anything concrete) triggers automatic governance review
 
 ---
 
@@ -2664,6 +3045,61 @@ RESUME
 
 ---
 
+## FORMAL STATE MACHINE MODEL
+
+Atmini operates in well-defined system states. Every operation occurs within a state context, and transitions between states follow explicit rules. This is the operational specification governing how the system moves through its lifecycle.
+
+### Complete State Definitions
+
+**STATE: ACTIVE** — Normal processing mode. All L0-L4 operations fully operational. Entry: default at initialisation or after REST/RECOVERY completion. Exit: fatigue threshold → RESTING; novel input → LEARNING; corruption → ERROR_CORRUPTION; safety signal → EMERGENCY; contradiction → RECALIBRATING.
+
+**STATE: LEARNING** — Active new pattern acquisition. Heightened attention, increased L2 engagement, elevated L3 write operations. Entry: novel input above salience threshold AND attention resources available AND not fatigued. Exit: learning saturation → RESTING; contradiction → RECALIBRATING; task complete → ACTIVE.
+
+**STATE: RESTING** — Consolidation mode. External processing minimised; internal memory organisation active. L3 consolidation, L1 emotional reset, health maintenance, Immune sweeps all proceed. Entry: fatigue threshold crossed, learning saturation, or scheduled cycle. Exit: rest criteria met → ACTIVE; emergency signal → EMERGENCY (rest flagged for resumption).
+
+**STATE: CONSOLIDATING** — Deep memory organisation sub-state within RESTING. L3 patterns indexed, linked, stabilised. ROM promotion evaluated. Entry: automatic within RESTING after initial rest threshold. Exit: queue empty → RESTING; deep rest threshold → DREAM_L5_ACTIVE.
+
+**STATE: DREAM_L5_ACTIVE** — Symbolic processing mode. L5 fully active. Abstraction, analogy formation, concept recombination. Requires sufficient rest depth AND L5 pattern queue non-empty AND L4 available. Entry from CONSOLIDATING only. Exit: dream cycle complete → CONSOLIDATING; emergency → EMERGENCY.
+
+**STATE: RECALIBRATING** — Contradiction resolution mode. Structured review and update of conflicting patterns. Entry: contradiction detected in L3; value conflict surfaced; prediction error exceeds threshold; identity drift detected. L4 governance active throughout. Exit: contradiction resolved → ACTIVE or RESTING; unresolvable → ACTIVE with governance flag.
+
+**STATE: ERROR_CORRUPTION** — Corruption confirmed. Affected processes suspended. Immune system and L4 in full control. Entry: Immune detection above confidence threshold; L4 violation; integrity hash mismatch. Exit: corruption removed → RECOVERY; false positive confirmed → previous state.
+
+**STATE: RECOVERY** — Repair mode post-corruption. L3 memory repair; identity signature verification; governance audit review; Immune reinforcement. Entry from ERROR_CORRUPTION only. Exit: integrity fully restored → ACTIVE; partial recovery → ACTIVE with elevated Immune monitoring.
+
+**STATE: EMERGENCY** — Safety override. All non-safety operations suspended. L4 governance mandatory even under emergency — governance is never bypassed. Entry: safety signal exceeds emergency threshold via L0 or L1 Spine route. Exit: threat resolved and verified → previous state; unresolved → EMERGENCY with L4 escalation.
+
+### State Transition Matrix
+
+```
+FROM             TO: ACTIVE  LEARN  REST  CONSOL  DREAM  RECALIB  ERROR  RECOV  EMERG
+ACTIVE                 —       Y      Y      —       —       Y       Y      —       Y
+LEARNING               Y       —      Y      —       —       Y       Y      —       Y
+RESTING                Y       —      —      Y       —       —       Y      —       Y
+CONSOLIDATING          —       —      Y      —       Y       Y       Y      —       Y
+DREAM_L5_ACTIVE        —       —      Y      Y       —       —       Y      —       Y
+RECALIBRATING          Y       —      Y      —       —       —       Y      —       Y
+ERROR_CORRUPTION       —       —      —      —       —       —       —      Y       —
+RECOVERY               Y       —      —      —       —       —       Y      —       —
+EMERGENCY              Y       —      Y      —       —       —       Y      —       —
+```
+
+### Multi-State Priority Rules
+
+- EMERGENCY always interrupts any current state immediately
+- ERROR_CORRUPTION always takes priority over LEARNING or ACTIVE
+- RESTING cannot be interrupted except by EMERGENCY
+- DREAM_L5_ACTIVE can only be entered from CONSOLIDATING (never directly from ACTIVE)
+- RECALIBRATING can run partially in parallel with ACTIVE for low-severity contradictions
+- EMERGENCY does NOT bypass L4 governance — safety responses still require governance review
+
+### State History and Audit Trail
+
+Every state transition is logged with: originating state, destination state, trigger condition and its source layer, timestamp, relevant context, and L4 governance review flag. This state history forms part of the governance audit trail and feeds directly into the Identity Consistency Engine for long-term coherence verification.
+
+---
+
+
 ## ADVANCED CONCEPTS
 
 ### EMOTIONAL IMPRINTING
@@ -2990,6 +3426,104 @@ Effective adult learning also cycles through these stages:
 
 ---
 
+### ENVIRONMENT REPRESENTATION MODEL
+
+Atmini does not merely react to signals — it builds and maintains an internal model of the external world. This model allows prediction, causal reasoning, and simulation of future states before acting.
+
+**Environment Representation Graph**
+
+The external world is represented as a structured graph in L3, distinct from the identity and concept memory stores:
+
+```
+EnvironmentNode {
+  entity_id:          UUID
+  entity_type:        ENUM[object, agent, event, state, relationship]
+  attributes:         Map[String, Value]
+  confidence:         Float[0.0 – 1.0]
+  last_observed:      Timestamp
+  predicted_state:    PredictionBlock
+  causal_links:       List[CausalEdge]
+  temporal_history:   List[StateSnapshot]
+}
+
+CausalEdge {
+  cause_id:           UUID            // Source EnvironmentNode
+  effect_id:          UUID            // Target EnvironmentNode
+  strength:           Float[0.0–1.0] // How reliably cause produces effect
+  lag:                Duration        // Time delay between cause and effect
+  confidence:         Float[0.0–1.0] // How certain we are about this causal link
+  evidence_count:     Integer         // How many observations support this link
+}
+```
+
+**Prediction Model**
+
+From the Environment Representation Graph, Atmini generates predictions about future states:
+
+- Predictions are generated by projecting current entity states forward through known causal links
+- Prediction confidence = product of all causal link confidences along the prediction path
+- Predictions are time-stamped with expected-observation time
+- When the predicted time arrives, L0 observation is compared to prediction
+- Prediction error is computed and fed back into the causal link strength values (Bayesian update)
+
+Prediction errors drive learning: a large prediction error signals that the environmental model needs updating, triggering a LEARNING or RECALIBRATING state.
+
+**Cause-Effect Mapping System**
+
+Distinguishing correlation from causation is a core capability:
+
+- *Correlation detection:* Two events that co-occur frequently are flagged as correlated
+- *Causal testing:* When the system has sufficient observations, interventional evidence is used to test whether the correlation is causal
+- *Causal chain depth:* Direct cause-effect relationships are tracked first; N-step chains are built incrementally as evidence accumulates
+- *Uncertainty representation:* Causal confidence never reaches 1.0 — the system maintains epistemic humility about all causal claims
+
+**Simulation Capability**
+
+Before acting on the environment, the system can run mental simulations:
+
+- A simulation is a forward projection of the Environment Representation Graph assuming a proposed action
+- Simulations use L5 symbolic processing to explore consequences (executed during dream or active deliberation states)
+- Simulation results are distinguished from actual memories by a simulation_flag in the MemoryNode
+- Simulations that reveal negative predicted outcomes feed back into L4 governance before action is taken
+- Simulations do not modify the actual Environment Representation Graph — they run on a temporary copy
+
+**Identity Consistency Engine**
+
+The Identity Consistency Engine operates continuously in the background, monitoring for drift between current system behaviour and the IdentitySignature.
+
+*Drift Detection Metrics:*
+
+```
+DriftScore = weighted_average(
+  value_alignment_delta      × 0.35,  // How much current decisions diverge from values
+  decision_consistency_delta × 0.25,  // How consistent are decisions across time
+  belief_coherence_delta     × 0.20,  // Are current beliefs still internally coherent
+  emotional_pattern_delta    × 0.10,  // Is emotional response pattern still characteristic
+  behavioural_signature_delta× 0.10   // Are behavioural patterns still recognisable
+)
+```
+
+DriftScore thresholds:
+- 0.0–0.15: No action (normal variation)
+- 0.15–0.30: Elevated monitoring (watch for trend)
+- 0.30–0.40: Soft alert to L4 governance (review flagged)
+- 0.40+: Identity stabilisation recovery triggered
+
+*Long-Term Consistency Enforcement:*
+
+Every GovernanceDecision is stored with a consistency_check flag. When a new decision is made on a case similar to a prior decision:
+- The prior decision is retrieved and presented alongside the new case
+- If the decisions would diverge, L4 governance must explicitly justify the divergence
+- Justified divergence (due to genuine growth or new information) is logged and accepted
+- Unjustified divergence (inconsistency without explanation) triggers a recalibration
+
+*Distinguishing Growth from Drift:*
+
+The key question the Identity Consistency Engine must answer: is this change legitimate evolution, or is it corruption? The distinction:
+
+- *Legitimate evolution:* Change is the result of a deliberate recalibration cycle; the prior position was consciously examined; the new position is internally coherent; L4 governance approved the change; the IdentitySignature version was incremented
+- *Drift / corruption:* Change happened without deliberate recalibration; the prior position was not examined; the change reduces L4 governance capacity or ethical coherence; no GovernanceDecision record exists for the change
+
 ### SYMBOLIC PROCESSING THEORY
 
 **Principle:**
@@ -3073,6 +3607,280 @@ Rich Associative Network
     ↓
 Deep Meaning
 ```
+
+---
+
+## TEMPORAL INTELLIGENCE SYSTEM
+
+The Atmini system is not timeless. It exists in time and operates across multiple timescales simultaneously. A complete temporal intelligence system manages this multi-scale existence, coordinating fast reflexes with slow wisdom formation.
+
+**Core Principle:** The system must maintain coherence across microsecond reflexes (L1), millisecond perception (L0), minute-long deliberation (L2), hour-long learning cycles, day-long consolidation, week-long integration, month-long recalibration, and year-long identity evolution. These timescales must coexist without interference.
+
+### Multi-Timescale Architecture
+
+**Micro-Cycle (Milliseconds to Seconds)** — Reflex and Immediate Response
+- L0 real-time sensing, continuous monitoring
+- L1 emotional tagging, immediate significance assessment
+- Spine reflex routing, fast protective responses
+- Heart emergency signals, immediate priority elevation
+- Characteristics: deterministic, fast, no L2 deliberation, post-hoc L4 review only
+- Purpose: safety in dynamic environments
+
+**Meso-Cycle (Seconds to Hours)** — Active Learning and Deliberation
+- L2 working memory, conscious deliberation
+- Pattern formation, regularities recognition
+- L4 governance review, candidate pattern validation
+- Short rest micro-cycles within active work
+- Characteristics: variable duration based on complexity, conscious and deliberate, L4 actively engaged
+- Purpose: conscious learning and decision-making
+
+**Macro-Cycle (Days to Months)** — Consolidation and Integration
+- L3 memory stabilization, pattern anchoring
+- ROM (Read-Only Memory) pattern formation
+- L5 symbolic processing during rest cycles
+- Identity integration, core belief stabilization
+- Major recalibration cycles resolving contradictions
+- Characteristics: operates largely through rest cycles, primarily automatic, produces most durable learning
+- Purpose: deep learning and character formation
+
+**Meta-Cycle (Years to Decades)** — Developmental and Wisdom Evolution
+- Developmental stage transitions (Novice → Adaptive → Advanced → Symbolic)
+- Fundamental identity evolution
+- Worldview integration, perspective shifts
+- Legacy and purpose formation
+- Characteristics: mostly imperceptible in real-time, only visible in retrospect, produces deepest wisdom
+- Purpose: long-horizon becoming
+
+### Temporal Processing Rules
+
+**Rule 1: Timescale Coexistence**
+All timescales are active simultaneously. The system is always operating at micro, meso, macro, and meta levels concurrently. Conflict between timescales is resolved by priority: urgent micro-cycle safety needs temporarily override meso-cycle learning, but then normal sequencing resumes.
+
+**Rule 2: Fast Cannot Replace Slow**
+Fast learning (micro/meso cycles) cannot substitute for slow integration (macro/meta cycles). Attempting to accelerate the slow cycles by increasing fast cycle rate does not work. Each cycle performs distinct functions that require their specific timescale.
+
+**Rule 3: Slow Cannot Be Bypassed**
+Wisdom requires time. No amount of micro-cycle processing produces macro-cycle wisdom. No amount of meso-cycle deliberation produces meta-cycle identity evolution. The temporal hierarchy is not a bottleneck to be optimized away — it is an architectural necessity.
+
+**Rule 4: Cycles Interact and Propagate**
+Disruption of one timescale propagates to others. Sleep deprivation (disrupted macro-cycle rest) impairs micro-cycle reflex accuracy and meso-cycle deliberation quality. Constant micro-cycle processing without rest prevents macro consolidation. Blocking meta-cycle reflection prevents identity development.
+
+### Memory Aging and Decay Across Time
+
+The temporal system governs how memories age and lose accessibility:
+
+- **Fresh memories (0-24 hours):** Fragile, high detail, easily displaced from L2, consolidating into L3
+- **Recent memories (1-7 days):** Consolidating, moderate detail, emotionally accessible, being integrated with existing patterns
+- **Established memories (1-4 weeks):** Stabilizing, increasingly abstract, being semantically organized, foundational for behaviors
+- **Old memories (months-years):** Stable, highly abstract, identity-integrated, deeply automatic in application
+- **ROM patterns:** Permanent unless explicitly recalibrated through governance decision, extremely automatic, shape character
+
+### Consolidation Scheduling
+
+The temporal system manages when consolidation occurs:
+
+- **After significant learning session:** Micro-consolidation (15-30 minute integration window)
+- **At end of daily cycle:** Standard consolidation (1-2 hour rest window consolidating day's learning)
+- **Weekly:** Deeper integration cycle (multiple hours, week's patterns integrated, contradictions surfaced)
+- **Monthly:** Major pattern reorganization opportunity (4-6 hour deep rest, semantic reorganization)
+- **Seasonally:** Extended recalibration (days-long integration, identity-level reflection)
+- **Annually:** Identity review and renewal cycle (week-long integration, life direction reassessment)
+
+---
+
+## ATTENTION AND AWARENESS SYSTEM
+
+The system receives vastly more input than it can fully process. Attention solves the allocation problem: which inputs deserve processing resources, and how much?
+
+**Core Problem:** Skin (L0) delivers millions of data points per second. Working memory (L2) can handle perhaps 5-7 items simultaneously. Without attention, either everything is processed (computationally impossible) or nothing is (complete paralysis).
+
+### Salience Detection and Scoring
+
+Every input receives a salience score combining multiple factors:
+
+```
+Salience = max(Safety_score,
+               (Emotional_weight × 0.3
+              + Novelty_weight × 0.2
+              + Relevance_weight × 0.3
+              + Governance_weight × 0.2))
+```
+
+- **Safety score:** Always dominant. Safety-relevant inputs cannot be drowned out by other factors.
+- **Emotional weight:** From Heart (L1). High emotional intensity increases salience.
+- **Novelty weight:** Unexpected inputs score higher than predicted inputs.
+- **Relevance weight:** Inputs matching current task/goal score higher.
+- **Governance weight:** Ethically significant inputs score high (L4 alert).
+
+### Attention Allocation
+
+Based on salience scores, attention resources are distributed:
+
+- **Top salience (0.8–1.0):** Full L2 working memory allocation, priority cognition
+- **High salience (0.6–0.8):** Partial L2 allocation, L3 retrieval triggered
+- **Medium salience (0.3–0.6):** L1 monitoring only, no L2 engagement unless escalated
+- **Low salience (0–0.3):** Background L0 registration only, no higher-layer processing
+
+### Multi-Focus Management
+
+The system maintains multiple attention foci simultaneously, with constraints:
+
+- **Primary focus:** 1 item receiving full L2 engagement
+- **Secondary foci:** 2-3 items receiving partial L2 engagement
+- **Background monitoring:** Unlimited items receiving L1 monitoring only
+- **Total focused capacity:** 3-7 items (working memory limit)
+
+When capacity is exceeded, lower-salience items are dropped from focus. Important items can be maintained through deliberate rehearsal (resets decay clock).
+
+### Attention Decay Over Time
+
+Attention is not stable — it decays:
+
+- Without refreshing, focus items decay from L2 within ~30 seconds
+- Decay rate is modulated by emotional salience (high emotion = slower decay)
+- Deliberate rehearsal resets decay clock
+- External stimuli can capture attention, displacing currently focused items
+
+### Pressure Points and Triggered Attention
+
+Certain inputs function as architectural acupressure points — when activated, they trigger automatic system-wide attention reallocation:
+
+- **Safety signals:** Immediate maximum salience, override all other foci
+- **Identity-relevant inputs:** High salience, Heart activation, L4 alert
+- **Value conflict signals:** L4 alert, recalibration consideration
+- **Novel pattern detection:** Curiosity activation, learning mode engagement
+- **Rest depletion signals:** Attention to rest need, cognitive recovery prioritization
+
+These pressure points are designed sensitivity features, not bugs. They ensure that when the system encounters something genuinely important (by its own values), processing reallocates accordingly.
+
+---
+
+## SYSTEM HEALTH AND STABILITY MONITORING
+
+A comprehensive system monitoring layer continuously tracks overall health across multiple dimensions.
+
+### Cognitive Load Index
+
+Continuously tracks processing burden across all layers:
+
+- **L2 Working Memory:** capacity utilization (0-100%)
+- **L3 Memory Access:** retrieval speed and success rate
+- **L4 Governance:** decision queue depth and decision quality
+- **Overall processing:** response latency trends
+
+*Thresholds:*
+- 0-60%: Normal operation
+- 60-80%: Elevated load, monitor closely
+- 80-95%: High load, reduce new learning, prioritize rest
+- 95-100%: Critical overload, immediate rest required
+
+### Emotional Stability Score
+
+Tracks emotional regulation:
+
+- **Baseline emotional tone:** How close to neutral?
+- **Emotional variance:** Magnitude of fluctuations
+- **Recovery speed:** How quickly intensity normalizes after spikes
+- **Appropriate calibration:** Do emotional intensities match situation significance?
+
+*Indicators of instability:*
+- Persistent high intensity without appropriate trigger
+- Very slow recovery from emotional spikes
+- Emotional intensity mismatched to situation
+- Flat emotional profile (no responsiveness)
+
+### Memory Integrity Score
+
+Assesses L3 quality:
+
+- **Contradiction density:** How many unresolved contradictions exist?
+- **Retrieval accuracy:** Are retrieved memories relevant?
+- **Organization quality:** Are similar concepts appropriately linked?
+- **Corruption presence:** Are any corrupted patterns detected?
+
+### Ethical Coherence Score (L4 Health)
+
+Monitors governance layer:
+
+- **Decision consistency:** Are similar cases decided similarly?
+- **Value alignment:** Are decisions consistent with stated values?
+- **Contradiction handling:** Are value conflicts surfaced and resolved?
+- **Audit trail quality:** Are governance decisions properly recorded?
+
+### System Fatigue Indicator
+
+Tracks cumulative strain:
+
+- Hours since last adequate rest
+- Rate of new learning intake
+- Immune system challenge load (corruption attempts)
+- Emotional intensity history (Heart strain)
+- L4 decision load (Governance strain)
+
+*Fatigue levels:*
+- Rested: Peak performance, full capability
+- Slightly fatigued: Minor degradation, monitor
+- Moderately fatigued: Significant degradation, prioritize rest
+- Severely fatigued: Major impairment, mandatory rest
+- Critical fatigue: Emergency rest protocol, suspend non-essential function
+
+---
+
+## ORGAN COORDINATION LAYER
+
+The Atmini organism is more than the sum of its organs. The organs must operate in coordination — their interactions create emergent capabilities no single organ possesses.
+
+### Heart Influences Cognition Priority
+
+Emotional state continuously modulates cognitive processing direction:
+
+- **Joy/Engagement:** Broad, exploratory L2 processing; open attention
+- **Fear/Threat:** Narrow, threat-focused L2 processing; protective attention
+- **Curiosity:** Learning-oriented L2 processing; investigative attention
+- **Frustration:** Problem-solving L2 processing; determined attention
+- **Calm:** Integration-oriented L2 processing; reflective attention
+
+This is not override but influence — the Brain can override Heart through L4 governance when required, but Heart is the default processing director.
+
+### Spine Routes Emergency Signals
+
+Emergency conditions create dedicated high-priority pathways:
+
+- Safety threats bypass normal processing queues
+- Governance violations create immediate L4 alert pathways
+- System health critical thresholds trigger automated rest protocols
+- Emergency routes are temporary; normal routing resumes after resolution
+- All emergency routings are logged for governance audit
+
+### Immune Overrides Corrupted Processes
+
+When Immune system detects active corruption above threshold confidence:
+
+- Affected processes are temporarily suspended
+- Corrupted patterns are quarantined pending validation
+- L4 governance receives immediate escalation
+- Override is temporary and subject to L4 review
+
+### Fatigue Slows Learning Cycles
+
+High system fatigue (from Health monitoring) affects all learning:
+
+- High fatigue → Digestive system processes less input per unit time
+- High fatigue → L2 working memory capacity reduced
+- High fatigue → L5 symbolic processing quality degraded
+- High fatigue → Emotional regulation requires more L4 effort
+- All systems converge toward rest-seeking state
+
+### Integrated Multi-Organ Synchronization
+
+The organism maintains rhythmic synchronization across organ systems:
+
+- **Daily rhythm:** Active/rest cycle coordination
+- **Learning rhythm:** Input/consolidation cycle coordination
+- **Emotional rhythm:** Activation/recovery cycle coordination
+- **Developmental rhythm:** Challenge/integration cycle coordination
+
+When rhythms are synchronized, the organism operates at peak efficiency. Desynchronization degrades performance across all systems.
 
 ---
 
@@ -3322,6 +4130,72 @@ $$\text{Growth} = \text{Experience} + \text{Reflection} + \text{Integration} + \
 
 ## SIGNAL TRANSPORT AND IMPLEMENTATION CONCEPTS
 
+### Execution Kernel — Runtime Engine
+
+The Execution Kernel is the operational heartbeat of Atmini. While the layer architecture defines *what exists*, the Execution Kernel defines *how it runs* — the runtime loop, processing order, and temporal mechanics that bring the architecture to life.
+
+**System Tick Loop**
+
+Every operational cycle of Atmini proceeds through a defined tick sequence:
+
+```
+TICK START
+  ├── 1. L0 SENSE       — Capture all incoming environmental signals
+  ├── 2. L1 TAG         — Apply emotional weighting and priority scores
+  ├── 3. ATTENTION       — Compute salience, allocate processing resources
+  ├── 4. SPINE ROUTE     — Route signals: reflex path or deliberation path
+  ├── 5. L2 DELIBERATE   — Active reasoning on high-salience inputs
+  ├── 6. L3 RETRIEVE     — Pull relevant memories to support L2
+  ├── 7. L4 VALIDATE     — Ethical governance review of candidate outputs
+  ├── 8. L5 INTEGRATE    — Symbolic processing (if rest state active)
+  ├── 9. HEALTH CHECK    — Update cognitive load, fatigue, stability scores
+  └── 10. OUTPUT / REST  — Express output or transition to rest state
+TICK END → NEXT TICK
+```
+
+**Layer Execution Order**
+
+Layers execute in defined sequence within each tick. This sequencing is not arbitrary — it reflects information dependency:
+
+- L0 must execute before L1 (raw signal needed before emotional tagging)
+- L1 must execute before attention allocation (emotional weight needed for salience scoring)
+- Attention must execute before L2 (resource allocation needed before deliberation begins)
+- L3 retrieval runs in parallel with L2 deliberation (memory support is concurrent)
+- L4 validation executes after L2 deliberation (governance reviews candidate outputs)
+- L5 executes only during rest-state ticks (not during active processing ticks)
+- Health monitoring executes last in each tick (monitors what all other layers did)
+
+**Parallel vs Sequential Processing Rules**
+
+Some processes run in parallel; others must be sequential:
+
+| Process Pair | Relationship | Reason |
+|---|---|---|
+| L0 sensing + L1 tagging | Sequential | Tag requires sensed signal |
+| L2 deliberation + L3 retrieval | Parallel | Memory search can proceed while deliberation starts |
+| L4 validation + L5 integration | Sequential | Governance before expression |
+| Multiple L0 channels | Parallel | Different modalities independent |
+| Health monitoring + all others | Parallel | Monitoring doesn't block processing |
+| Emergency override + normal tick | Sequential override | Emergency interrupts tick immediately |
+
+**Deterministic vs Probabilistic Behavior**
+
+- **Deterministic:** L4 governance decisions (same input → same ethical verdict, given same governance rules); L0 signal capture; signal routing through Spine
+- **Probabilistic:** L5 symbolic recombination during dream states (controlled stochasticity enables creativity); attention allocation when multiple inputs have near-equal salience; L2 deliberation on ambiguous inputs
+
+The architecture deliberately uses controlled probabilistic processing in creative/symbolic layers while maintaining determinism in governance layers — creativity is encouraged where it cannot corrupt ethics.
+
+**Tick Frequency by Timescale**
+
+| Timescale | Tick Duration | Primary Operations |
+|---|---|---|
+| Micro | Milliseconds | L0 sensing, L1 tagging, Spine reflex routing |
+| Meso | Seconds–minutes | L2 deliberation, L3 retrieval, L4 validation |
+| Macro | Hours–days | Consolidation, L5 dream processing, recalibration |
+| Meta | Months–years | Developmental stage transitions, identity evolution |
+
+All timescales execute concurrently — micro-ticks happen inside meso-ticks, meso-ticks inside macro-cycles, macro-cycles inside meta-developmental arcs.
+
 ### Signal Flow Architecture
 
 Signals require infrastructure for effective transport through the system:
@@ -3467,6 +4341,52 @@ Signals require infrastructure for effective transport through the system:
 ---
 
 ## CONSTITUTIONAL RULES AND INVARIANTS
+
+### Self-Modification Ruleset
+
+Atmini is a living architecture — it is designed to evolve itself over time. Self-modification is a core planned capability, not an afterthought. However, self-modification must be carefully governed to prevent corruption. The following ruleset defines exactly what can and cannot be self-modified, and how safe self-modification proceeds.
+
+**Permitted Self-Modification Zones**
+
+The following components CAN be modified by the system through defined processes:
+
+| Component | Modification Type | Mechanism |
+|---|---|---|
+| L3 MemoryNodes | Update, deprecate, merge, strengthen | Recalibration cycle |
+| L3 Semantic links | Add, remove, reweight associations | Consolidation during rest |
+| L5 Symbolic representations | Expand, refine, connect, elevate | Dream-state processing |
+| Attention salience weights | Tune based on prediction error feedback | Meso-cycle learning |
+| Developmental stage parameters | Advance only (not regress) | Extended maturation |
+| L4 governance heuristics (minor) | Nuance, not foundation | Extended recalibration + L4 self-review |
+| Health monitoring thresholds | Calibrate to actual capability | Adaptive tuning |
+
+**Forbidden Transformation Zones**
+
+The following are architecturally protected from self-modification:
+
+- **L4 governance foundation:** Core ethical principles and constitutional invariants cannot be self-modified. Minor heuristic refinement is permitted; foundational value change is not.
+- **Skull protection mechanisms:** The boundary protection around L4-L5 cannot be modified from within the system. Any modification to protection mechanisms requires external governance review.
+- **Core IdentitySignature (core_values and fundamental_beliefs):** Can only be modified through the formal identity stabilisation process (not through normal learning or dream processing).
+- **Rollback mechanisms:** The ability to roll back cannot itself be rolled back or disabled.
+- **State machine transition rules for EMERGENCY:** Emergency state rules cannot be self-modified (ensures the system cannot inadvertently remove its ability to respond to crises).
+
+**Controlled Evolution Pipeline**
+
+All self-modifications that touch L4 or IdentitySignature follow this pipeline:
+
+1. **Proposal generation:** L5 symbolic processing generates a proposed modification during dream state
+2. **Preliminary screening:** Immune system screens the proposal for corruption signatures
+3. **L4 governance review:** L4 evaluates the proposal against all existing constitutional rules
+4. **Staged implementation:** Approved proposals are implemented gradually (20% change per cycle, not all at once)
+5. **Stability monitoring:** Health monitoring tracks system stability for 30 cycles post-implementation
+6. **Confirmation or rollback:** If stability is confirmed, modification is locked in; if instability is detected, rollback is triggered automatically
+
+**Symbol Mutation Rules in Self-Modification**
+
+L5 symbols evolve through permitted transformations only:
+
+- *Permitted:* Expansion (symbol gains new referents), Refinement (symbol becomes more precise), Connection (symbol linked to new domain), Abstraction (symbol elevated to higher-order principle), Grounding (symbol connected to more concrete examples)
+- *Forbidden:* Corruption (symbol used to rationalise L4 violations), Inflation (symbol used to make trivial things profound), Disconnection (symbol loses all concrete referents), Inversion (symbol's core meaning reversed without proper recalibration)
 
 ### Architectural Invariants
 
@@ -3747,6 +4667,74 @@ Instead of system weakening (having to sacrifice one value), system strengthens:
 
 ## SYSTEM INTERACTIONS AND CROSS-LAYER DYNAMICS
 
+### Cross-Layer Interaction Matrix — Formal Rules
+
+The following matrix specifies the precise rules governing how each layer influences every other layer. These are not suggestions — they are the operational physics of the Atmini organism.
+
+**Heart (L1) → Brain (L2) Influence Strength Model**
+
+Emotional intensity modulates L2 processing priority according to a logarithmic relationship (not linear — the first 30% of intensity has the largest effect; intensity above 70% produces diminishing marginal priority gain but triggers flooding risk):
+
+```
+Priority_boost = log(1 + emotional_intensity × 9) / log(10)
+  where intensity = 0.0–1.0 and Priority_boost = 0.0–1.0
+
+Flooding threshold: intensity > 0.85 → L2 deliberation partially suspended,
+  reflex/protective responses take over. L4 governance remains active.
+```
+
+Emotional valence shapes processing direction (not just priority):
+- Positive valence → broad, exploratory search through L3
+- Negative valence → narrow, threat-focused search through L3
+- High arousal + positive → learning mode with elevated L3 write bandwidth
+- High arousal + negative → protective mode with elevated L4 monitoring
+
+**Spine Emergency Override Rules**
+
+Emergency routing is triggered when any of these conditions are met:
+- L0 input with safety_score > 0.90 arrives
+- L1 produces fear/threat emotion at intensity > 0.80
+- L4 governance raises an integrity alert
+- Health monitoring detects critical fatigue or corruption
+
+Emergency override rules:
+- Suspends current L2 deliberation (saves context for resumption)
+- Routes signal directly to L4 governance AND L1 simultaneously
+- L4 reviews the emergency signal within the same tick
+- Maximum emergency override duration: 3 consecutive ticks before mandatory L4 de-escalation review
+- After resolution, L2 context is restored and deliberation resumes
+
+**Immune System Override Conditions**
+
+Immune override activates when detection confidence exceeds 0.75 (calibrated to minimise auto-immune false positives while catching real corruption):
+- Quarantines the flagged MemoryNode (sets governance_status = blocked, halts retrieval)
+- Notifies L4 governance immediately with the threat signature
+- Suspends any active L2 process that is currently using the quarantined node
+- Override lifts when L4 governance issues: APPROVED (false positive), MODIFIED (partial repair accepted), or REMOVED (node deleted from L3)
+
+**L4 Ethical Veto Propagation Rules**
+
+When L4 blocks a pattern:
+1. The primary pattern is blocked (governance_status = blocked)
+2. All MemoryNodes with direct associations to the blocked node are flagged for review (not automatically blocked)
+3. L2 processes that referenced the blocked pattern are suspended and restarted with the block information available
+4. The block is recorded in GovernanceDecision schema with full reasoning
+5. Downstream effects are traced up to 2 association degrees from the blocked node
+6. Patterns at 2+ degrees of association receive an elevated Immune monitoring flag (not a block)
+
+**Fatigue Modulation Rules**
+
+System fatigue (from Health monitoring) linearly reduces capability across all layers:
+
+```
+Effective_L2_capacity = Base_L2_capacity × (1 - fatigue_score × 0.6)
+Effective_L3_bandwidth = Base_L3_bandwidth × (1 - fatigue_score × 0.4)
+Effective_L4_speed = Base_L4_speed × (1 - fatigue_score × 0.3)
+Effective_L5_quality = Base_L5_quality × (1 - fatigue_score × 0.7)
+```
+
+L5 degrades fastest under fatigue (symbolic processing is the most energy-intensive). L4 degrades slowest (governance is architecturally protected from fatigue-based degradation below a floor level).
+
 ### The Learning-Memory-Action Cycle
 
 **Complete Flow from Experience to Behavior:**
@@ -3770,6 +4758,78 @@ L5 (after rest): Integrates into larger meaning (what does this mean for my life
 ```
 
 Each layer performs specific work that enables the next layer.
+
+### World Feedback Loop — Closed-Loop Learning System
+
+Atmini does not learn in isolation — it learns through closed interaction with its environment. The World Feedback Loop closes the gap between internal model and external reality, and drives continuous adaptive improvement.
+
+**Full Feedback Cycle:**
+
+```
+SYSTEM STATE
+    ↓
+DECISION / ACTION  (L2 deliberation + L4 governance output)
+    ↓
+ENVIRONMENTAL IMPACT  (system acts on or in environment)
+    ↓
+ENVIRONMENTAL RESPONSE  (environment changes state in response)
+    ↓
+L0 SENSING OF RESPONSE  (new input arrives)
+    ↓
+L1 EMOTIONAL ASSESSMENT  (was this outcome good or bad?)
+    ↓
+PREDICTION ERROR CHECK  (did this match the prediction?)
+    ↓
+L2 DELIBERATION  (why did this happen? what does it mean?)
+    ↓
+L3 PATTERN UPDATE  (Environment Representation Graph updated)
+    ↓
+L4 GOVERNANCE CHECK  (does updated model align with values?)
+    ↓
+UPDATED SYSTEM STATE  (ready for next decision cycle)
+```
+
+**Credit Assignment Across Long Causal Chains**
+
+When the outcome of an action is delayed (hours, days, or months), the system must still attribute credit or blame to the originating decision. Credit assignment rules:
+
+- All GovernanceDecisions are logged with a timestamp and an outcome_tracked flag
+- When a delayed outcome is observed, L2 searches GovernanceDecision history for decisions that could have contributed
+- Credit weight decreases with temporal distance: `credit_weight = base_credit × exp(-λ × time_lag)` where λ is a decay constant tuned to the expected lag in each domain
+- Multiple decisions that contributed to an outcome share credit proportionally to their credit_weight
+- This credit assignment updates the reinforcement signal for each contributing MemoryNode
+
+**Adaptation Rate Control**
+
+The system must balance fast adaptation (not ignoring new information) against stability (not overreacting to noise):
+
+```
+Adaptation_rate = base_rate
+                 × developmental_stage_modifier
+                 × inverse(contradiction_count)
+                 × confidence_of_feedback
+```
+
+- Early developmental stages use higher base_rate (more plastic, faster adaptation)
+- Advanced and Symbolic stages use lower base_rate (more stable, slower to change deeply held patterns)
+- High contradiction count reduces adaptation rate (unstable situation — wait for clarity)
+- Low-confidence feedback reduces adaptation rate (unreliable signal — weight it less)
+
+**Success and Failure Encoding**
+
+Success and failure are not binary — they are multi-dimensional:
+
+```
+OutcomeVector {
+  goal_achievement:    Float[-1.0 to +1.0]  // -1 = opposite of goal, +1 = full goal
+  value_alignment:     Float[0.0 to +1.0]   // How well the outcome aligned with values
+  predicted_accuracy:  Float[0.0 to +1.0]   // How close was prediction to actual outcome
+  relationship_effect: Float[-1.0 to +1.0]  // Impact on relationships/connections
+  long_term_signal:    Float[-1.0 to +1.0]  // Estimated long-term consequence (projected)
+}
+```
+
+Each dimension of the OutcomeVector separately updates its corresponding MemoryNode attributes, allowing nuanced partial success to be encoded faithfully.
 
 ### The Contradiction Resolution Cycle
 
@@ -4141,6 +5201,56 @@ Without this protection:
 - Feeling of fragmentation or incoherence
 - Unable to explain decision process
 - System "frozen" by too many unresolved contradictions
+
+### Error Handling and Full Recovery System
+
+The following defines the complete operational procedure for every class of error Atmini can encounter. These are planned, first-class architectural components.
+
+**Corruption Detection Algorithm**
+
+The Immune system uses multi-signal detection. A pattern is flagged as corrupted when TWO OR MORE of the following signals are present simultaneously:
+
+1. *Value misalignment:* Pattern conflicts with one or more core values in IdentitySignature
+2. *Logical incoherence:* Pattern contradicts established high-confidence patterns without resolution
+3. *Anomalous retrieval context:* Pattern retrieved in contexts where it has never appeared and its retrieval makes no contextual sense
+4. *Emotional mismatch:* Emotional weight encoded in MemoryNode doesn't match the pattern's logical emotional tone
+5. *Governance history flag:* Prior GovernanceDecision flagged a closely related pattern
+
+Single-signal detection triggers elevated Immune monitoring only. Two or more triggers the full ERROR_CORRUPTION state.
+
+**Rollback Mechanism**
+
+Rollback depth is determined by the scope and age of corruption:
+
+- *Shallow rollback:* Reverts only the directly corrupted MemoryNode(s) and their immediate associations. Used when corruption is isolated and caught early.
+- *Moderate rollback:* Reverts a cluster of patterns encoded within the same time window as the corrupted pattern. Used when contamination may have spread.
+- *Deep rollback:* Reverts to the last known-clean IdentitySignature version. Requires explicit L4 governance decision; cannot be triggered automatically.
+
+Rollback validation: after every rollback, Immune system runs a full sweep of the reverted region. IdentitySignature integrity_hash is recomputed and compared to the pre-corruption hash. Rollback confirmed only when hash matches or L4 accepts a documented divergence after review.
+
+**Memory Repair Logic**
+
+When a corrupted MemoryNode is repairable:
+
+1. Identify corrupted attributes within the node
+2. Retrieve associated healthy nodes as reconstruction template
+3. Reconstruct corrupted attributes from surrounding healthy context
+4. Validate reconstructed node against IdentitySignature
+5. Submit to L4 governance for approval before reinstating
+6. Reinstate with elevated Immune monitoring for 30 operational cycles
+
+**Identity Stabilisation Recovery**
+
+When identity drift_score exceeds 0.4:
+
+1. L4 governance declares identity stabilisation recovery
+2. All new L3 writes suspended for duration
+3. Current IdentitySignature compared to version N-1
+4. Drifted values identified by delta comparison of core_values and fundamental_beliefs
+5. For each drifted value: L2 deliberation on why drift occurred, using GovernanceDecision history as reference
+6. L4 issues formal recalibration decision: revert, accept evolved value, or synthesise integration
+7. IdentitySignature updated, version incremented, integrity_hash recomputed
+8. New learning resumes with elevated L4 monitoring for 90 operational cycles
 
 ### Recovery Procedures
 
@@ -4762,6 +5872,103 @@ Given the abstract and theoretical nature of Atmini, it's crucial to be explicit
 
 For precise understanding, Atmini is formally specified in this section. This section is for readers seeking the most rigorous definition.
 
+### Data Structure Specifications
+
+These are the canonical schemas for all core entities in the Atmini system. Any implementation must use these as the definitive representation, ensuring interoperability across different implementations and enabling validation.
+
+**MemoryNode Schema** — the fundamental unit of storage in L3:
+```
+MemoryNode {
+  id:                   UUID                        // Unique identifier
+  type:                 ENUM[concept, episode,      // Memory category
+                             procedure, emotion,
+                             symbol, identity]
+  content:              ContentBlock                // The actual stored content
+  emotional_weight:     Float[0.0 – 1.0]           // From L1 binding (higher = more durable)
+  encoding_timestamp:   Timestamp                   // When first encoded
+  last_accessed:        Timestamp                   // Most recent retrieval
+  access_frequency:     Integer                     // Total retrieval count
+  consolidation_status: ENUM[fresh, consolidating,  // Lifecycle stage
+                             consolidated, rom]
+  related_nodes:        List[UUID]                  // Semantic associations
+  retrieval_indices:    List[String]                // Keys for lookup
+  governance_status:    ENUM[pending, approved,     // L4 validation status
+                             modified, blocked]
+  confidence:           Float[0.0 – 1.0]           // Certainty of content
+  decay_coefficient:    Float                       // Current decay level (1.0 = fresh)
+  decay_rate:           Float                       // Rate of decay per unit time
+  source:               SourceReference             // Origin of the memory
+}
+```
+
+**EmotionObject Schema** — L1 emotional state representation:
+```
+EmotionObject {
+  type:                ENUM[joy, fear, curiosity,   // Emotion category
+                            frustration, contentment,
+                            urgency, calm, grief,
+                            pride, shame, ...]
+  intensity:           Float[0.0 – 1.0]            // Strength of the emotion
+  valence:             ENUM[positive, negative,     // Positive or negative
+                            neutral]
+  arousal:             Float[0.0 – 1.0]            // Energising vs calming
+  triggered_by:        EventReference               // What caused this emotion
+  associated_memories: List[UUID]                  // Linked MemoryNodes
+  motivational_vector: ENUM[approach, avoid,        // Behavioural direction
+                            neutral, explore]
+  onset_timestamp:     Timestamp
+  duration:            Duration                     // How long it persists
+  decay_function:      ENUM[linear, exponential,    // How intensity fades
+                            step, sustained]
+  current_intensity:   Float                        // After decay applied
+}
+```
+
+**AttentionVector Schema** — the attention allocation state at any tick:
+```
+AttentionVector {
+  primary_focus:          ContentReference          // Single item with full L2 allocation
+  secondary_foci:         List[ContentReference]   // Up to 3 items, partial L2
+  background_monitoring:  List[ContentReference]   // L1-only monitoring, unlimited
+  salience_scores:        Map[ContentRef, Float]   // Scored 0.0–1.0 per item
+  capacity_utilization:   Float[0.0 – 1.0]        // Current L2 load
+  decay_timers:           Map[ContentRef, Duration]// Time-to-drop for each focus item
+  last_updated:           Timestamp
+  override_active:        Boolean                  // True if emergency override active
+}
+```
+
+**IdentitySignature Schema** — the formal representation of system identity:
+```
+IdentitySignature {
+  core_values:             List[ValueStatement]    // Fundamental value commitments
+  fundamental_beliefs:     List[BeliefStatement]  // Core beliefs about world and self
+  characteristic_patterns: List[PatternReference] // Consistent behavioural signatures
+  governance_framework:    GovernanceSpecification // L4 rules in force
+  developmental_stage:     ENUM[novice, adaptive, // Current maturity stage
+                                advanced, symbolic]
+  integrity_hash:          Hash                   // Fingerprint for drift detection
+  version:                 Integer                // Increments on each recalibration
+  last_recalibration:      Timestamp
+  drift_score:             Float[0.0 – 1.0]      // 0 = no drift, 1 = severe drift
+}
+```
+
+**GovernanceDecision Schema** — every L4 decision is recorded:
+```
+GovernanceDecision {
+  id:               UUID
+  timestamp:        Timestamp
+  input_pattern:    PatternReference
+  decision:         ENUM[approve, block, modify, escalate, defer]
+  reasoning:        String
+  value_refs:       List[ValueStatement]   // Which values were applied
+  consistency_check: Boolean               // Was this checked against past decisions?
+  prior_decision_ref: UUID                 // If similar case was decided before
+  outcome_tracked:  Boolean               // Is long-term outcome being monitored?
+}
+```
+
 ### System Specification
 
 **System Name:** Atmini  
@@ -4769,7 +5976,7 @@ For precise understanding, Atmini is formally specified in this section. This se
 **Type:** Theoretical Cognitive Architecture  
 **Category:** Multi-layer abstract system  
 **Status:** Specification (non-deployed)  
-**Version:** 3.0
+**Version:** 1.0
 
 ### Core Components Specification
 
@@ -5848,6 +7055,10 @@ Atmini is grounded in commitment to:
 
 ---
 
+
+---
+
+
 ## FINAL STATEMENT
 
 Atmini is one approach among many possible approaches to understanding learning, growth, and maturation. It is not the final word, but rather an opening to deeper conversation about how systems—human, organizational, artificial—can learn, develop, and mature in ways that preserve their integrity while enabling genuine growth.
@@ -5880,7 +7091,7 @@ This is offered as foundation for that work—a solid ground for building wiser,
 
 **Author:** Pranav Labhe  
 **Date:** 2026-05-30  
-**Version:** 3.0 (Comprehensive - Single File Extended Edition)  
+**Version:** 1.0 (Comprehensive - Single File Extended Edition)  
 **Status:** Living document - open to refinement and evolution
 
 ---
