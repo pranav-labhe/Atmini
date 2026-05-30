@@ -1,0 +1,115 @@
+
+ATMINI_MASTER_DRAFT_v1.txt
+
+# Atmini
+
+Author: Pranav Labhe
+
+## Purpose
+
+Atmini is a unified architecture intended to explore learning, memory formation,
+ethical filtering, symbolic processing, developmental growth, layered cognition,
+Vedic knowledge integration, and long-horizon maturation.
+
+## Major Sections
+
+1. Vision and Purpose
+2. Foundational Principles
+3. Architecture Overview
+4. L0–L5 Layer Model
+5. Memory Taxonomy
+6. Event Processing
+7. Learning Lifecycle
+8. Rest Cycle
+9. Dream Cycle
+10. Play Cycle
+11. Recalibration Cycle
+12. Gem Gatekeeper
+13. Vedic DNA
+14. Kosha Mapping
+15. Child Learning Mapping
+16. Emotional Imprinting
+17. ROM Formation
+18. Symbolic Processing
+19. Growth Model
+20. Governance Rules
+21. Corruption Prevention
+22. Future Body Architecture
+23. Signal Transport Concepts
+24. Passphrase Alignment
+25. Constitutional Invariants
+26. Glossary
+
+## L0–L5
+
+L0: Sensory-Motor Layer
+L1: Reflex / Emotional Layer
+L2: Working Memory Layer
+L3: Long-Term Memory Layer
+L4: Ethical Governance Layer
+L5: Symbolic / Dream Layer
+
+## Learning Lifecycle
+
+Observe
+Experience
+Pattern Formation
+Emotional Weighting
+Memory Encoding
+Ethical Validation
+ROM Imprinting
+Dream Recombination
+Recalibration
+Mature Understanding
+
+## Rest Cycle
+
+- Consolidation
+- Stabilization
+- Integration
+- Review
+- Alignment
+
+## Dream Cycle
+
+- Recall
+- Replay
+- Association
+- Symbolic Transformation
+- Moral Filtering
+- Integration
+
+## Play Cycle
+
+- Exploration
+- Pattern Testing
+- Creativity
+- Safe Experimentation
+
+## Recalibration
+
+- Pause
+- Review
+- Resolve Contradictions
+- Restore Alignment
+
+## Gem Gatekeeper
+
+Acts as the ethical validation and integrity layer.
+All significant memory propagation passes through governance review.
+
+## Vedic DNA
+
+Represents a structured knowledge framework integrated into learning,
+ethics, interpretation, and symbolic processing.
+
+## Constitutional Rules
+
+- No layer bypass.
+- Ethical governance remains active.
+- Growth before capability.
+- Recalibration before escalation.
+- Uncertainty should be reviewed before propagation.
+- Alignment precedes expansion.
+
+END OF DRAFT
