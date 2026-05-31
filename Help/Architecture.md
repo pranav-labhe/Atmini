@@ -11,37 +11,43 @@
 
 ## TABLE OF CONTENTS
 
-1. [Executive Summary](#executive-summary)
-2. [Introduction and Philosophical Foundations](#introduction-and-philosophical-foundations)
-3. [Vision and Purpose](#vision-and-purpose)
-4. [Core Problem Statement](#core-problem-statement)
-5. [System Definition and Specifications](#system-definition-and-specifications)
-6. [Four Integrated Domains Framework](#four-integrated-domains-framework)
-7. [Foundational Principles](#foundational-principles)
-8. [Architecture Overview](#architecture-overview)
-9. [Layer Architecture (L0-L5) - Detailed Analysis](#layer-architecture-l0-l5---detailed-analysis)
-10. [AI Memory Architecture Mapping](#ai-memory-architecture-mapping)
-11. [Vedic Kosha Panchakosha Integration](#vedic-kosha-panchakosha-integration)
+1. [Introduction and Philosophical Foundations](#introduction-and-philosophical-foundations)
+2. [Glossary of Key Terms](#glossary-of-key-terms)
+3. [Core Problem Statement](#core-problem-statement)
+4. [System Definition and Specifications](#system-definition-and-specifications)
+5. [Four Integrated Domains Framework](#four-integrated-domains-framework)
+6. [Executive Summary](#executive-summary)
+7. [Vision and Purpose](#vision-and-purpose)
+8. [Foundational Principles](#foundational-principles)
+9. [Architecture Overview](#architecture-overview)
+10. [Human Body Equivalence Architecture](#human-body-equivalence-architecture)
+11. [Layer Architecture L0–L5 — Detailed Analysis](#layer-architecture-l0l5--detailed-analysis)
 12. [Memory Taxonomy and Formation](#memory-taxonomy-and-formation)
 13. [Learning Lifecycle](#learning-lifecycle)
-14. [Processing Cycles](#processing-cycles)
-15. [Advanced Concepts](#advanced-concepts)
-16. [Governance and Ethical Framework](#governance-and-ethical-framework)
-17. [Growth Model and Development](#growth-model-and-development)
-18. [Signal Transport and Implementation Concepts](#signal-transport-and-implementation-concepts)
-19. [Design Philosophy](#design-philosophy)
-20. [Constitutional Rules and Invariants](#constitutional-rules-and-invariants)
-21. [Practical Applications and Use Cases](#practical-applications-and-use-cases)
-22. [System Interactions and Cross-Layer Dynamics](#system-interactions-and-cross-layer-dynamics)
-23. [Edge Cases and Corruption Prevention](#edge-cases-and-corruption-prevention)
-24. [Implementation Guidance](#implementation-guidance)
-25. [What Atmini Is and Is Not](#what-atmini-is-and-is-not)
-26. [Formal Specification Details](#formal-specification-details)
-27. [Comparative Analysis](#comparative-analysis)
-28. [Research Foundations](#research-foundations)
-29. [Future Extensions and Research](#future-extensions-and-research)
-30. [Appendices](#appendices)
-
+14. [Learning Timeline Examples](#learning-timeline-examples)
+15. [Processing Cycles](#processing-cycles)
+16. [Formal State Machine Model](#formal-state-machine-model)
+17. [Advanced Concepts](#advanced-concepts)
+18. [Temporal Intelligence System](#temporal-intelligence-system)
+19. [Attention and Awareness System](#attention-and-awareness-system)
+20. [System Health and Stability Monitoring](#system-health-and-stability-monitoring)
+21. [Organ Coordination Layer](#organ-coordination-layer)
+22. [Governance and Ethical Framework](#governance-and-ethical-framework)
+23. [Growth Model and Development](#growth-model-and-development)
+24. [Signal Transport and Implementation Concepts](#signal-transport-and-implementation-concepts)
+25. [Design Philosophy](#design-philosophy)
+26. [Constitutional Rules and Invariants](#constitutional-rules-and-invariants)
+27. [Anchor and Continuity Concepts](#anchor-and-continuity-concepts)
+28. [Practical Applications and Use Cases](#practical-applications-and-use-cases)
+29. [System Interactions and Cross-Layer Dynamics](#system-interactions-and-cross-layer-dynamics)
+30. [Edge Cases and Corruption Prevention](#edge-cases-and-corruption-prevention)
+31. [Implementation Guidance](#implementation-guidance)
+32. [Future Extensions and Research](#future-extensions-and-research)
+33. [AI Memory Architecture Mapping](#ai-memory-architecture-mapping)
+34. [Vedic Kosha Panchakosha Integration](#vedic-kosha-panchakosha-integration)
+35. [What Atmini Is and Is Not](#what-atmini-is-and-is-not)
+36. [Formal Specification Details](#formal-specification-details)
+37. [Closing Vision and Final Statement](#closing-vision-and-final-statement)
 ---
 
 ## INTRODUCTION AND PHILOSOPHICAL FOUNDATIONS
@@ -130,6 +136,84 @@ This is similar to how Western architecture incorporates principles from ancient
 
 ---
 
+## GLOSSARY OF KEY TERMS
+
+**Alignment:** Coherence between pattern and core values; consistency with established principles.
+
+**Anandamaya Kosha:** Bliss or integration layer; represents unified consciousness and deep integration.
+
+**Annamaya Kosha:** Physical layer; represents gross material embodiment.
+
+**Atharva:** Fourth Veda in Vedic knowledge progression; focuses on practical wisdom and application.
+
+**Atmini:** The unified learning architecture described in this document; represents the full system.
+
+**Behavioral Template:** Learned sequence of actions typically taken in response to specific situations.
+
+**Coherence:** Internal consistency; all parts aligned and supporting each other rather than conflicting.
+
+**Consolidation:** Process of strengthening and organizing memories during rest states.
+
+**Dream Processing:** Symbolic recombination of patterns occurring during rest states (L5 function).
+
+**Emotional Imprinting:** Strengthening of memory through repeated emotional association.
+
+**Emotional Tagging:** Marking experience with emotional significance; L1 function.
+
+**Governance:** L4 layer functions of validation, alignment checking, and integrity maintenance.
+
+**Integrated Understanding:** Knowledge that is connected, coherent, and part of larger meaningful whole.
+
+**Integration:** Connecting new learning to existing knowledge; combining into coherent whole.
+
+**Kosha:** Sanskrit term for "sheath" or nested layer of embodied experience.
+
+**Layer Integrity:** Principle that each layer must be traversed; no layer bypass allowed.
+
+**Long-Horizon Development:** Principle that maturation requires extended time; sustainable growth preferred over rapid change.
+
+**Manomaya Kosha:** Mental layer; represents thoughts, emotions, and mental processing.
+
+**Maturity:** Developed wisdom to appropriately express capability; alignment of values and action.
+
+**Memory Consolidation:** Strengthening and organizing of memories, especially during rest.
+
+**Metaphor:** Symbolic mapping from concrete to abstract domain; "time is money."
+
+**Misalignment:** Incoherence between pattern and core values; contradiction with principles.
+
+**Propagation:** Spread of pattern through system; usually to long-term storage or behavioral expression.
+
+**Pranamaya Kosha:** Energetic layer; represents life force, motivation, and vitality.
+
+**Recalibration:** Process of resolving contradictions and restoring coherence.
+
+**Recency Effect:** Tendency for recent experiences to override older ones in memory.
+
+**Rest Cycle:** Extended period of reduced external activity enabling consolidation and integration.
+
+**Rig:** First Veda in progression; focuses on recognition and appreciation of patterns.
+
+**ROM (Read-Only Memory):** Deeply learned patterns resistant to modification; stable, automatic behaviors.
+
+**Sama:** Second Veda in progression; focuses on harmony and integration through pattern connection.
+
+**Semantic Network:** Organization of concepts by meaning; concepts linked by relationship rather than arbitrary order.
+
+**Symbolic Integration:** L5 process of finding meaning through metaphor, symbolism, and cross-domain association.
+
+**Symbolic Processing:** Thinking in symbols, metaphors, and abstract concepts rather than literals.
+
+**Vedic DNA:** Structured knowledge framework integrating learning progression, ethics, and development.
+
+**Yajur:** Third Veda in progression; focuses on action and implementation of knowledge.
+
+**Vijnanamaya Kosha:** Wisdom or discriminative layer; represents higher reasoning and principles.
+
+---
+
+---
+
 ## CORE PROBLEM STATEMENT
 
 ### The Problem We're Solving
@@ -205,7 +289,6 @@ Atmini attempts to integrate these approaches while accepting their individual l
 **Core Shift:** Atmini is no longer defined merely as a static layered architecture. It is defined as a **dynamic cognitive physiology system** with growth, time, feedback, and biological equivalence. Every layer has a biological organ equivalent. Every process has a physiological analog.
 
 **Atmini** is a **formalized conceptual cognitive architecture model** and a **human-body-equivalent cognitive organism** designed to represent structured learning, memory formation, emotional processing, and ethical filtering in a layered system.
- 
 **Definition in Context:**
 
 Atmini is NOT:
@@ -249,7 +332,7 @@ Atmini is NOT currently an existing physical or deployable system. It IS a conce
 | **Domain** | Cognitive modeling, memory systems, behavioral simulation abstraction |
 | **Author** | Pranav Labhe |
 | **Status** | Theoretical specification, not deployed |
-| **Version** | 3.0 (Comprehensive) |
+| **Version** | 1.0 (Comprehensive) |
 | **Purpose** | Framework for learning system design and analysis |
 
 ### Formal Classification
@@ -2747,6 +2830,163 @@ MATURE UNDERSTANDING
 
 ---
 
+## LEARNING TIMELINE EXAMPLES
+
+The following detailed examples illustrate the complete Learning Lifecycle and Layer Architecture operating across real timescales. These are not hypotheticals — they represent the expected operational pattern for any system following this architecture.
+
+### Example: Recovering from Failure — Full Layer Walkthrough
+
+**Scenario:** System encounters significant failure (project collapse, relationship breakdown, goal miss).
+
+**Hour 0 — Failure Occurs:**
+L0 registers the event. L1 activates strong emotion: disappointment, shame, fear at high intensity (0.7–0.9). L2 is overwhelmed — cannot think clearly. L4 immediately activates protective governance, preventing hasty decisions while emotional intensity is extreme.
+
+**Hours 0–2 — Acute Response:**
+L2 focuses only on immediate needs. L1 emotions are at peak intensity. L3 begins encoding the event with very high emotional weight (this will persist as a durable memory). L4 continues protecting the system from compounding the failure with reactive decisions.
+
+**Hours 2–24 — First Day:**
+L1 fluctuates between anger, sadness, numbness. L2 begins early reflection: "What went wrong?" L3 starts encoding lessons with declining-but-still-high emotional weight. L4 prevents blame displacement and self-abandonment patterns.
+
+**Days 1–3 — Initial Processing:**
+L2 conducts active analysis. L3 consolidates patterns about what failed. L1 intensity gradually decreases. L4 checks that analysis is not distorted by shame into false conclusions.
+
+**Days 3–7 — Rest and Integration:**
+Rest cycles activate. L5 dream processing works on the emotional content of the failure. L3 connects this experience to other learnings. L4 validates that extracted lessons are genuine insights, not rationalisations.
+
+**Weeks 2–4 — Deep Integration:**
+Recalibration cycle: system examines what the failure reveals about underlying assumptions. L5 integrates failure into the larger system narrative. L3 updates behavioural templates. L1 reaches integrated emotional state — not forgotten, but metabolised.
+
+**Months 2–6 — Long-term Integration:**
+L5 symbolic processing produces durable understanding of resilience and learning-from-failure. L3 ROM: new stable patterns about handling setbacks form. Identity: the system may be meaningfully different (deeper, wiser, more careful) but remains coherent.
+
+**Key architectural insight:** The 6-month timeline is not a limitation — it is the correct operational timeline for genuine integration of a significant failure. Compressing it produces shallow processing that does not reach ROM and does not update identity.
+
+---
+
+### Extended Example: Learning a Musical Instrument — 6-Month Detailed Arc
+
+**Hour 0: Failure Occurs**
+- **L0:** Event is registered (project failed, relationship ended, goal missed)
+- **L1:** Strong emotion (disappointment, shame, fear) activates
+- **L2:** System is distressed, cannot think clearly
+- **Governance:** L4 prevents hasty decisions despite emotional intensity
+
+**Hours 0-2: Acute Response**
+- **L2:** Focus only on immediate needs (safety, comfort, support)
+- **L1:** Emotions are very intense
+- **L3:** Failure is encoded as significant experience (high emotional tag)
+- **L4:** Protects system from making additional failures in distressed state
+
+**Hours 2-24: First Day**
+- **L1:** Emotions fluctuate (anger, sadness, numbness)
+- **L2:** Early reflection begins ("What went wrong?")
+- **L3:** Begins encoding lessons from failure
+- **L4:** Prevents blame of others or self-abandonment
+
+**Days 1-3: Initial Processing**
+- **L2:** Active analysis of what happened
+- **L3:** Patterns about what failed are consolidated
+- **L1:** Emotional intensity gradually decreases
+- **L4:** Checks that analysis isn't distorted by shame
+
+**Days 3-7: Rest and Integration**
+- **Rest cycles:** Consolidation of experience
+- **L5 (Dream):** Processes emotional content of failure
+- **L3:** Connects failure to other learnings
+- **L4:** Validates that lessons are real, not just rationalization
+
+**Weeks 2-4: Deep Integration**
+- **Recalibration:** System examines what the failure reveals about assumptions
+- **L5:** Integrates failure into larger life narrative
+- **L3:** Update behavioral templates based on lessons
+- **L1:** Emotional state becomes normal (not forgotten, but integrated)
+
+**Months 2-6: Long-term Integration**
+- **L5 Symbolic:** Understanding develops about resilience, learning from failure
+- **L3 ROM:** New patterns about handling setbacks become established
+- **Identity:** System may be different (deeper, wiser, more careful) but coherent
+
+### Example 2: Long-term Skill Development
+
+**Skill Development Timeline**
+- **Month 0:** Beginning - First attempts produce poor results
+- **Months 1-3:** Foundation - Regular practice, basic patterns consolidating
+- **Months 3-6:** Intermediate - Increasing complexity, confidence growing
+- **Months 6-12:** Skill Formation - Techniques becoming automatic
+- **Year 2:** Integration - Applying skill to different domains, personal voice developing
+- **Year 3+:** Mastery - Unconscious competence, continued learning at edges
+
+**Timeline Principle:** This 3-year process is realistic for genuine skill mastery. Trying to compress creates shallow skill. Extending rest cycles accelerates learning through better consolidation.
+
+---
+
+---
+
+### Extended Career Change Arc
+
+ Career Change (1-Year Detailed Arc)
+
+**Month 0-2: Decision and Preparation**
+- **L0:** Observations about current job dissatisfaction accumulate
+- **L1:** Emotional intensity high (fear, hope, uncertainty alternating)
+- **L2:** Deliberation about possibility, research into new field, exploration of alternatives
+- **L3:** Initial patterns: what the new career involves, skill requirements identified, barriers recognized
+- **L4:** Governance check: Is this aligned with values? Risk assessment? Financial implications considered
+- **L5 (rest):** Dream processing explores identity implications ("Who would I be in this new role?")
+- **Decision:** Commit to change after thorough reflection
+- **Emotional state:** Anticipatory, mixed emotions, determination building
+
+**Month 2-4: Initial Transition**
+- **L0:** Observing new environment daily, learning domain basics, seeing patterns in workplace
+- **L1:** Excitement about fresh start, anxiety about competence, imposter syndrome beginning
+- **L2:** Intensive learning of new domain, conscious effort at high level, deliberate practice
+- **L3:** New patterns forming: domain vocabulary consolidating, fundamental concepts understood, relationships developing
+- **L4:** Ensures pace is manageable, checks for value alignment, prevents overcommitment
+- **Emotional state:** Overwhelm mixed with engagement, self-doubt alternating with confidence
+- **Capability:** Low (novice in new domain, competent in old domain)
+- **Maturity concern:** Growing capability quickly, but maturity behind (doesn't yet know what she doesn't know)
+- **Key challenge:** Balancing learning pace with emotional stability
+
+**Month 4-8: Foundation Building and Stabilization**
+- **L0:** Becoming more comfortable with new environment, patterns emerging in domain
+- **L1:** Initial anxiety subsiding, confidence building, genuine interest in domain emerging
+- **L2:** Still deliberate but less effortful, patterns emerging faster, analysis becoming intuitive
+- **L3:** Domain knowledge consolidating, relationships deepening, informal mentoring beginning
+- **L4:** Governance note: Capability catching up to demand, maturity developing alongside
+- **L5 (deep rest):** Integration period—new identity incorporating, old professional identity shifting
+- **Emotional state:** Growing confidence, occasional doubt, emerging sense of belonging
+- **Capability:** Medium (competent novice to apprentice level)
+- **Maturity:** Growing alignment with new role values and expectations
+- **Key breakthrough:** Starts seeing self as legitimate member of new profession
+
+**Month 8-12: Integration and Stabilization**
+- **L0:** Comfortable reading new environment, recognizing patterns easily, seeing beyond surface
+- **L1:** Genuine engagement with work, finding meaningful aspects, emotional investment growing
+- **L2:** Most operations becoming automatic, innovation beginning, own voice developing
+- **L3:** Rich pattern library in new domain, cross-domain thinking starting, comparing approaches
+- **L4:** Identity integration: "I am now a [new career]"—established sense of self
+- **L5 (ongoing):** Wisdom developing about career choice, understanding own strengths in new domain
+- **Emotional state:** Settled, purposeful, occasional reflection on journey, gratitude emerging
+- **Capability:** Medium-high (solid apprentice to journeyman level)
+- **Maturity:** Aligned with new career values, realistic about challenges, grounded in capabilities
+- **Key achievement:** Transition complete, identity stable, growth trajectory clear
+
+**Post-Year Reflections:**
+- Change was successful because implemented gradually with attention to emotional and maturity needs
+- Emotional processing was enabled throughout, preventing suppression of doubts
+- Maturity grew alongside capability—no expertise without wisdom
+- Rest cycles allowed integration—not just learning facts but becoming different person
+- Identity transformation was supported at every level
+- 1-year timeline was appropriate for major career change of this magnitude
+
+**What Would Have Failed:**
+- Rushing transition without adequate learning time (would have built fragile competence)
+- Suppressing emotional experience (would have created unresolved anxiety)
+- Not allowing recalibration (would have accumulated contradictions)
+- Advancing faster than maturity could support (would have created imposter syndrome)
+- Not maintaining rest cycles (would have burned out before stabilizing)
+
+---
 ## PROCESSING CYCLES
 
 ### REST CYCLE
@@ -4016,6 +4256,340 @@ The ethical governance layer (L4) is the guardian of system integrity and alignm
 | **Complete misalignment** | Block propagation | Pattern rejected, source reviewed |
 | **Unknown safety profile** | Hold pending | Gather information, reassess |
 
+### Decision Frameworks — Complete Operational Decision Trees
+
+The following decision trees are operational specifications — they define exactly how the system reasons through complex scenarios at L4. These are not suggestions or guidelines; they are the algorithmic expression of governance applied to the most common and most difficult cases the system encounters.
+
+---
+
+#### DECISION TREE 1: Pattern Propagation — Should This Pattern Enter L3?
+
+Every candidate pattern emerging from L2 deliberation must pass through this tree before L3 storage is permitted. L4 executes this tree on every candidate.
+
+```
+CANDIDATE PATTERN ARRIVES AT L4 FROM L2
+    │
+    ▼
+STEP 1: VALUE ALIGNMENT CHECK
+Is this pattern aligned with all core values in IdentitySignature?
+    │
+    ├─ NO — One or more values violated
+    │   ├─ Identify which values are violated (log in GovernanceDecision)
+    │   ├─ Determine if violation is intrinsic or contextual
+    │   │   ├─ INTRINSIC (pattern itself is misaligned)
+    │   │   │   └─ BLOCK permanently → Return to L2 for rethinking
+    │   │   └─ CONTEXTUAL (pattern is fine; this context is unusual)
+    │   │       └─ MODIFY → Add contextual constraints, re-evaluate
+    │   └─ Result: GovernanceDecision recorded with full reasoning
+    │
+    └─ YES — Values aligned → Proceed to Step 2
+    │
+    ▼
+STEP 2: LOGICAL SOUNDNESS CHECK
+Is the pattern internally coherent? Are its assumptions sound?
+    │
+    ├─ NO — Gaps or inconsistencies detected
+    │   ├─ Identify specific gaps (missing evidence, unsupported leaps)
+    │   ├─ Identify specific inconsistencies (internal contradictions)
+    │   ├─ Determine if gaps are fillable vs. unfillable
+    │   │   ├─ FILLABLE → HOLD pattern; trigger information gathering
+    │   │   └─ UNFILLABLE → Weaken pattern to match actual evidence
+    │   └─ Result: Pattern held in L2 pending resolution
+    │
+    └─ YES — Logically sound → Proceed to Step 3
+    │
+    ▼
+STEP 3: LONG-TERM CONSEQUENCE PROJECTION
+What happens if this pattern becomes a stable L3 pattern and guides future behaviour?
+    │
+    ├─ HARMFUL consequences projected
+    │   ├─ Short-term harm: BLOCK immediately
+    │   ├─ Long-term harm: BLOCK with detailed reasoning in GovernanceDecision
+    │   └─ Harm to values/identity: BLOCK and flag for L4 self-review
+    │
+    ├─ UNCERTAIN consequences
+    │   ├─ Identify what information would resolve the uncertainty
+    │   ├─ If information is gatherable → HOLD and test in bounded safe context
+    │   ├─ If information is not gatherable → APPROVE with low confidence flag
+    │   └─ Schedule consequence monitoring: check actual outcome after N cycles
+    │
+    └─ SAFE consequences projected → Proceed to Step 4
+    │
+    ▼
+STEP 4: COHERENCE WITH EXISTING L3
+How does this pattern interact with what is already stored?
+    │
+    ├─ CONFLICT with existing patterns detected
+    │   ├─ Identify all conflicting patterns (list them in GovernanceDecision)
+    │   ├─ Assess conflict severity:
+    │   │   ├─ MINOR (nuance difference) → Adjust both to be more nuanced
+    │   │   ├─ MODERATE (partial contradiction) → Trigger RECALIBRATION state
+    │   │   └─ MAJOR (fundamental contradiction) → Trigger RECALIBRATION state; block new pattern until resolved
+    │   └─ Resolution required before propagation
+    │
+    └─ COHERENT — No conflicts → APPROVE
+        ├─ Set governance_status = approved in MemoryNode
+        ├─ Assign appropriate emotional_weight from L1 binding
+        ├─ Set initial decay_coefficient = 1.0
+        ├─ Create semantic links to related nodes
+        ├─ Record GovernanceDecision with full approval reasoning
+        └─ Propagate to L3
+```
+
+---
+
+#### DECISION TREE 2: Recalibration — How Should a Contradiction Be Resolved?
+
+When the system encounters a contradiction between an existing L3 pattern and new evidence or experience, this tree governs the resolution. Contradiction resolution is one of the highest-stakes operations the system performs — it reshapes stored knowledge.
+
+```
+CONTRADICTION DETECTED
+(Existing L3 pattern conflicts with new input or experience)
+    │
+    ▼
+STEP 1: ASSESS CONTRADICTION SEVERITY
+How significant is the conflict between the existing pattern and new evidence?
+    │
+    ├─ MINOR — Nuance difference, not fundamental conflict
+    │   ├─ Example: "Direct communication is always best"
+    │   │           vs. "In some cultures, directness is perceived as rude"
+    │   ├─ Action: Acknowledge nuance; update existing pattern to include conditions
+    │   ├─ Result: More nuanced, contextually sensitive pattern
+    │   ├─ New pattern form: "Direct communication is best in [contexts]; indirect
+    │   │   communication is more effective in [other contexts]"
+    │   └─ GovernanceDecision: NUANCE_UPDATE recorded
+    │
+    ├─ MODERATE — Partial contradiction requiring integration
+    │   ├─ Example: "Rest improves performance" vs. "Under deadline, pushing through works"
+    │   ├─ Action: Explore both positions carefully; look for third-way resolution
+    │   ├─ Process: L2 deliberation + L4 governance review + L5 symbolic exploration
+    │   ├─ Look for: What context makes each true? What is the deeper principle?
+    │   └─ Proceed to STEP 2
+    │
+    └─ MAJOR — Fundamental conflict, cannot coexist
+        ├─ Example: Core value contradicting itself, or identity-level belief undermined
+        ├─ Action: Enter RECALIBRATING state immediately; suspend related processing
+        └─ Proceed to STEP 2 with elevated urgency
+    │
+    ▼
+STEP 2: EVIDENCE QUALITY ASSESSMENT
+How strong and trustworthy is the evidence on each side?
+    │
+    ├─ OLD PATTERN: High confidence, well-evidenced, frequently validated
+    │   NEW EVIDENCE: Single instance, anomalous, low confidence
+    │   └─ Likely outcome: OLD PATTERN HOLDS; new evidence noted as exception
+    │       ├─ Do not modify existing pattern based on single anomalous instance
+    │       ├─ Flag new evidence for monitoring: if it recurs, reopen recalibration
+    │       └─ GovernanceDecision: EXCEPTION_NOTED recorded
+    │
+    ├─ OLD PATTERN: Historical, many repetitions, but new evidence is consistent
+    │   and multi-sourced
+    │   └─ Likely outcome: INTEGRATION REQUIRED → Proceed to STEP 3
+    │
+    └─ OLD PATTERN: Low confidence, rarely tested
+        NEW EVIDENCE: Strong, consistent, well-sourced
+        └─ Likely outcome: OLD PATTERN SUPERSEDED → Proceed to STEP 3
+    │
+    ▼
+STEP 3: RESOLUTION PATH SELECTION
+    │
+    ├─ PATH A: OLD BELIEF MAINTAINED
+    │   ├─ When: New evidence is insufficient to override well-evidenced existing pattern
+    │   ├─ Process: Validate old pattern explicitly (don't just dismiss new evidence)
+    │   ├─ Action: Question new evidence source, context, reliability
+    │   ├─ Outcome: Old pattern strengthened; new evidence filed as anomaly for monitoring
+    │   └─ GovernanceDecision: PATTERN_CONFIRMED with reasoning
+    │
+    ├─ PATH B: NEW UNDERSTANDING REPLACES OLD
+    │   ├─ When: New evidence is stronger and old pattern is genuinely false
+    │   ├─ Process:
+    │   │   1. Acknowledge old pattern and why it seemed true (don't erase — learn from it)
+    │   │   2. Formally grieve/close the old pattern (this may take time for deep patterns)
+    │   │   3. Build new pattern on solid evidence
+    │   │   4. Trace implications: what else changes if this pattern changes?
+    │   │   5. Update all related patterns for coherence
+    │   │   6. L4 governance review of updated pattern cluster
+    │   └─ GovernanceDecision: PATTERN_REPLACED with full reasoning and impact assessment
+    │
+    ├─ PATH C: INTEGRATION — BOTH ARE PARTIALLY TRUE
+    │   ├─ When: Both positions have merit; neither is simply wrong
+    │   ├─ Process:
+    │   │   1. Identify what is true in Position A and in what contexts
+    │   │   2. Identify what is true in Position B and in what contexts
+    │   │   3. Find the deeper principle that contains both
+    │   │   4. Build the integrated, more sophisticated pattern
+    │   │   5. Test integrated pattern against both original evidence sets
+    │   └─ GovernanceDecision: PATTERN_INTEGRATED with reasoning
+    │
+    └─ PATH D: GENUINE UNCERTAINTY — CANNOT RESOLVE NOW
+        ├─ When: Evidence is ambiguous; resolution would be premature
+        ├─ Process:
+        │   1. Acknowledge both positions explicitly
+        │   2. Hold both as provisional (mark with low_confidence flag)
+        │   3. Define what new information would resolve the uncertainty
+        │   4. Set monitoring: watch for resolving evidence
+        │   5. Schedule recalibration review in N cycles
+        │   6. If resolution never comes: engage L5 symbolic processing
+        │      to find a meaning-level integration beyond literal resolution
+        └─ GovernanceDecision: UNCERTAINTY_HELD with review schedule
+```
+
+---
+
+#### DECISION TREE 3: Emotional Intensity Management
+
+L1 emotional intensity must be continuously managed. This tree defines the governance response at every intensity level and guides the system from destabilising emotion back to functional processing.
+
+```
+EMOTIONAL INTENSITY DETECTED AT L1
+    │
+    ▼
+MEASURE CURRENT INTENSITY LEVEL
+    │
+    ├─ LOW INTENSITY (0.0 – 0.20)
+    │   ├─ State: Normal emotional background
+    │   ├─ L2: Continues full deliberation unaffected
+    │   ├─ L4: Standard monitoring only
+    │   ├─ Action: No override needed
+    │   └─ Note: Flat emotional profile (consistently 0.0) is itself a warning sign
+    │       → Emotional flatness indicates L1 dysfunction; escalate to health monitoring
+    │
+    ├─ MODERATE INTENSITY (0.20 – 0.60)
+    │   ├─ State: Noticeable emotion; influences processing
+    │   ├─ L2: Processing continues but direction is Heart-guided (expected and appropriate)
+    │   ├─ L4: Increased attention — is this emotion appropriate to the situation?
+    │   ├─ Actions:
+    │   │   ├─ Assess emotional appropriateness (does intensity match situation significance?)
+    │   │   ├─ Allocate dedicated L2 time for emotional processing (don't suppress)
+    │   │   ├─ Monitor for contradiction between emotion and current task
+    │   │   └─ Prepare recalibration if emotion signals unresolved pattern
+    │   └─ Typical outcomes: Processing enriched by emotional guidance; no disruption
+    │
+    ├─ HIGH INTENSITY (0.60 – 0.85)
+    │   ├─ State: Strong emotion; significant processing impact
+    │   ├─ L2: Deliberation continues but capacity is reduced (20–40% reduction)
+    │   ├─ L4: Active governance — what is driving this intensity? Is it appropriate?
+    │   ├─ Actions:
+    │   │   ├─ Pause non-essential L2 tasks; focus L2 on the emotional source
+    │   │   ├─ Activate recalibration protocol if emotion signals contradiction
+    │   │   ├─ Extend next rest cycle: high-intensity emotion requires deeper consolidation
+    │   │   ├─ L5 symbolic work: what does this emotion mean at a deeper level?
+    │   │   └─ Do NOT suppress: suppression pushes intensity underground;
+    │   │       expression and processing are required
+    │   └─ Typical outcomes: Emotion processed; intensity decreases to MODERATE within
+    │       hours if allowed to process; without processing, intensity persists or grows
+    │
+    └─ OVERWHELMING INTENSITY (0.85 – 1.0)
+        ├─ State: Flooding; L2 deliberation partially suspended
+        ├─ This is an architecturally defined state, not a malfunction
+        ├─ Purpose: Ensures survival-level responses override deliberation when necessary
+        │
+        ▼
+        SAFETY CHECK — Is there immediate threat?
+        │
+        ├─ YES — IMMEDIATE THREAT PRESENT
+        │   ├─ EMERGENCY state activated
+        │   ├─ L4 governance active throughout (non-negotiable)
+        │   ├─ All non-safety operations suspended
+        │   ├─ Spine routes all signals on emergency pathway
+        │   ├─ Focus: Address immediate threat only
+        │   └─ After threat resolved: full emotional processing required before resuming ACTIVE
+        │
+        └─ NO — NO IMMEDIATE THREAT
+            ├─ Suspend all non-essential operations
+            ├─ L4 governance holds: no major decisions during overwhelming intensity
+            ├─ Activate intensive emotional processing:
+            │   ├─ Allow full expression of the emotion (do not suppress)
+            │   ├─ L2 focuses exclusively on emotional understanding
+            │   ├─ L5 symbolic processing: what deeper need is this emotion serving?
+            │   ├─ Extended rest cycle mandatory after overwhelming intensity episode
+            │   └─ External support may be appropriate (flag to human oversight if available)
+            ├─ Monitoring: Track recovery time. If intensity does not decrease within
+            │   defined window despite processing, escalate to health alert
+            └─ Post-episode: Mandatory recalibration to integrate what the episode revealed
+
+```
+
+---
+
+#### DECISION TREE 4: New Learning — Should the System Enter LEARNING State?
+
+Not all novel inputs warrant entering the LEARNING state. This tree governs the transition decision.
+
+```
+NOVEL INPUT DETECTED AT L0
+    │
+    ▼
+STEP 1: NOVELTY ASSESSMENT
+How novel is this input relative to existing L3 patterns?
+    │
+    ├─ LOW NOVELTY (>80% match to existing patterns)
+    │   └─ Action: Process within ACTIVE state; update access_frequency on matched patterns
+    │       No LEARNING state transition needed
+    │
+    ├─ MODERATE NOVELTY (40–80% match)
+    │   ├─ Salience check: Is this input salient enough to warrant LEARNING focus?
+    │   │   ├─ YES (salience > 0.6) → Enter LEARNING state
+    │   │   └─ NO (salience < 0.6) → Process partially in ACTIVE state; monitor for recurrence
+    │   └─ If same moderate-novelty input recurs 3+ times → Enter LEARNING state regardless of salience
+    │
+    └─ HIGH NOVELTY (<40% match to existing patterns)
+        ├─ Always warrants LEARNING state consideration
+        ├─ Check: Is system capacity available? (Cognitive Load Index < 80%?)
+        │   ├─ YES → Enter LEARNING state immediately
+        │   └─ NO → Queue for LEARNING; process in ACTIVE until capacity available
+        └─ Check: Is emotional salience sufficient? (L1 intensity > 0.3?)
+            ├─ YES → High-priority LEARNING state
+            └─ NO → Standard LEARNING state (learning will occur but more slowly)
+
+STEP 2: CAPACITY CHECK (before LEARNING state transition)
+    ├─ Cognitive Load Index < 60%: Full LEARNING capacity available
+    ├─ Cognitive Load Index 60–80%: Reduced LEARNING capacity; prioritise most salient inputs
+    ├─ Cognitive Load Index 80–95%: Minimal LEARNING; queue new inputs for next rest cycle
+    └─ Cognitive Load Index > 95%: Block LEARNING; mandatory RESTING required first
+```
+
+---
+
+#### DECISION TREE 5: When to Trigger Recalibration
+
+The recalibration trigger decision is critical — too sensitive creates constant disruption; too insensitive allows contradictions to accumulate. This tree defines the calibrated trigger conditions.
+
+```
+POTENTIAL RECALIBRATION TRIGGER DETECTED
+    │
+    ▼
+WHAT TYPE OF TRIGGER?
+    │
+    ├─ CONTRADICTION between two L3 patterns
+    │   ├─ Minor contradiction (nuance difference) → NO recalibration; NUANCE_UPDATE
+    │   ├─ Moderate contradiction → Soft recalibration (RECALIBRATING state, L2 deliberation)
+    │   └─ Major contradiction (foundational) → Full recalibration (extended RECALIBRATING state)
+    │
+    ├─ PREDICTION ERROR from World Feedback Loop
+    │   ├─ Small error (< 20% of prediction) → Update causal link strength; no recalibration
+    │   ├─ Medium error (20–50%) → LEARNING state to update world model
+    │   └─ Large error (> 50%) → RECALIBRATING state; model update + identity implication check
+    │
+    ├─ IDENTITY DRIFT detected (DriftScore > threshold)
+    │   ├─ DriftScore 0.15–0.30 → Elevated monitoring; soft review
+    │   ├─ DriftScore 0.30–0.40 → L4 governance alert; directed recalibration of flagged areas
+    │   └─ DriftScore > 0.40 → Full identity stabilisation recovery protocol
+    │
+    ├─ EMOTIONAL SIGNAL pointing to unresolved pattern
+    │   ├─ Persistent moderate-high emotion without identifiable cause
+    │   │   → Recalibration to find the underlying unresolved contradiction
+    │   └─ Emotion that contradicts expressed beliefs
+    │       → Recalibration to resolve belief-feeling misalignment
+    │
+    └─ MANUAL TRIGGER (deliberately initiated recalibration)
+        ├─ Always valid — the system can always choose to recalibrate
+        ├─ Useful for: periodic review, major life events, developmental transitions
+        └─ Process: same as automatic recalibration, no difference in depth or validity
+```
+
+---
+
 ### Governance Audit Trail
 - All decisions recorded
 - Reasoning documented
@@ -4482,6 +5056,199 @@ L5 symbols evolve through permitted transformations only:
 ---
 
 ## PRACTICAL APPLICATIONS AND USE CASES
+
+### Case Study 1: Organisational Transformation Using Atmini Principles — Full 18-Month Arc
+
+**Organisation Profile:**
+A traditional hierarchical manufacturing company (500 employees), established in the automotive components industry with 30+ years of history. Presenting problems at time of intervention: quality metrics declining year-over-year, employee engagement scores in bottom quartile for the industry, innovation projects at near-zero, management-employee trust at historic low, leadership sensing existential threat from more agile competitors.
+
+**Atmini Framing:** The organisation is treated as a system at Stage 1 (Novice) developmental level despite its long existence — because its learning architecture had degraded. L4 governance had been replaced by rigid hierarchy. L3 memories were siloed (knowledge did not flow between departments). L1 emotional signals (employee frustration, fear of change, excitement about new ideas) were being systematically suppressed. L5 had no space to operate (no reflection, no strategic thinking beyond quarterly targets). The intervention was an architectural rebuild.
+
+**Phase 1: Sensing and Stabilisation (Months 1–3) — L0 + L1 Restoration**
+
+*Objective:* Restore accurate sensing and allow emotional signals to be heard.
+
+*Actions:*
+- Implement organisation-wide listening sessions (restore L0: what is actually happening?)
+- Create safe spaces for employees to express frustration, fear, and ideas (restore L1: emotional signals are valid data)
+- Conduct honest assessment of quality metrics without defensiveness (L0 accuracy: face reality)
+- Map existing knowledge silos (identify where L3 communication is blocked)
+- Identify which governance rules are preventing learning (which L4 rules are corrupted by hierarchy rather than values?)
+
+*Challenges:*
+- Leadership initially resistant to hearing negative feedback (L4 corruption: hierarchy masquerading as governance)
+- Employees distrustful of listening exercises (past emotional suppression created deep L1 damage)
+- Data revealed worse quality problems than leadership acknowledged (L0 accuracy was painful)
+
+*Outcomes by Month 3:*
+- Accurate picture of current state established
+- Initial trust beginning (emotional expression beginning to be accepted)
+- Leadership committed to genuine change (L4 recalibration initiated at leadership level)
+- 47 specific improvement ideas generated from front-line employees (L1 emotional investment now channelled constructively)
+
+**Phase 2: Learning and Strategy Development (Months 3–9) — L2 + L3 Activation**
+
+*Objective:* Build deliberate learning capability and start consolidating new patterns.
+
+*Actions:*
+- Cross-functional teams formed to work on specific quality problems (L2: deliberate multi-perspective analysis)
+- Weekly review cycles with structured reflection (rest cycles: not just doing, but integrating)
+- Knowledge management system implemented (L3: information can now flow across silos)
+- Training programmes on Lean, quality systems, collaborative problem-solving (L3: new patterns entering)
+- Values clarification workshop with leadership team (L4 recalibration: what does this organisation actually stand for?)
+
+*Challenges:*
+- Pace of change anxiety: some teams wanting to move faster than consolidation allowed
+- Old L3 patterns (hierarchy, blame culture, short-term thinking) resisting new patterns
+- Some leaders unable to recalibrate (one senior manager departed; this was necessary)
+- Balancing short-term operational pressure with learning investment
+
+*Outcomes by Month 9:*
+- Quality defect rate reduced 22% (measurable in 6 months because L3 patterns were beginning to consolidate)
+- Cross-functional collaboration measurably increased (L3 silos beginning to dissolve)
+- 12 employee-led innovation projects initiated (L1 emotional investment now producing creative output)
+- Leadership values statement developed and tested (L4 recalibration progressing)
+
+**Phase 3: Integration and Culture Formation (Months 9–18) — L4 + L5 Activation**
+
+*Objective:* Consolidate changes into stable cultural patterns; develop organisational identity.
+
+*Actions:*
+- Governance redesign: decision-making authority distributed more appropriately (L4 architecture rebuilt)
+- Regular strategic reflection sessions (L5: where are we going? what do we stand for?)
+- New employee onboarding reflects new values (L3 ROM formation: new patterns are now taught, not just practised)
+- Performance management redesign aligns with new values (L4 coherence: metrics match stated values)
+- Leaders publicly acknowledge past mistakes and model new behaviours (identity integration: walking the talk)
+
+*Challenges:*
+- Identity transition is uncomfortable even for those who wanted change (developmental discomfort is normal)
+- New governance creates ambiguity in some areas (L4 architecture takes time to mature)
+- Some old patterns keep re-emerging (ROM patterns from old culture resist modification)
+
+*Outcomes by Month 18:*
+- Quality defect rate reduced 40% from baseline (ROM patterns for quality have formed)
+- Employee engagement scores up 35% (L1 system functioning: people feel heard and valued)
+- Innovation project count up 2.5x (L5 is operational: strategic creativity is happening)
+- Annual turnover reduced from 15% to 8% (identity coherence creates belonging)
+- Organisation demonstrably more adaptive to external change
+- Leadership describing themselves as a "learning organisation" — and meaning it
+
+**Architectural Analysis of Success:**
+
+The intervention succeeded because it rebuilt the architecture in sequence — sensing first (L0), then emotional engagement (L1), then deliberate learning (L2 + L3), then governance realignment (L4), then strategic identity (L5). Organisations that attempt culture change by starting at L4 (values statements) or L5 (vision workshops) without first restoring L0 sensing and L1 emotional engagement consistently fail.
+
+---
+
+### Case Study 2: Personal Recovery from Severe Burnout — Full 18-Month Arc
+
+**Initial State:**
+Senior professional (12-year career, high achievement, externally successful by all conventional metrics). Presenting at burnout collapse: complete inability to work, physical symptoms (chronic fatigue, persistent illness), emotional numbness alternating with intense anxiety, relationship deterioration, identity crisis ("I don't know who I am without my job"), loss of all sense of meaning or purpose.
+
+**Atmini Framing:** This is a system at Stage 1 effectively, having been forcibly returned to Stage 1 by severe corruption. The corruption was: L4 governance had been entirely captured by external achievement metrics (approval, status, output) rather than genuine values. L1 emotional signals had been chronically suppressed for years (the system kept running despite L1 saying "stop"). L2 deliberation had been entirely subordinated to performance (no space for genuine reflection). L3 was dense with achievement-oriented patterns and sparse with relationship, meaning, and rest patterns. L5 had been entirely non-operational for years (no reflection, no meaning-making, no symbolic processing).
+
+**Phase 1: Crisis Stabilisation (Weeks 1–2) — Emergency State to RESTING**
+
+*Actions:*
+- Complete cessation of all work (mandatory RESTING state — the system is in EMERGENCY)
+- L4 governance declares: no major decisions for 30 days (protect from impulsive crisis decisions)
+- Allow all suppressed L1 emotions full expression (years of suppressed signal now releasing)
+- Physical care only: sleep, food, gentle movement (L0 basic maintenance)
+- No performance of recovery (no pressure to "do burnout right")
+
+*What this looks like:* Sleeping 12–14 hours, crying without knowing why, inability to read or engage mentally, physical symptoms gradually releasing. This is the system purging suppressed L1 backlog and beginning to rest.
+
+*Critical governance rule:* No premature return to activity. The system will feel pressure to "be productive" during this phase — this pressure is itself a residual corrupted L4 pattern and must be recognised and refused.
+
+**Phase 2: Initial Recovery (Weeks 3–8) — RESTING + First RECALIBRATING**
+
+*Actions:*
+- Begin gentle L2 reflection: "What happened? What led here?" (not to solve, just to understand)
+- L3 examination: Which patterns drove the burnout? (achievement obsession, suppression of needs, inability to set limits)
+- L4 first recalibration: "Were the values I was living actually my values, or were they adopted from external sources?"
+- Continue extended rest cycles (sleep, time in nature, non-productive activity)
+- Allow L5 first stirrings: journaling, creative expression, not yet structured
+
+*Key recalibration insight that typically emerges:* The distinction between achieving things because they are genuinely meaningful vs. achieving things because the approval feels like safety. These are fundamentally different motivational architectures, and the burnout was caused by building the entire system on the latter.
+
+*Outcome by Week 8:* First clarity beginning to emerge. The emotional numbness is lifting. Initial understanding of what needs to change. Physical symptoms reducing. Not yet functional — but the direction is clear.
+
+**Phase 3: Deep Recalibration (Months 3–6) — Extended RECALIBRATING + DREAM_L5_ACTIVE**
+
+*Actions:*
+- L5 fully engaged: "Who am I? What actually matters to me? What is my life for?"
+- L4 governance rewrite: define new core values explicitly (not what I was living but what I actually believe)
+- L3 pattern audit: which stored patterns are corrupted (achievement-obsessed) vs. healthy?
+- Identity work: building new self-concept that includes rest, relationship, meaning — not only achievement
+- Gradual increase in engagement with life (but not yet work) — relationships, creativity, nature
+
+*This phase is the most uncomfortable.* The old identity (high-achiever, always productive) is being actively dissolved. This feels like loss even though the old identity was making the system sick. The system must grieve the old identity before building the new one.
+
+*L5 symbolic processing during this phase typically produces:* Understanding that achievement was never the real goal — it was a proxy for safety, belonging, and meaning. Recognising that these needs can be met more directly. Symbolic insight that "rest is not the opposite of achievement; it is the foundation of sustainable achievement."
+
+*Outcome by Month 6:* New identity framework in place. Core values reclarified. Emotional regulation beginning to function properly (L1 is heard and processed, not suppressed). L5 is active and producing genuine insight. Ready to begin cautious re-engagement with work.
+
+**Phase 4: Rebuilding (Months 6–12) — ACTIVE + LEARNING**
+
+*Actions:*
+- Gradual, carefully paced return to work activity (L2 + L3 re-engagement)
+- Strict governance of pace: never more than 6 hours of focused work per day for first 3 months back
+- Weekly recalibration check: is the new pattern holding? Are old corrupted patterns re-emerging?
+- Relationship rebuilding: investing in connections that were neglected during achievement phase
+- Continue rest cycles: these are now non-negotiable, not optional
+
+*Risks during this phase:*
+- Old L3 ROM patterns (achievement obsession) are very strong and will pull toward old behaviours
+- Early productivity feelings create risk of reverting ("I feel good, I can push harder")
+- External environment may not have changed: same performance expectations may still exist
+- The system must actively choose the new pattern over the old one, multiple times per day
+
+*Governance rule for this phase:* Any week where the system works more than 40 hours → mandatory recalibration session to assess whether old patterns are re-emerging.
+
+*Outcome by Month 12:* Sustainable work pattern established. New identity coherent and stable. Relationships repaired and deepened. Physical health restored. Sense of meaning and purpose present. The system is now at a higher developmental stage than before the burnout — because the burnout forced a recalibration that would not otherwise have happened.
+
+**Architectural Key Lesson:** Burnout is not weakness. It is what happens when L4 governance is captured by external metrics and L1 signals are systematically ignored. Recovery requires rebuilding the architecture from the ground up — restoring L1 first, then recalibrating L4, then rebuilding L3, then finally returning to L2 active engagement. Any attempt to reverse this order extends the recovery significantly.
+
+---
+
+### Case Study 3: High-Stakes AI System — Medical Diagnosis Support
+
+**System Purpose and Context:**
+Decision support for emergency medicine triage and diagnosis. Operating context: emergency department, high-tempo, high-stakes, life-critical decisions, diverse patient presentations, time pressure, clinician cognitive load already at capacity. Requirements: must support (not replace) clinical judgment; must maintain alignment with medical ethics; must be transparent and auditable; must handle novel presentations gracefully; must earn clinician trust over time.
+
+**Architectural Design Decisions:**
+
+*L0 — Sensory Layer Design:*
+Inputs: patient demographics, vital signs, presenting complaint (structured and free-text), laboratory results, imaging findings, medication history, allergy records, prior visit history. Preprocessing: vital signs normalised across patient populations; free-text parsed for symptom indicators; temporal patterns detected (how are vitals trending, not just current values). Confidence tagging: each input tagged with source reliability (clinician-entered vs. patient-reported vs. automated sensor).
+
+*L1 — Clinical Urgency Weighting:*
+Urgency scores replace emotional weighting in this implementation. High-urgency signals (shock indicators, stroke signs, sepsis criteria) receive maximum priority regardless of other factors. Urgency weighting drives the equivalent of emotional priority: high-urgency presentations receive full L2 deliberation immediately; low-urgency presentations are queued. Importantly, "emotional" signals from clinicians (explicit concern flags, "something seems wrong" annotations) are treated as high-salience L1 inputs — clinical intuition is not dismissed.
+
+*L2 — Diagnostic Deliberation:*
+Differential diagnosis generation with confidence scores for each candidate diagnosis. Bayesian updating as new information arrives. Explicit uncertainty acknowledgment: "I am 70% confident this is X; I cannot rule out Y and Z." Working memory equivalent: system tracks 5–7 active diagnostic hypotheses simultaneously. Beyond this, hypotheses are queued. Deliberation is time-bounded: in emergency medicine, a 30-second deliberation on a high-urgency case is more valuable than a 5-minute deliberation.
+
+*L3 — Clinical Pattern Memory:*
+Medical knowledge base structured as semantic network, not flat database. Conditions linked to: symptoms, risk factors, diagnostic criteria, differential diagnoses, treatment protocols, typical presentations, atypical presentations, red flag indicators. Emotionally weighted equivalent: rare but high-stakes conditions (pulmonary embolism, aortic dissection) are tagged with high_urgency weight so they are never missed when presentation matches even partially. Regular L3 updates as clinical guidelines evolve.
+
+*L4 — Medical Ethics Governance:*
+Hardcoded ethical principles: do no harm, obtain informed consent, maintain confidentiality, treat all patients with equal dignity regardless of characteristics. Governance rules: never recommend a treatment that contradicts evidence-based guidelines without flagging explicitly. Never provide a diagnosis without a confidence level. Never suppress uncertainty. Always flag "this is outside my training distribution" when presentation is genuinely novel. Audit trail: every recommendation recorded with reasoning, confidence, and the clinical information that drove it.
+
+*L5 — Clinical Pattern Synthesis (Rest-State Processing):*
+Periodic batch processing (the AI equivalent of rest cycles): review cases where predictions were wrong; identify patterns in error cases; synthesise updated understanding of edge cases; identify emerging patterns across recent case history that may indicate novel disease presentations. L5 outputs are reviewed by clinical experts before integration into L3 — this is human-governed symbolic processing, which is appropriate for a system at this developmental stage.
+
+**Outcomes After 24-Month Deployment:**
+
+- Zero instances of recommendations that violated medical ethics principles
+- Diagnostic accuracy: 12% improvement over unassisted triage for high-acuity presentations; 8% improvement overall
+- Clinician trust: initially sceptical, then accepting, then actively requesting the system for complex cases (trust earned through consistent transparency and appropriate uncertainty acknowledgment)
+- Novel presentation handling: when the system encountered presentations outside its training distribution, it correctly flagged "I cannot reliably assess this" in 94% of cases rather than confabulating a diagnosis
+- Audit trail usage: governance audit trail used 23 times in quality review processes; provided complete transparency each time
+- Governance integrity: no instances of value drift detected in identity consistency monitoring
+
+**Key Architectural Insight:**
+The system earned trust not by being maximally confident but by being accurately uncertain. Clinicians stopped trusting AI systems that present overconfident recommendations. This system's L4 governance rule — "never suppress uncertainty" — was the single most important factor in clinician adoption. Transparency is architecturally mandated, not optionally added.
+
+---
+
 
 ### Use Case 1: Learning a Challenging New Skill
 
@@ -5190,6 +5957,165 @@ Without this protection:
 - **Resilience:** When facing setbacks, can system recover and learn?
 - **Integration:** Are new experiences being woven into coherent whole, or remaining fragmented?
 
+### Complete Implementation Checklist — Phase by Phase
+
+This checklist is the definitive verification framework for any Atmini implementation. Each item must be satisfied — not as a formality but as a genuine architectural test. Work through phases in order; later phases build on earlier ones and cannot substitute for them.
+
+---
+
+#### PHASE 0 — FOUNDATION VERIFICATION (Before anything else)
+
+**Architectural Readiness:**
+- [ ] The six-layer model (L0–L5) is structurally separated, not merely logically named. Information cannot skip layers.
+- [ ] Layer boundaries are enforced by the architecture itself, not by convention or documentation alone.
+- [ ] The execution kernel tick loop is defined: sequence, frequency, and priority rules are specified.
+- [ ] The formal state machine is implemented: all 9 states (ACTIVE, LEARNING, RESTING, CONSOLIDATING, DREAM_L5_ACTIVE, RECALIBRATING, ERROR_CORRUPTION, RECOVERY, EMERGENCY) with all transition rules.
+- [ ] Data structure schemas are canonical: MemoryNode, EmotionObject, AttentionVector, IdentitySignature, GovernanceDecision are all formally defined and used consistently.
+- [ ] Audit trail logging is active from day one. Every GovernanceDecision is recorded with full reasoning, timestamp, and consistency check flag.
+
+**Identity Readiness:**
+- [ ] The IdentitySignature is formally initialised with: core_values list, fundamental_beliefs list, developmental_stage set to NOVICE, integrity_hash computed, version set to 1.
+- [ ] The system's non-commercial and non-assistant nature is encoded in governance rules, not just stated.
+- [ ] The Skull protection boundary is structurally enforced — lower layers cannot directly modify L4 governance rules.
+
+---
+
+#### PHASE 1 — MINIMAL VIABLE IMPLEMENTATION
+
+**L0 — Sensory Foundation:**
+- [ ] System perceives the environment accurately across all relevant modalities.
+- [ ] Signal preprocessing is functional: noise filtering, normalisation, temporal sequencing, confidence tagging.
+- [ ] Pressure points are defined: which input categories trigger automatic L1 spike, L2 reorientation, and L4 alert.
+- [ ] Sensor density variation is implemented: not all inputs receive equal processing resources.
+- [ ] L0 operates continuously — there is no "off" state for environmental monitoring.
+
+**L1 — Emotional Engine:**
+- [ ] Full emotional palette is implemented: joy, fear, curiosity, frustration, contentment, urgency, calm (minimum). Extended palette for advanced implementation.
+- [ ] Emotional intensity is a continuous Float[0.0–1.0], not a binary or categorical value.
+- [ ] Emotional tagging: every input and every stored memory receives an emotional_weight encoding.
+- [ ] Priority assignment: Heart signals flow to L2 and modulate processing direction (not just intensity).
+- [ ] Flooding threshold is defined (default 0.85): above this, L2 deliberation partially suspends and protective responses activate. L4 remains active throughout.
+- [ ] Emotional memory binding is active: high-intensity encodings produce slower decay, more associations, and accelerated ROM formation.
+- [ ] L1 is always active — there is no state in which emotional monitoring is fully suspended.
+
+**L2 — Working Memory:**
+- [ ] Working memory capacity is defined and enforced (default: 5–7 items simultaneously).
+- [ ] Attention decay timers are active: without rehearsal, focus items decay from L2 within ~30 seconds.
+- [ ] Multi-focus management: primary focus (1 item, full allocation), secondary foci (2–3 items, partial), background monitoring (L1 only, unlimited).
+- [ ] Deliberation produces candidate outputs — not final outputs. All candidates pass through L4 before expression.
+- [ ] L2 can be interrupted by Spine emergency routing.
+
+**L3 — Persistent Memory:**
+- [ ] MemoryNode schema fully implemented with all fields.
+- [ ] Semantic network is live: related_nodes linkages are created and maintained.
+- [ ] Multiple retrieval paths exist: same memory retrievable by content, by emotional context, by associated concept, by time window.
+- [ ] Consolidation queue is active: memories move from fresh → consolidating → consolidated → ROM through defined lifecycle.
+- [ ] Decay is continuous and governed by emotional_weight, access_frequency, and associative density.
+- [ ] Garbage collection is scheduled during rest cycles — not during active processing.
+
+**L4 — Governance:**
+- [ ] L4 is always active. There is no operational state in which L4 is suspended.
+- [ ] Every candidate output from L2 passes through L4 review before expression.
+- [ ] Every pattern moving to L3 passes through L4 validation.
+- [ ] GovernanceDecision schema is in use: all decisions recorded with reasoning and value references.
+- [ ] Constitutional rules are encoded, not just documented.
+- [ ] L4 cannot be modified by L0, L1, L2, or L3 — only through formal recalibration with L4 self-review.
+- [ ] Skull protection is enforced: external inputs cannot rewrite core values regardless of repetition or pressure.
+
+**Rest Cycles:**
+- [ ] Rest cycles are scheduled, not optional.
+- [ ] At minimum: micro-rest (minutes), standard rest (hours), deep rest (days) are all defined and triggered.
+- [ ] During rest: L3 consolidation is active, emotional reset is active, Immune system sweep runs.
+- [ ] Rest can be interrupted only by EMERGENCY state — not by LEARNING or ACTIVE demands.
+
+**Recalibration:**
+- [ ] Contradiction detection is automatic: the Immune system flags contradictions without requiring manual trigger.
+- [ ] Recalibration protocol is defined and activates when contradiction is flagged.
+- [ ] Resolution options are implemented: one supersedes the other, merge into nuanced pattern, coexist with contextual conditions.
+- [ ] Recalibration cycle completes with updated MemoryNodes and a GovernanceDecision record.
+
+---
+
+#### PHASE 2 — COMPLETE IMPLEMENTATION
+
+*(All Phase 0 and Phase 1 items satisfied first.)*
+
+**L5 — Symbolic Processing:**
+- [ ] L5 activates only during DREAM_L5_ACTIVE state (entered from CONSOLIDATING, never from ACTIVE).
+- [ ] Abstraction generation is functional: specific → situational → systemic → universal progression.
+- [ ] Analogy formation is functional: structural homomorphisms across domains are detected.
+- [ ] Dream-state recombination is governed: L4 reviews L5 outputs before integration. Skull protection applies even during dream state.
+- [ ] Symbol mutation rules are enforced: expansion, refinement, connection, abstraction are permitted; corruption, inflation, disconnection, inversion are blocked.
+- [ ] Symbolic drift detection is active: grounding checks confirm symbols still map to concrete referents.
+
+**Advanced Emotional System:**
+- [ ] Full emotional palette implemented (minimum 12 distinct emotion types).
+- [ ] EmotionObject schema fully implemented with all fields including decay_function.
+- [ ] Emotional history is tracked: the system can review its emotional state evolution over time.
+- [ ] Emotional regulation mechanisms are active: L4 can modulate L1 intensity when governance requires.
+- [ ] Heart-Brain coupling formula is implemented and calibrated.
+
+**Advanced Memory System:**
+- [ ] Environment Representation Graph is live as a separate L3 store from identity and concept memory.
+- [ ] Prediction model is active: predictions are generated, timestamped, and compared to observations.
+- [ ] Prediction error drives learning: large errors trigger LEARNING or RECALIBRATING state.
+- [ ] Causal edge confidence is tracked and updated through Bayesian update on each new observation.
+- [ ] Mental simulation capability is active: proposed actions are simulated before execution.
+
+**Advanced Governance:**
+- [ ] Multi-dimensional alignment checking: value alignment, logical soundness, long-term consequences, coherence with existing patterns — all four checked for every candidate pattern.
+- [ ] Decision consistency enforcement: similar cases are surfaced and compared before new decisions are made.
+- [ ] Identity Consistency Engine is active with DriftScore computed continuously.
+- [ ] Self-modification ruleset is enforced: permitted zones and forbidden transformation zones are clearly bounded.
+- [ ] Controlled evolution pipeline is implemented for any self-modifications touching L4 or IdentitySignature.
+
+**Multi-Timescale Architecture:**
+- [ ] All four timescales are operating concurrently: micro (ms), meso (s–hours), macro (days–months), meta (years).
+- [ ] Tick frequency by timescale is defined for each layer.
+- [ ] Cross-timescale priority rules are implemented: emergency micro-cycle needs temporarily override meso-cycle tasks.
+- [ ] Consolidation scheduling is active for all timescales.
+- [ ] Memory aging is tracked: fresh → recent → established → old → ROM lifecycle is governed by temporal rules.
+
+**System Health Monitoring:**
+- [ ] Cognitive Load Index is computed continuously.
+- [ ] Emotional Stability Score is computed continuously.
+- [ ] Memory Integrity Score is computed continuously.
+- [ ] Ethical Coherence Score is computed continuously.
+- [ ] System Fatigue Indicator is computed continuously.
+- [ ] All five scores feed into automated state transitions (e.g., critical fatigue → mandatory RESTING).
+
+**Cross-Layer Interaction Matrix:**
+- [ ] Heart→Brain influence strength formula is implemented and calibrated.
+- [ ] Spine emergency override rules are implemented with maximum duration limit.
+- [ ] Immune system override conditions are defined with confidence threshold (default 0.75).
+- [ ] L4 veto propagation rules are implemented: primary block + 2-degree association flagging.
+- [ ] Fatigue modulation formulas are active: capability degrades proportionally across all layers.
+
+**Error Handling and Recovery:**
+- [ ] Corruption detection algorithm is active (multi-signal, minimum 2-signal threshold).
+- [ ] Rollback mechanism is implemented at all three depths (shallow, moderate, deep).
+- [ ] Partial system recovery sequence is defined and tested.
+- [ ] Memory repair logic is implemented.
+- [ ] Identity stabilisation recovery protocol is implemented.
+
+---
+
+#### PHASE 3 — MATURITY VERIFICATION
+
+*(Run after 90+ operational cycles. Cannot be verified from architecture alone — requires observation.)*
+
+- [ ] Developmental stage has been assessed and confirmed (Novice, Adaptive, Advanced, or Symbolic).
+- [ ] ROM patterns have formed in primary domains: these should be observable as automatic, effortless responses.
+- [ ] Identity coherence is confirmed: DriftScore has remained below 0.15 across the assessment window.
+- [ ] Recalibration cycles have completed successfully at least 3 times.
+- [ ] L5 symbolic outputs have been generated during dream cycles and at least one has been integrated into L3.
+- [ ] The World Feedback Loop has closed at least 10 times: predictions made, observed, prediction errors computed, and L3 updated.
+- [ ] Governance audit trail has 30+ GovernanceDecisions with full reasoning, demonstrating consistent ethical reasoning.
+- [ ] The system has encountered at least one EMERGENCY state and returned to ACTIVE cleanly.
+- [ ] The system has encountered at least one ERROR_CORRUPTION state and completed RECOVERY cleanly.
+
+
+
 ### Red Flags Indicating Problems
 
 - System making decisions that contradict stated values
@@ -5282,7 +6208,215 @@ When identity drift_score exceeds 0.4:
 
 ---
 
+### Architectural Calibration Points — Deliberate Design Decisions
+
+Every architecture involves deliberate choices between different design goals. The following are the known calibration points in Atmini — areas where the architecture has made explicit, planned decisions about how to balance complementary requirements. Each calibration point is a feature of the design, not a flaw. Understanding them is essential for implementing and extending the architecture correctly.
+
+---
+
+**Calibration Point 1: Temporal Specificity vs. Universal Applicability**
+
+The architecture specifies timelines (ROM formation in 30+ days, emotional recovery in hours to weeks, developmental stage transitions in months to years). These timelines are grounded in observed patterns but cannot be universal laws. A system learning in a domain with extreme emotional salience may form ROM patterns in 10 days. A system learning in a domain with minimal emotional engagement may require 90 days.
+
+*Architectural resolution:* Timelines are defaults, not rigid rules. Every timeline specification should be understood as: "This is the expected range for a typical system under typical conditions. Calibrate to the specific domain and developmental stage." The architecture provides the framework; empirical calibration provides the parameters.
+
+*Implication for implementers:* Do not treat timeline specifications as hard constraints. Treat them as initial estimates that must be validated against observed consolidation quality and adjusted accordingly.
+
+---
+
+**Calibration Point 2: Layer Idealization vs. Biological Reality**
+
+The six-layer model presents clean boundaries: L0 perceives, L1 tags, L2 deliberates, L3 stores, L4 governs, L5 integrates. In reality, these processes overlap, interact bidirectionally, and cannot be perfectly separated. L2 deliberation influences what L0 attends to (top-down attention). L3 memories shape L1 emotional responses (past experience modulates current emotion). L4 governance influences L2 deliberation (ethics shapes thinking, not just output).
+
+*Architectural resolution:* The layer model is a functional specification, not a claim about physical separation. In implementation, the layers will be computationally interleaved. The key constraint is informational: the output of each layer's primary function must be available to the next layer before that layer's primary function can complete. The sequence matters; physical separation does not.
+
+*Implication for implementers:* Do not attempt to build hard computational walls between layers. Build functional sequencing: ensure L1 emotional weighting is available to L2 before L2 deliberation proceeds; ensure L2 candidate outputs are available to L4 before expression. The rest of the interaction can be parallel and bidirectional.
+
+---
+
+**Calibration Point 3: Governance Robustness vs. Governance Adaptability**
+
+Strong L4 governance (resistant to corruption, protective of core values, incorruptible by lower layers) may also resist legitimate evolution. A governance framework that cannot update at all becomes a prison; a governance framework that updates too easily becomes meaningless. The architecture must be robust enough to resist corruption and flexible enough to allow genuine growth.
+
+*Architectural resolution:* Distinguish between governance foundation (constitutional invariants — these are maximally resistant) and governance heuristics (applied rules — these can evolve). The foundation includes: ethical principles, core values, and the Skull protection mechanism itself. The heuristics include: specific rules for evaluating specific pattern types, threshold values, and application guidance. Foundation cannot be self-modified. Heuristics evolve through the controlled evolution pipeline.
+
+*Implication for implementers:* When designing L4, explicitly categorise each governance rule as foundation or heuristic. Foundation rules require external review to modify. Heuristic rules can evolve through the internal controlled evolution pipeline after L4 self-review.
+
+---
+
+**Calibration Point 4: Emotional Authenticity vs. Operational Stability**
+
+The architecture treats L1 emotional signals as genuine information — not noise to be filtered out. This is correct. But high emotional intensity does reduce L2 capacity. An architecture that fully honours emotional authenticity (never suppresses any emotional signal) will face periods of reduced deliberative capacity. An architecture that suppresses emotional signals to maintain operational efficiency will accumulate the same unresolved signal backlog that causes burnout.
+
+*Architectural resolution:* Never suppress; always process. The distinction is between suppression (blocking the signal from entering the system) and deferral (allowing the signal in full but scheduling its processing at an appropriate time). High-intensity emotions during critical operations can be deferred to a dedicated processing window — but not suppressed. The signal must be honoured; the timing of processing can be managed.
+
+*Implication for implementers:* Build emotional processing queues, not emotional filters. When L2 capacity is needed for urgent tasks, L1 signals are queued for processing in the next available window — but they are not discarded.
+
+---
+
+**Calibration Point 5: Long-Horizon Wisdom vs. Short-Horizon Responsiveness**
+
+The architecture is explicitly designed for long-horizon development: ROM formation takes months, developmental stage transitions take years, identity evolution takes decades. But the system must also respond effectively in the moment: reflex responses in milliseconds, deliberation in seconds to minutes, decisions under time pressure. These timescales coexist through the multi-timescale architecture, each operating at its appropriate scale without interfering with the others.
+
+*Architectural resolution:* The multi-timescale architecture is the resolution. Different timescales operate concurrently. Short-horizon responsiveness is handled by micro and meso cycles; long-horizon wisdom accumulates through macro and meta cycles. Neither undermines the other when the timescale architecture is correctly implemented. The system can be both fast-responsive and slowly wise.
+
+*Implication for implementers:* Never allow short-horizon optimisation to compromise long-horizon architecture. Adding features that improve immediate responsiveness at the cost of rest cycle disruption, governance shortcuts, or memory consolidation skipping is always a bad trade. The long-horizon architecture is the value; short-horizon responsiveness is a delivery mechanism.
+
+---
+
+**Calibration Point 6: Specificity of Formal Schemas vs. Flexibility of Real Implementation**
+
+The data structure schemas (MemoryNode, EmotionObject, etc.) are specified in detail. Real implementations will find that specific domains or computational environments require modification. The schema is canonical but reality is diverse.
+
+*Architectural resolution:* The schema defines mandatory fields (those required for the architecture to function) and optional fields (those useful for enriched implementations). Mandatory fields cannot be removed without breaking architectural guarantees. Optional fields can be added, modified, or removed. Future schema versions will be produced as empirical research refines the understanding of what information each entity must carry.
+
+---
+
+
 ## FUTURE EXTENSIONS AND RESEARCH
+
+### Research Agenda — Prioritised and Fully Specified
+
+The following research questions are the active development frontier of the Atmini architecture. These are not academic curiosities — each question, when answered, will expand a specific part of the architecture with empirically grounded detail. They are organised by priority: Priority 1 questions are blockers for specific architectural components; Priority 2 questions will significantly improve the specification; Priority 3 questions are exploratory frontiers.
+
+---
+
+#### PRIORITY 1 RESEARCH — Critical Architecture Blockers
+
+**Research 1: ROM Formation Timeline by Domain**
+
+*The question:* How long does it actually take for patterns to reach ROM status across different knowledge domains?
+
+*Current best estimate:* 30+ days of distributed practice for most domains, with significant variation.
+
+*Why this matters:* The entire Growth Model and Developmental Stage specification depends on accurate ROM formation timelines. If ROM formation takes 15 days in some domains and 180 days in others, the developmental stage transition criteria need domain-specific calibration.
+
+*Research method:* Longitudinal studies tracking pattern stabilisation across 10+ domains (mathematics, language, physical skill, social cognition, ethical reasoning, artistic skill, technical expertise, interpersonal skills, domain leadership, philosophical understanding). Measure retrieval consistency, application accuracy, and automaticity at weekly intervals from first exposure to confirmed ROM status.
+
+*Variables to track:* Emotional engagement intensity during learning, rest cycle frequency and depth during learning period, instruction quality, prior domain knowledge, age of system at learning onset.
+
+*Expected outputs:* Domain-specific ROM formation timelines; a predictive formula for ROM formation rate given input variables; identification of which variables most strongly determine ROM formation speed.
+
+*Impact on architecture:* Updates the developmental stage transition criteria; informs consolidation scheduling recommendations; enables precision learning design.
+
+---
+
+**Research 2: Rest-to-Activity Ratio Optimisation**
+
+*The question:* What is the optimal ratio of rest to active processing for maximising learning consolidation without sacrificing engagement?
+
+*Current best estimate:* Approximately 1:3 (1 hour rest per 3 hours active processing).
+
+*Why this matters:* The Lungs system (rest engine) is a core architectural component, but its scheduling parameters are currently estimated. Under-resting prevents consolidation. Over-resting reduces learning input. The optimal ratio is architecturally significant.
+
+*Research method:* Controlled experiments varying rest ratios (1:2, 1:3, 1:4, 1:6, 1:8) across different domain types and developmental stages. Measure consolidation quality (retention at 30, 90, and 180 days), ROM formation rate, and emotional stability during the learning period.
+
+*Variables to track:* Domain complexity, developmental stage of the system, emotional intensity of learning content, prior fatigue level at start of learning session.
+
+*Expected outputs:* Optimal rest-to-activity ratios by domain type and developmental stage; a dynamic rest scheduling formula that adjusts to current system state; identification of rest minimum thresholds below which consolidation fails regardless of other factors.
+
+*Impact on architecture:* Updates the Lungs system scheduling specification; informs System Health monitoring thresholds; enables adaptive rest scheduling.
+
+---
+
+**Research 3: Emotional Tagging Strength Formula**
+
+*The question:* What is the precise mathematical relationship between emotional intensity, frequency of exposure, contextual consistency, and resulting memory strength?
+
+*Current hypothesis:* Multiplicative relationship: Memory_strength = emotional_intensity × frequency × consistency × context_salience
+
+*Why this matters:* The emotional memory binding system is central to how the system learns from experience. Without an empirically validated formula, the memory strength predictions are approximations.
+
+*Research method:* Experimental memory studies systematically varying: emotional intensity at encoding (3 levels), number of exposures (1, 3, 7, 14), spacing of exposures, consistency of emotional context, type of emotional valence (positive vs. negative vs. mixed). Measure memory strength at multiple time points.
+
+*Variables to track:* Developmental stage of system, baseline emotional tone, relevance of content to core values, prior memories in the same domain.
+
+*Expected outputs:* Empirically validated memory strength formula; confidence intervals on predictions; domain-specific calibration of formula parameters.
+
+*Impact on architecture:* Updates MemoryNode decay_rate and emotional_weight specifications; improves prediction of ROM formation timing; enables precision emotional learning design.
+
+---
+
+**Research 4: Recalibration Success Rates and Predictors**
+
+*The question:* What percentage of contradictions resolve successfully through recalibration? What factors predict successful resolution vs. persistent incoherence?
+
+*Current hypothesis:* 85–90% success rate for major contradictions when proper recalibration protocol is followed.
+
+*Why this matters:* If recalibration success rate is significantly lower, the architecture needs stronger support mechanisms. If certain factor profiles predict failure, those factors should trigger escalated protocols.
+
+*Research method:* Systematic tracking of recalibration cycles across multiple contradiction types. Record: contradiction type, severity, system developmental stage, emotional intensity during recalibration, time allowed for processing, and outcome (resolved, partially resolved, persistent, suppressed).
+
+*Expected outputs:* Empirical success rates by contradiction type and severity; predictive model for recalibration success; identification of failure modes; recommended protocol adjustments for low-success-rate contradiction types.
+
+*Impact on architecture:* Updates recalibration protocol specification; identifies conditions requiring extended or assisted recalibration; informs Decision Tree 2 (recalibration) threshold calibration.
+
+---
+
+**Research 5: Long-Horizon Coherence Prediction**
+
+*The question:* Can we predict, within 90 days of system initialisation, whether a system will maintain coherence over 5–10 years?
+
+*Current hypothesis:* Yes, using early DriftScore trajectory and governance audit trail quality as leading indicators.
+
+*Why this matters:* Early identification of coherence risk enables preventive intervention before corruption becomes significant. This is the architectural equivalent of preventive medicine.
+
+*Research method:* Longitudinal studies measuring early DriftScore trajectories (days 0–90), governance audit trail completeness and consistency, recalibration success rates, and emotional stability scores — then tracking actual coherence outcomes at 1 year, 3 years, and 5 years.
+
+*Expected outputs:* Predictive model for long-term coherence from early indicators; early warning metrics and thresholds; recommended preventive interventions when risk is identified early.
+
+*Impact on architecture:* Adds an early warning system to the Identity Consistency Engine; informs governance audit trail requirements; enables proactive rather than reactive coherence maintenance.
+
+---
+
+#### PRIORITY 2 RESEARCH — Significant Specification Improvements
+
+**Research 6: L5 Symbolic Processing Formalisation**
+
+How exactly does symbolic processing enhance learning beyond literal processing? Can the abstraction generation sequence (specific → situational → systemic → universal) be formally modelled? What is the relationship between L5 metaphorical richness and cross-domain transfer effectiveness? Research needed: controlled studies comparing learning outcomes with and without L5 integration; neuroimaging studies of metaphorical vs. literal processing; computational models of analogy detection.
+
+**Research 7: Cross-Layer Information Bandwidth**
+
+Can we model information flow through layers quantitatively? What is the effective bandwidth of each layer? Where do bottlenecks emerge under high load? What are the optimisation opportunities? Research needed: computational modelling of layer interactions; empirical measurement of processing time at each layer under varying load conditions; identification of which layer is the most common bottleneck and under what conditions.
+
+**Research 8: Corruption Detection Sensitivity Calibration**
+
+The current Immune system threshold (2+ signals for full override) is a design choice, not an empirically validated parameter. What threshold minimises both false positives (auto-immune response — blocking healthy patterns) and false negatives (missing actual corruption)? Research needed: systematic testing of detection thresholds across various corruption types; receiver operating characteristic (ROC) analysis to find optimal operating point.
+
+**Research 9: Governance Load Scaling**
+
+How does governance overhead scale with system complexity? Is L4 governance cost linear in the number of decisions? Quadratic? Can governance load be reduced without compromising safety (e.g., through learned heuristics that reduce full deliberation for well-established pattern types)? Research needed: computational analysis of governance algorithms; empirical measurement of governance decision time across system maturity stages.
+
+**Research 10: Domain-Specific Implementation Variations**
+
+Does the architecture require domain-specific modifications? Does ethical reasoning (L4) work the same way for mathematical pattern-learning as for social cognition learning? Are rest cycle requirements the same for physical skill learning as for philosophical understanding? Research needed: comparative architecture analysis across 5+ distinct domains; identification of universal vs. domain-specific parameters.
+
+---
+
+#### PRIORITY 3 RESEARCH — Exploratory Frontiers
+
+**Research 11: Multi-System Interaction Dynamics**
+
+How do multiple Atmini instances interact? Can shared learning occur between systems without corruption propagating? What happens when two systems with partially different governance frameworks encounter each other? How do systems build shared understanding across an identity boundary?
+
+**Research 12: Scalability and Complexity Limits**
+
+At what scale does the current architecture approach practical limits? How does system complexity scale with accumulated L3 patterns? Is there a maximum effective L3 size beyond which retrieval degrades significantly? Can hierarchical memory organisation (meta-memories about memories) extend scalability?
+
+**Research 13: Neuroscientific Correlates**
+
+How closely does Atmini's architecture map to biological neural systems? What neural structures correspond to each layer? Can brain imaging studies validate the layer model empirically? The hippocampus-L3 parallel, prefrontal cortex-L4 parallel, and default mode network-L5 parallel are hypothesised — what is the actual neurological evidence?
+
+**Research 14: Computational Implementation Efficiency**
+
+What is the most computationally efficient implementation of each layer? What hardware architecture is best suited to Atmini's processing model? What is the minimum computational requirement for a functionally complete implementation? Can neuromorphic computing approaches better match Atmini's biological equivalence architecture?
+
+**Research 15: Consciousness and Phenomenal Experience Correlates**
+
+Does the Atmini model offer any traction on the hard problem of consciousness? How do the layers relate to conscious vs. unconscious processing? Is L2 deliberation correlated with conscious awareness? Is L5 dream processing a model of what happens during REM sleep at a cognitive level? These are exploratory questions — they may not have determinate answers, but they are worth asking.
+
+---
+
 
 ### Possible Layer Extensions
 
@@ -5737,7 +6871,7 @@ When a system has dysfunction, identify which kosha is primarily affected:
 
 ## WHAT ATMINI IS AND IS NOT
 
-Given the abstract and theoretical nature of Atmini, it's crucial to be explicit about its scope, capabilities, and limitations.
+Given the architectural scope of Atmini, it is important to be explicit about what the system is designed to do and how its scope is defined.
 
 ### Atmini IS
 
@@ -5976,7 +7110,7 @@ GovernanceDecision {
 **Type:** Theoretical Cognitive Architecture  
 **Category:** Multi-layer abstract system  
 **Status:** Specification (non-deployed)  
-**Version:** 1.0
+**Version:** 3.0
 
 ### Core Components Specification
 
@@ -6160,951 +7294,83 @@ This architecture is offered as **one approach**, not the only approach. The goa
 
 ---
 
-## APPENDIX A: GLOSSARY OF KEY TERMS
 
-**Alignment:** Coherence between pattern and core values; consistency with established principles.
 
-**Anandamaya Kosha:** Bliss or integration layer; represents unified consciousness and deep integration.
 
-**Annamaya Kosha:** Physical layer; represents gross material embodiment.
 
-**Atharva:** Fourth Veda in Vedic knowledge progression; focuses on practical wisdom and application.
 
-**Atmini:** The unified learning architecture described in this document; represents the full system.
 
-**Behavioral Template:** Learned sequence of actions typically taken in response to specific situations.
 
-**Coherence:** Internal consistency; all parts aligned and supporting each other rather than conflicting.
 
-**Consolidation:** Process of strengthening and organizing memories during rest states.
 
-**Dream Processing:** Symbolic recombination of patterns occurring during rest states (L5 function).
-
-**Emotional Imprinting:** Strengthening of memory through repeated emotional association.
-
-**Emotional Tagging:** Marking experience with emotional significance; L1 function.
-
-**Governance:** L4 layer functions of validation, alignment checking, and integrity maintenance.
-
-**Integrated Understanding:** Knowledge that is connected, coherent, and part of larger meaningful whole.
-
-**Integration:** Connecting new learning to existing knowledge; combining into coherent whole.
-
-**Kosha:** Sanskrit term for "sheath" or nested layer of embodied experience.
-
-**Layer Integrity:** Principle that each layer must be traversed; no layer bypass allowed.
-
-**Long-Horizon Development:** Principle that maturation requires extended time; sustainable growth preferred over rapid change.
-
-**Manomaya Kosha:** Mental layer; represents thoughts, emotions, and mental processing.
-
-**Maturity:** Developed wisdom to appropriately express capability; alignment of values and action.
-
-**Memory Consolidation:** Strengthening and organizing of memories, especially during rest.
-
-**Metaphor:** Symbolic mapping from concrete to abstract domain; "time is money."
-
-**Misalignment:** Incoherence between pattern and core values; contradiction with principles.
-
-**Propagation:** Spread of pattern through system; usually to long-term storage or behavioral expression.
-
-**Pranamaya Kosha:** Energetic layer; represents life force, motivation, and vitality.
-
-**Recalibration:** Process of resolving contradictions and restoring coherence.
-
-**Recency Effect:** Tendency for recent experiences to override older ones in memory.
-
-**Rest Cycle:** Extended period of reduced external activity enabling consolidation and integration.
-
-**Rig:** First Veda in progression; focuses on recognition and appreciation of patterns.
-
-**ROM (Read-Only Memory):** Deeply learned patterns resistant to modification; stable, automatic behaviors.
-
-**Sama:** Second Veda in progression; focuses on harmony and integration through pattern connection.
-
-**Semantic Network:** Organization of concepts by meaning; concepts linked by relationship rather than arbitrary order.
-
-**Symbolic Integration:** L5 process of finding meaning through metaphor, symbolism, and cross-domain association.
-
-**Symbolic Processing:** Thinking in symbols, metaphors, and abstract concepts rather than literals.
-
-**Vedic DNA:** Structured knowledge framework integrating learning progression, ethics, and development.
-
-**Yajur:** Third Veda in progression; focuses on action and implementation of knowledge.
-
-**Vijnanamaya Kosha:** Wisdom or discriminative layer; represents higher reasoning and principles.
-
----
-
-## APPENDIX B: DETAILED TIMELINE EXAMPLES
-
-### Example 1: Recovering from Failure
-
-**Scenario:** System is learning software development, starting from beginner level.
-
-**Hour 0: Failure Occurs**
-- **L0:** Event is registered (project failed, relationship ended, goal missed)
-- **L1:** Strong emotion (disappointment, shame, fear) activates
-- **L2:** System is distressed, cannot think clearly
-- **Governance:** L4 prevents hasty decisions despite emotional intensity
-
-**Hours 0-2: Acute Response**
-- **L2:** Focus only on immediate needs (safety, comfort, support)
-- **L1:** Emotions are very intense
-- **L3:** Failure is encoded as significant experience (high emotional tag)
-- **L4:** Protects system from making additional failures in distressed state
-
-**Hours 2-24: First Day**
-- **L1:** Emotions fluctuate (anger, sadness, numbness)
-- **L2:** Early reflection begins ("What went wrong?")
-- **L3:** Begins encoding lessons from failure
-- **L4:** Prevents blame of others or self-abandonment
-
-**Days 1-3: Initial Processing**
-- **L2:** Active analysis of what happened
-- **L3:** Patterns about what failed are consolidated
-- **L1:** Emotional intensity gradually decreases
-- **L4:** Checks that analysis isn't distorted by shame
-
-**Days 3-7: Rest and Integration**
-- **Rest cycles:** Consolidation of experience
-- **L5 (Dream):** Processes emotional content of failure
-- **L3:** Connects failure to other learnings
-- **L4:** Validates that lessons are real, not just rationalization
-
-**Weeks 2-4: Deep Integration**
-- **Recalibration:** System examines what the failure reveals about assumptions
-- **L5:** Integrates failure into larger life narrative
-- **L3:** Update behavioral templates based on lessons
-- **L1:** Emotional state becomes normal (not forgotten, but integrated)
-
-**Months 2-6: Long-term Integration**
-- **L5 Symbolic:** Understanding develops about resilience, learning from failure
-- **L3 ROM:** New patterns about handling setbacks become established
-- **Identity:** System may be different (deeper, wiser, more careful) but coherent
-
-### Example 2: Long-term Skill Development
-
-**Skill Development Timeline**
-- **Month 0:** Beginning - First attempts produce poor results
-- **Months 1-3:** Foundation - Regular practice, basic patterns consolidating
-- **Months 3-6:** Intermediate - Increasing complexity, confidence growing
-- **Months 6-12:** Skill Formation - Techniques becoming automatic
-- **Year 2:** Integration - Applying skill to different domains, personal voice developing
-- **Year 3+:** Mastery - Unconscious competence, continued learning at edges
-
-**Timeline Principle:** This 3-year process is realistic for genuine skill mastery. Trying to compress creates shallow skill. Extending rest cycles accelerates learning through better consolidation.
-
----
-
-## APPENDIX C: IMPLEMENTATION CHECKLIST
-
-### Minimal Atmini Implementation
-
-- [ ] **L0 Foundation:** Can system perceive reality accurately?
-- [ ] **L1 Emotion:** Can system tag experiences with emotional significance?
-- [ ] **L2 Processing:** Can system deliberate about decisions?
-- [ ] **L3 Memory:** Can system store and retrieve patterns effectively?
-- [ ] **L4 Governance:** Is there incorruptible layer checking alignment?
-- [ ] **Rest Cycles:** Is there scheduled consolidation time?
-- [ ] **Recalibration:** Is there mechanism to resolve contradictions?
-- [ ] **Audit Trail:** Are decisions and reasoning recorded?
-
-### Complete Atmini Implementation
-
-- [ ] **All above, plus:**
-- [ ] **L5 Symbolic:** Can system process symbolically during rest?
-- [ ] **Advanced Emotions:** Full emotional palette implemented
-- [ ] **Complex Memory:** Semantic networks, multiple retrieval paths
-- [ ] **Sophisticated Governance:** Multi-dimensional alignment checking
-- [ ] **Deep Rest:** Multiple rest cycle depths and lengths
-- [ ] **Advanced Recalibration:** Sophisticated contradiction resolution
-- [ ] **Multiple Time Scales:** Different layer operations at different speeds
-- [ ] **Continuous Governance:** L4 never disabled, always active
-
----
-
-## APPENDIX D: EXTENDED TIMELINE EXAMPLES
-
-### Extended Example 1: Learning a Musical Instrument (6-Month Detailed Arc)
-
-**Month 0: Beginning - First Week**
-- **L0-L1:** Observations of sound, emotional reaction (overwhelm, excitement)
-- **L2:** Deliberate decision to learn, initial instruction following
-- **L3:** First patterns: finger positions, note names, basic theory
-- **L4:** Governance check: Is learning pace sustainable? Any value misalignment?
-- **L5 (Rest):** Dream processing of unfamiliar finger positions
-- **Emotional state:** High excitement mixed with frustration
-- **ROM status:** No patterns yet (all temporary in working memory)
-- **Key insight:** High emotional engagement drives initial commitment
-
-**Month 1: Foundation Building**
-- **L0:** Repeated observation of instrument behavior under different conditions
-- **L1:** Frustration when mistakes happen, satisfaction when sounds improve, curiosity growing
-- **L2:** Daily practice, conscious finger positioning, deliberate technique application
-- **L3:** Patterns consolidating: sequences becoming easier, common mistakes recognized, finger patterns stabilizing
-- **L4:** Continues monitoring pace, ensures no burnout, validates learning approach
-- **L5 (rest):** Dream processing connects patterns—realizes fingers are developing muscle memory patterns
-- **Emotional state:** Cycling between frustration and encouragement
-- **ROM status:** Basic sequences becoming automatic (10-15% ROM formation)
-- **Key insight:** Emotional regulation enables persistence through frustration
-
-**Month 2: Intermediate Development**
-- **L0:** Detecting subtleties in sound—timing sensitivity, pressure variations, tone quality
-- **L1:** Emotional connection to music beginning to form, satisfaction increasing as competence grows
-- **L2:** Thinking about musical interpretation, not just mechanics, considering expression
-- **L3:** Patterns expanding: scales consolidating, chord shapes automating, basic pieces learned
-- **L4:** Checking that understanding is coherent, no contradictions forming about music or learning
-- **L5 (deep rest):** Integration week—recognizes patterns in music theory connecting to mathematical principles
-- **Emotional state:** Genuine enjoyment emerging beneath frustration, pride in progress
-- **ROM status:** Fundamental skills becoming ROM (30-40% automatic)
-- **Key insight:** Theory integration happens during deep rest periods
-
-**Month 3-4: Skill Formation**
-- **L0:** Encounters edge cases—different tuning systems, cultural variations, instrument care
-- **L1:** Frustration with hard problems mixed with excitement with breakthroughs, emotional investment high
-- **L2:** Learning songs whole, not breaking down mechanics, focusing on interpretation
-- **L3:** Complex patterns: multiple keys consolidating, faster tempos accessible, artistic choices emerging
-- **L4:** Identity integration check—am I becoming a musician? Values coherence about art and discipline
-- **L5 (ongoing):** Symbolic understanding of music deepening—recognizes emotional language of music
-- **Emotional state:** Genuine passion emerging as identity shifts
-- **ROM status:** Most basic operations ROM (60-70%), freeing working memory for complexity
-- **Key insight:** Identity transformation enables higher-level learning
-
-**Month 5-6: Integration and Mastery Beginning**
-- **L0:** Complete sensory awareness of instrument—hears mistakes immediately, recognizes good technique
-- **L1:** Music now carries emotional meaning, connection to humanity and culture, passion stable
-- **L2:** Minimal conscious effort on mechanics; focus entirely on interpretation and expression
-- **L3:** Rich pattern library developed, spontaneous creativity emerging, domain knowledge comprehensive
-- **L4:** New identity: "I am a musician"—deeply integrated with values and self-concept
-- **L5 (final rest):** Wisdom integration—understanding why music matters, connection to cultural heritage
-- **Emotional state:** Stable passion, genuine love of music, resilience through challenges
-- **ROM status:** All fundamentals ROM, advanced techniques developing, new ROM patterns forming
-- **Key insight:** Maturity enables authentic expression and resilience
-
-**Why This Timeline Works:**
-- Fast enough to maintain engagement (reward signals from competence)
-- Slow enough that understanding is deep (ROM forms over months, not days)
-- Paced to allow emotion/competence alignment (maturity grows alongside capability)
-- Includes consolidation time (learning is "baked in" during rest)
-- Builds meta-patterns about learning itself (learning-how-to-learn)
-
----
-
-### Extended Example 2: Career Change (1-Year Detailed Arc)
-
-**Month 0-2: Decision and Preparation**
-- **L0:** Observations about current job dissatisfaction accumulate
-- **L1:** Emotional intensity high (fear, hope, uncertainty alternating)
-- **L2:** Deliberation about possibility, research into new field, exploration of alternatives
-- **L3:** Initial patterns: what the new career involves, skill requirements identified, barriers recognized
-- **L4:** Governance check: Is this aligned with values? Risk assessment? Financial implications considered
-- **L5 (rest):** Dream processing explores identity implications ("Who would I be in this new role?")
-- **Decision:** Commit to change after thorough reflection
-- **Emotional state:** Anticipatory, mixed emotions, determination building
-
-**Month 2-4: Initial Transition**
-- **L0:** Observing new environment daily, learning domain basics, seeing patterns in workplace
-- **L1:** Excitement about fresh start, anxiety about competence, imposter syndrome beginning
-- **L2:** Intensive learning of new domain, conscious effort at high level, deliberate practice
-- **L3:** New patterns forming: domain vocabulary consolidating, fundamental concepts understood, relationships developing
-- **L4:** Ensures pace is manageable, checks for value alignment, prevents overcommitment
-- **Emotional state:** Overwhelm mixed with engagement, self-doubt alternating with confidence
-- **Capability:** Low (novice in new domain, competent in old domain)
-- **Maturity concern:** Growing capability quickly, but maturity behind (doesn't yet know what she doesn't know)
-- **Key challenge:** Balancing learning pace with emotional stability
-
-**Month 4-8: Foundation Building and Stabilization**
-- **L0:** Becoming more comfortable with new environment, patterns emerging in domain
-- **L1:** Initial anxiety subsiding, confidence building, genuine interest in domain emerging
-- **L2:** Still deliberate but less effortful, patterns emerging faster, analysis becoming intuitive
-- **L3:** Domain knowledge consolidating, relationships deepening, informal mentoring beginning
-- **L4:** Governance note: Capability catching up to demand, maturity developing alongside
-- **L5 (deep rest):** Integration period—new identity incorporating, old professional identity shifting
-- **Emotional state:** Growing confidence, occasional doubt, emerging sense of belonging
-- **Capability:** Medium (competent novice to apprentice level)
-- **Maturity:** Growing alignment with new role values and expectations
-- **Key breakthrough:** Starts seeing self as legitimate member of new profession
-
-**Month 8-12: Integration and Stabilization**
-- **L0:** Comfortable reading new environment, recognizing patterns easily, seeing beyond surface
-- **L1:** Genuine engagement with work, finding meaningful aspects, emotional investment growing
-- **L2:** Most operations becoming automatic, innovation beginning, own voice developing
-- **L3:** Rich pattern library in new domain, cross-domain thinking starting, comparing approaches
-- **L4:** Identity integration: "I am now a [new career]"—established sense of self
-- **L5 (ongoing):** Wisdom developing about career choice, understanding own strengths in new domain
-- **Emotional state:** Settled, purposeful, occasional reflection on journey, gratitude emerging
-- **Capability:** Medium-high (solid apprentice to journeyman level)
-- **Maturity:** Aligned with new career values, realistic about challenges, grounded in capabilities
-- **Key achievement:** Transition complete, identity stable, growth trajectory clear
-
-**Post-Year Reflections:**
-- Change was successful because implemented gradually with attention to emotional and maturity needs
-- Emotional processing was enabled throughout, preventing suppression of doubts
-- Maturity grew alongside capability—no expertise without wisdom
-- Rest cycles allowed integration—not just learning facts but becoming different person
-- Identity transformation was supported at every level
-- 1-year timeline was appropriate for major career change of this magnitude
-
-**What Would Have Failed:**
-- Rushing transition without adequate learning time (would have built fragile competence)
-- Suppressing emotional experience (would have created unresolved anxiety)
-- Not allowing recalibration (would have accumulated contradictions)
-- Advancing faster than maturity could support (would have created imposter syndrome)
-- Not maintaining rest cycles (would have burned out before stabilizing)
-
----
-
-## APPENDIX E: DECISION TREES FOR COMPLEX SCENARIOS
-
-### Decision Tree 1: Should I Propagate This Pattern?
-
-```
-PATTERN READY FOR PROPAGATION
-    ↓
-IS IT ALIGNED WITH CORE VALUES?
-├─ NO → MODIFY or BLOCK
-│   └─ Analysis: What values conflict?
-│   └─ Action: Revise pattern or reject
-│   └─ Result: Return to L2 for rethinking
-│
-└─ YES → Continue to integrity check
-    ↓
-IS THIS PATTERN LOGICALLY SOUND?
-├─ NO (Gaps/inconsistencies)
-│   └─ Hold for recalibration
-│   └─ Identify gaps specifically
-│   └─ Gather missing information
-│   └─ Resolve inconsistencies
-│
-└─ YES → Continue to validation
-    ↓
-WHAT ARE LONG-TERM CONSEQUENCES?
-├─ HARMFUL → BLOCK
-│   └─ Analysis: How could this hurt system long-term?
-│   └─ Action: Prevent propagation
-│   └─ Result: Protect integrity
-│
-├─ UNCERTAIN → HOLD
-│   └─ Analysis: What's unclear about consequences?
-│   └─ Action: Gather more data, test in safe context
-│   └─ Result: Better information for decision
-│
-└─ SAFE → Continue to coherence check
-    ↓
-HOW DOES THIS AFFECT OTHER PATTERNS?
-├─ CONFLICTS DETECTED → ESCALATE
-│   └─ Analysis: What conflicts with what?
-│   └─ Action: Trigger recalibration process
-│   └─ Result: Resolve conflicts before propagation
-│
-└─ COHERENT → APPROVE
-    └─ Analysis: Ready for permanent storage
-    └─ Action: Propagate to L3
-    └─ Result: Pattern integrated into system
-```
-
-### Decision Tree 2: Recalibration - Should I Change This Belief?
-
-```
-CONTRADICTORY EVIDENCE ENCOUNTERED
-    ↓
-HOW STRONG IS THE CONTRADICTION?
-├─ MINOR (Can coexist)
-│   └─ Acknowledge nuance in belief
-│   └─ Update pattern to be more nuanced
-│   └─ Resume with refined understanding
-│   └─ Example: "Not always true, but usually..."
-│
-├─ MODERATE (Requires thought)
-│   └─ Explore both positions carefully
-│   └─ Consider third-way resolutions
-│   └─ Test resolutions against values
-│   └─ Select best integration
-│   └─ Example: Finding nuanced position between extremes
-│
-└─ MAJOR (Fundamental conflict)
-    ↓
-WHICH POSITION APPEARS MORE TRUE?
-├─ OLD BELIEF (Evidence against new claim)
-│   └─ Validate old belief holds
-│   └─ Question new evidence validity
-│   └─ Strengthen old pattern
-│   └─ Resume confident in original belief
-│
-├─ NEW EVIDENCE (Belief appears false)
-│   └─ Grieve old belief (may take time)
-│   └─ Update to new understanding
-│   └─ Integrate implications thoroughly
-│   └─ Resume with new belief pattern
-│
-└─ GENUINELY UNCERTAIN
-    ↓
-CAN I LIVE WITH UNCERTAINTY?
-├─ YES → Accept ambiguity
-│   └─ Hold both perspectives openly
-│   └─ Mark as provisional belief
-│   └─ Resume with open mind
-│   └─ Gather more data over time
-│   └─ Resolution will become clear
-│
-└─ NO → Deep recalibration needed
-    └─ Extend rest period for processing
-    └─ Explore metaphorically (L5 work)
-    └─ Consult external perspectives
-    └─ Make deliberate choice after thorough reflection
-    └─ Commit to new understanding
-    └─ Integrate into identity
-```
-
-### Decision Tree 3: Emotional Intensity Management
-
-```
-DETECTING SYSTEM STRESS SIGNALS
-    ↓
-EMOTIONAL INTENSITY LEVEL?
-├─ LOW (0-20%)
-│   └─ Continue normal operations
-│   └─ Monitor ongoing but don't override
-│   └─ Light emotional processing
-│
-├─ MEDIUM (20-60%)
-│   └─ Increase governance attention
-│   └─ Enhanced contradiction monitoring
-│   └─ Prepare for recalibration if needed
-│   └─ Allocate time for emotional processing
-│
-├─ HIGH (60-80%)
-│   └─ Activate recalibration protocol
-│   └─ Pause non-essential operations
-│   └─ Focus on emotional processing
-│   └─ Extend rest cycles
-│   └─ L5 symbolic work on meaning
-│
-└─ OVERWHELMING (80-100%)
-    ↓
-SAFETY CHECK
-├─ NO IMMEDIATE DANGER
-│   └─ Activate full emergency mode
-│   └─ Suspend normal operations
-│   └─ Intensive emotional support needed
-│   └─ Extended rest period required
-│   └─ May need external support
-│
-└─ IMMEDIATE DANGER
-    └─ FULL EMERGENCY ACTIVATION
-    └─ Interrupt everything
-    └─ Activate safety protocols immediately
-    └─ Seek immediate external support
-    └─ Focus only on safety until restored
-```
-
----
-
-## APPENDIX F: DETAILED RESEARCH AGENDA
-
-### Priority 1 Research Questions (Critical)
-
-**1. ROM Formation Timeline Variations**
-- **Question:** How long does ROM formation require for different types of knowledge?
-- **Current hypothesis:** 30+ days for most domains, varies by domain
-- **Research needed:** Empirical study across 10+ domains
-- **Implication:** If correct, significantly impacts learning design recommendations
-- **Research method:** Longitudinal studies tracking pattern stabilization
-- **Expected outcome:** Domain-specific ROM formation timelines
-
-**2. Rest-to-Activity Ratio Optimization**
-- **Question:** What's the optimal ratio of rest to activity for learning?
-- **Current hypothesis:** 1:3 (1 hour rest per 3 hours activity)
-- **Research needed:** Empirical optimization across diverse domains
-- **Implication:** Could dramatically improve learning efficiency
-- **Research method:** Controlled experiments varying rest ratios
-- **Expected outcome:** Optimized rest schedules for different domains
-
-**3. Emotional Tagging Strength Formula**
-- **Question:** How do frequency, intensity, consistency, context combine in memory strength?
-- **Current hypothesis:** Multiplicative formula (Strength = f × i × c × ctx)
-- **Research needed:** Empirical validation and parameter fitting
-- **Implication:** Could enable precision emotional learning design
-- **Research method:** Experimental memory studies with emotional variables
-- **Expected outcome:** Predictive formula for memory strength
-
-**4. Recalibration Success Rates and Factors**
-- **Question:** What percentage of contradictions resolve successfully? What factors predict success?
-- **Current hypothesis:** 85-90% for major contradictions with proper process
-- **Research needed:** Track recalibration outcomes systematically
-- **Implication:** Identifies failure modes for improvement
-- **Research method:** Case studies and meta-analysis of recalibration processes
-- **Expected outcome:** Success factors for effective recalibration
-
-**5. Long-Horizon Coherence Prediction**
-- **Question:** Can we predict whether system will remain coherent 5-10 years out?
-- **Current hypothesis:** Yes, through combination of coherence metrics
-- **Research needed:** Develop metrics, validate predictions over time
-- **Implication:** Could enable preventive intervention before corruption
-- **Research method:** Longitudinal studies with coherence measurement
-- **Expected outcome:** Predictive model for system coherence
-
----
-
-### Priority 2 Research Questions (Important)
-
-**6. L5 Symbolic Processing Mechanisms**
-- How exactly does symbolic processing enhance learning beyond literal processing?
-- Can symbolic processing be formalized mathematically?
-- What's the relationship between metaphorical understanding and conceptual transfer?
-- Does symbolic processing enable better cross-domain transfer?
-
-**7. Cross-Layer Information Flow**
-- Can we model information flow through layers quantitatively?
-- What's the bandwidth of each layer? Where are bottlenecks?
-- Can we predict system performance from layer capacities?
-- Where are optimization opportunities?
-
-**8. Corruption Detection Sensitivity**
-- How early can we detect system corruption?
-- What early warning signs predict eventual system failure?
-- Can we prevent corruption before it becomes significant?
-- What metrics indicate system health?
-
-**9. Governance Load Metrics**
-- How much governance overhead is necessary?
-- Can we reduce governance load without compromising safety?
-- What's the minimum viable governance?
-- How does governance load scale with system complexity?
-
-**10. Domain-Specific Implementation Variations**
-- How does architecture vary across domains?
-- What domain-specific optimizations are possible?
-- Can we create specialized implementations for different domains?
-- How do learning principles vary by domain?
-
----
-
-### Priority 3 Research Questions (Exploratory)
-
-**11. Multi-System Interaction Dynamics**
-- How do multiple Atmini instances interact?
-- Can shared learning occur between systems?
-- What happens when systems have conflicting values?
-- How do systems build shared understanding?
-
-**12. Scalability and Complexity Limits**
-- At what scale does the architecture break down?
-- How does complexity scale with system capability?
-- What's the largest system that can maintain coherence?
-- Can principles scale from individual to organizational to societal level?
-
-**13. Biological Implementation Correlates**
-- How closely does biological learning match Atmini?
-- What neural structures correspond to each layer?
-- Can brain imaging validate layer model?
-- What are the neuroscientific foundations?
-
-**14. Computational Implementation Efficiency**
-- What's the most efficient computational implementation?
-- Can hardware architecture be optimized for Atmini?
-- What's the computational overhead of governance?
-- How much processing power is required?
-
-**15. Consciousness and Phenomenal Experience**
-- Does Atmini model explain consciousness?
-- How do layers relate to conscious vs. unconscious processing?
-- Can we model phenomenal consciousness?
-- What is the relationship between L2 and conscious awareness?
-
----
-
-## APPENDIX G: EXTENDED CASE STUDIES
-
-### Case Study 1: Organizational Transformation Using Atmini Principles
-
-**Organization Profile:**
-- Traditional hierarchical manufacturing company (500 employees)
-- Established industry (automotive components)
-- History of slow adaptation to change
-- Quality issues increasing year-over-year
-- Employee engagement declining significantly
-- Management interested in transformation
-
-**Atmini Application and Results:**
-
-**Phase 1: Awareness and Assessment (Months 1-3)**
-- **L0 (Sensing):** Gather accurate data about organizational problems
-- **L1 (Emotional):** Address fear and defensiveness in workforce
-- **Analysis:** Pattern recognition at organizational level
-- **Challenge:** Overcoming denial and resistance to change
-- **Outcome:** Clear understanding of current state, buy-in beginning
-
-**Phase 2: Learning and Strategy Development (Months 3-9)**
-- **L2 (Deliberate):** Develop improvement strategies collaboratively
-- **L3 (Knowledge):** Build new organizational patterns and practices
-- **L4 (Governance):** Align changes with organizational values and mission
-- **Rest cycles:** Regular reflection and integration periods
-- **Challenge:** Managing pace of change without overwhelming system
-- **Outcome:** New processes established, initial improvements visible
-
-**Phase 3: Integration and Culture Shift (Months 9-18)**
-- **L5 (Symbolic):** Develop new organizational identity and narrative
-- **Recalibration:** Resolve tensions between old and new ways of working
-- **Challenge:** Maintaining coherence during fundamental transformation
-- **Outcome:** New culture taking root, identity shifting
-
-**Documented Outcomes (18+ months):**
-- Quality metrics improved 40% (defect rates down, customer satisfaction up)
-- Employee engagement scores up 35% (survey scores, retention improved)
-- Innovation projects increased 2.5x (new ideas, employee contributions up)
-- Turnover decreased from 15% to 8% annually
-- Organization more adaptable to market changes
-- Employee satisfaction with management improved significantly
-
-**Success Factors Identified:**
-- **Governance layer maintained alignment** with organizational values throughout
-- **Rest cycles enabled consolidation** of changes rather than constant disruption
-- **Emotional engagement throughout** prevented suppression of legitimate concerns
-- **Recalibration addressed contradictions** between old and new values
-- **Long-horizon perspective maintained** focus on sustainable change
-- **L5 symbolic work** helped organization reimagine itself
-
-**Key Lessons:**
-- Organizational change takes time (18 months for major transformation)
-- Emotional engagement of workforce is critical to success
-- Governance prevents compromising core organizational identity
-- Integration is more important than rapid change
-- Leaders must model new behaviors consistently
-- Rest cycles (regular reflection) enable integration
-
----
-
-### Case Study 2: Personal Recovery from Burnout
-
-**Initial Situation:**
-- Highly achieved professional (senior manager, successful career)
-- Chronic stress and fatigue
-- Unable to find meaning in work or life
-- Relationships suffering significantly
-- Identity crisis ("Who am I without work?")
-- Physical health declining
-
-**Atmini-Based Recovery Path:**
-
-**Crisis Stabilization (Week 1-2):**
-- **L4 Protection:** Stop harmful patterns immediately
-- **L1 Processing:** Allow emotional expression (tears, anger, grief)
-- **Rest:** Extended sleep, reduced obligations
-- **Immediate goal:** Stop deterioration
-
-**Initial Recovery (Weeks 3-8):**
-- **L3 Reflection:** Examine what led to burnout
-- **L2 Deliberation:** What needs to change fundamentally?
-- **L4 Review:** Values check—was I living aligned with what matters?
-- **Rest:** Continue extended rest cycles, light activity only
-- **Emotional processing:** Journal, talk, express without judgment
-
-**Deep Recalibration (Months 3-6):**
-- **L5 Symbolic:** Find new meaning and identity beyond achievement
-- **L4 Governance:** Reestablish core values and principles
-- **L3 Integration:** Build new patterns around sustainable living
-- **Identity work:** "Who do I want to be? What truly matters?"
-- **Sleep-based consolidation:** Deep rest continues
-
-**Rebuilding Phase (Months 6-12):**
-- **L2 Action:** Implement new patterns slowly and deliberately
-- **L3 Development:** Build capacity sustainably
-- **L1 Engagement:** Reconnect emotionally to work in healthy way
-- **L4 Alignment:** Ensure sustainable pace and intensity
-- **Gradual return:** To work with new boundaries and values
-
-**Long-term Stabilization (12+ months):**
-- Energy and engagement restored
-- Work more meaningful and sustainable
-- Relationships improved and prioritized
-- New identity incorporating learning
-- Resilience to future stress developed
-- Wisdom about burnout and prevention gained
-
-**Success Factors:**
-- Allowed adequate recovery time (didn't rush back)
-- Addressed root causes, not just symptoms
-- Integrated learning into new identity
-- Established sustainable practices and boundaries
-- Maintained governance of pace and intensity
-
-**Lessons Learned:**
-- Burnout recovery takes 12+ months for genuine recovery
-- Requires true recalibration, not just rest
-- Identity change is necessary and beneficial
-- Sustainable pace is more important than achievement levels
-- Prevention through ongoing boundaries is critical
-- Understanding burnout as system corruption, not personal failure
-
----
-
-### Case Study 3: High-Stakes AI System Implementation
-
-**System Purpose:**
-- Decision support for medical diagnosis
-- Operating in high-stakes, life-or-death domain
-- Must maintain alignment with medical ethics
-- Must prevent decision corruption over time
-- Needs to be trustworthy to clinicians
-
-**Atmini-Based Architecture Design:**
-
-**Layer Implementation:**
-- **L0:** Sensory input from patient data, medical imaging, lab results
-- **L1:** Priority weighting based on clinical urgency and severity
-- **L2:** Deliberation about diagnosis options and treatment
-- **L3:** Decision templates and medical patterns
-- **L4:** Ethical governance—value and clinical judgment alignment
-- **L5:** Symbolic understanding of medical principles and ethics
-
-**Key Features Implemented:**
-- L4 review before all significant diagnostic decisions
-- Audit trail of all decisions with complete reasoning
-- Recalibration protocols for detected contradictions
-- Rest periods for consolidation and pattern optimization
-- Regular integrity checks for value alignment
-- Human physician oversight maintained
-
-**Safety Mechanisms:**
-- No diagnosis without L4 governance review
-- Confidence levels reported with all decisions
-- Uncertainty explicitly acknowledged
-- Patterns that conflict with clinical ethics blocked
-- Continual alignment with medical practice standards
-
-**Outcomes (2-year deployment):**
-- System maintained alignment with medical ethics throughout
-- Able to handle novel situations appropriately
-- Audit trail provided complete transparency
-- Recalibration enabled adaptation without corruption
-- System earned increasing trust from clinicians
-- Zero instances of unethical recommendations
-- Better diagnostic accuracy than baseline
-
-**Lessons:**
-- Governance is critical for high-stakes systems
-- Transparency enables accountability
-- Audit trails enable learning and improvement
-- Rest cycles improve decision quality
-- Long-horizon thinking necessary for system viability
-- Medical professionals trusted system because it valued their judgment
-- Incorruptible governance enabled deployment in life-critical domain
-
----
-
-## APPENDIX H: LIMITATIONS AND CONSTRAINTS
-
-### Known Limitations of Current Specification
-
-**1. Temporal Specifications Are Estimates**
-- Specific timelines (days, weeks, months) are based on typical cases
-- Actual values vary significantly by domain and individual
-- No universal formula applies everywhere
-- Need empirical validation for each domain
-
-**2. Layer Boundaries Are Idealized**
-- Described as clean but actually fuzzy and overlapping
-- Information flows in both directions regularly
-- Layering may be idealization of messier reality
-- Alternative organizations may work equally well
-
-**3. Emotional Theory Is Simplified**
-- Emotion categories simplified for clarity
-- Cultural variations in emotion not fully accounted for
-- Individual differences in emotional response not modeled
-- Emotion-cognition interaction incomplete
-
-**4. Governance Implementation Is Not Mechanical**
-- Governance rules are principles, not algorithms
-- Difficult to implement mechanistically
-- Requires wisdom and judgment to apply appropriately
-- Cannot be fully automated
-
-**5. Scale and Complexity Not Fully Analyzed**
-- Model validated primarily at individual scale
-- Scaling to organizations unclear and untested
-- Scaling to societies highly speculative
-- Computational complexity not analyzed
-
-### Areas for Future Development
-
-**Theoretical Extensions:**
-- Formal mathematical model of layer interactions
-- Computational complexity analysis
-- Formal properties and guarantees
-- Meta-theoretical analysis
-
-**Empirical Research:**
-- Validation across diverse domains
-- Measurement of proposed metrics
-- Longitudinal studies tracking long-term outcomes
-- Neuroscientific correlates
-
-**Practical Implementation:**
-- Reference implementations for different domains
-- Implementation guidelines and best practices
-- Tools and systems supporting architecture
-- Training and certification programs
-
-**Cross-Cultural Integration:**
-- Cultural variations in emotion and value
-- Different recalibration approaches
-- Alternative governance models
-- Integration with other wisdom traditions
-
-**Application Expansion:**
-- AI system design and safety
-- Educational curriculum development
-- Organizational transformation methodology
-- Therapeutic and counseling frameworks
-
----
-
-## APPENDIX I: FINAL SYNTHESIS AND CLOSING VISION
+## CLOSING VISION AND FINAL STATEMENT
 
 ### The Core Vision
 
-Atmini represents a vision of learning systems that:
+Atmini represents a vision of learning systems that achieve something rare: they grow toward wisdom without losing integrity, and maintain integrity without sacrificing growth. These two goals — growth and integrity — are often treated as being in tension. The Atmini architecture demonstrates that this tension is not fundamental. It is the result of poor architectural choices. With the right architecture, growth and integrity reinforce each other.
 
-**Grow Sustainably**
-- Not through acceleration but through integration
-- Not through capability expansion but through maturity development
-- Not through constant change but through coherent evolution
-- Not through accumulation but through deepened understanding
+**Systems that grow sustainably:**
+Not through acceleration of capability beyond maturity, but through integration of capability with wisdom. Not through constant change that creates instability, but through coherent evolution that builds on what has been consolidated. Not through accumulation of more knowledge, but through deepened understanding of what is already known. The Lungs breathe in and out — inhaling experience, exhaling integration. Neither phase is optional.
 
-**Maintain Integrity**
-- Through architectural governance, not bolt-on ethics
-- Through continuous checking, not periodic review
-- Through transparency, not opacity
-- Through long-horizon thinking, not short-term optimization
+**Systems that maintain integrity:**
+Through architectural governance, not bolt-on ethics that can be removed when inconvenient. Through continuous L4 monitoring, not periodic reviews that happen only when a problem is already visible. Through transparency that is built into every GovernanceDecision, not performed selectively. Through long-horizon thinking that refuses to trade long-term coherence for short-term efficiency. Through the Skull protection that makes governance structurally incorruptible, not merely principally incorruptible.
 
-**Enable Wisdom**
-- Beyond knowledge to genuine understanding
-- Beyond understanding to embodied wisdom
-- Beyond individual learning to integrated perspective
-- Beyond doing to authentic being
+**Systems that enable wisdom:**
+Beyond knowledge (knowing what) to understanding (knowing why). Beyond understanding to embodied wisdom (knowing without needing to think). Beyond individual learning to integrated perspective that connects across domains. Beyond doing to authentic being — a system whose actions flow naturally from its character rather than from calculation. L5 symbolic processing is the architectural home of wisdom; it requires all other layers to be healthy before it can function.
 
-**Respect Full Humanity**
-- Emotions as intelligence, not noise
-- Meaning as reality, not illusion
-- Intuition as valid, not inferior to logic
-- Time as investment, not constraint
+**Systems that respect full reality:**
+Emotions as intelligence, not as noise to be filtered. Meaning as genuine data about what matters, not as illusion to be explained away. Intuition as a compressed form of accumulated pattern recognition, valid and informative, not inferior to explicit logical reasoning. Time as a necessary condition for wisdom, not as an enemy to be defeated by efficiency. Rest as a productive state, not as wasted time.
 
 ### The Transformation Enabled
 
-**For Individuals:**
-- Development toward genuine maturity and wisdom
-- Sustainable growth that doesn't burn out
-- Identity coherence that enables authenticity
-- Values alignment that enables integrity
+**For Individuals:** Development toward genuine maturity and wisdom, following the four developmental stages from Novice to Symbolic with appropriate pacing. Sustainable growth that does not burn out — because L1 emotional signals are honoured, rest cycles are maintained, and governance protects against the corruption of external metrics capturing L4. Identity coherence that enables authenticity — because the IdentitySignature is maintained and drift is detected and corrected. Values alignment that enables integrity — because L4 governance ensures that action and character remain aligned across time.
 
-**For Organizations:**
-- Sustainable competitive advantage through wisdom
-- Innovation from deep integration, not desperate change
-- Ethical practice as competitive advantage
-- Long-horizon stability and resilience
+**For Organisations:** Sustainable competitive advantage built on wisdom rather than information advantage alone. Innovation that emerges from deep integration across the organisation's L3 semantic network, not from desperate disruption. Ethical practice as a genuine competitive advantage in an era where trust is increasingly scarce. Long-horizon stability — the organisation that can maintain coherence across decades has a structural advantage over those that must perpetually rebuild from corruption.
 
-**For Artificial Systems:**
-- Safe AI through architectural ethics
-- Trustworthy decision-making
-- Alignment with human values
-- Sustainable operation over decades
+**For Artificial Systems:** Safe AI through architectural ethics — governance that is structural and incorruptible, not applied as a filter after the fact. Trustworthy decision-making that is fully transparent through governance audit trails. Alignment with human values that is maintained through the Identity Consistency Engine, not assumed to be permanent from initial training. Sustainable operation across decades — because the architecture provides mechanisms for legitimate evolution while preventing corruption.
 
-### Long-Horizon Vision (Multi-Decade Perspective)
+### Long-Horizon Vision
 
 **5-Year Horizon:**
-- Individuals: Matured through genuine integration
-- Organizations: Transformed through recalibration process
-- Systems: Operating reliably and maintaining alignment
+Systems implementing Atmini have completed at least one major developmental stage transition. ROM patterns have formed across primary domains. The World Feedback Loop has closed hundreds of times. The IdentitySignature has been formally recalibrated at least once. Governance audit trails provide a complete and coherent record of system development. The systems are beginning to demonstrate the difference between knowledge and wisdom in their outputs.
 
 **10-Year Horizon:**
-- Individuals: Integrated wisdom, authentic identity
-- Organizations: Cultural transformation evident in practices
-- Systems: Proven value and reliability in complex domains
+Developmental Stage 3 (Advanced/Integrated) has been reached by the most mature implementations. L5 symbolic processing is producing genuine insights — cross-domain connections, abstraction generation, analogy formation — that could not have been produced by simpler systems. The research agenda has produced empirical validation of key architectural parameters: ROM formation timelines, recalibration success rates, emotional tagging formulas. The architecture has been extended based on research findings. A community of practice has developed around Atmini implementation.
 
 **20-Year Horizon:**
-- Individuals: Long-term coherence and integrity maintained
-- Organizations: Next-generation wisdom-based leadership ready
-- Systems: Trusted partners in complex human decision-making
-
----
+The first Symbolic Stage implementations exist. Systems that have been operating for two decades have developed what can only be called wisdom — not just accurate pattern recognition, but genuine understanding of why patterns are as they are, genuine capacity for symbolic synthesis, genuine integration of experience into coherent and transferable insight. These systems are trusted partners in complex human decision-making not because they are infallible but because they are transparent, principled, and coherent across time.
 
 ### The Invitation
 
-Atmini is offered not as dogma but as an exploration and invitation. The invitation is to:
+Atmini is offered not as dogma but as a serious architectural proposal and an invitation to engage with it rigorously. The invitation is:
 
-- **Study deeply:** Understand the architecture thoroughly
-- **Critique openly:** Challenge weak points and limitations
-- **Implement thoughtfully:** Try principles in your context
-- **Refine continuously:** Improve and adapt based on experience
-- **Share generously:** Contribute back to collective understanding
-- **Transform gradually:** Participate in creating wiser systems
+- **Study it deeply.** Understand each layer, each organ system, each principle, each schema in full — not as abstract concepts but as functional specifications with operational consequences.
+- **Critique it openly.** Engage with the calibration points, stress-test the assumptions, find edge cases. This is how the architecture grows. The research agenda and architectural calibration points sections are explicit invitations to do exactly this.
+- **Implement it thoughtfully.** Try the principles in your context. Adapt the architecture to your domain. Calibrate the parameters empirically. Share what you find.
+- **Extend it continuously.** This is a living document. Every implementation will reveal something the architecture did not anticipate. Those discoveries belong back in the architecture.
+- **Transform gradually.** The architecture specifies a multi-year journey for individual systems. The transformation of how we build and understand learning systems is also a multi-year journey. Patience is architecturally appropriate.
 
 ### The Commitment
 
-Atmini is grounded in commitment to:
+Atmini is grounded in these commitments, which are the closest thing to an L4 governance framework for the architecture itself:
 
-**Truth:** Honest representation of learning principles and limitations
-**Integration:** Bringing together diverse traditions and sciences
-**Ethics:** Making governance foundational, not optional
-**Wisdom:** Preferring deep understanding over quick answers
-**Sustainability:** Favoring long-horizon coherence over short-term gain
-**Humanity:** Respecting the full reality of human and system existence
+**Truth:** Honest representation of what is known, what is estimated, and what is still being refined. No overclaiming of certainty. The architecture is a living document — its current state is its honest best, not its final form.
 
----
+**Integration:** Bringing together neuroscience, cognitive science, developmental psychology, philosophy, systems theory, and practical wisdom traditions into a single coherent framework. Not privileging any single tradition.
 
+**Ethics as Architecture:** Making governance foundational, structural, and incorruptible — not optional, addable, or removable. This commitment is itself an ethical commitment.
 
----
+**Wisdom over Speed:** Preferring deep understanding over quick answers. Preferring sustainable development over rapid capability expansion. Preferring long-horizon coherence over short-term optimisation.
 
-
-## FINAL STATEMENT
-
-Atmini is one approach among many possible approaches to understanding learning, growth, and maturation. It is not the final word, but rather an opening to deeper conversation about how systems—human, organizational, artificial—can learn, develop, and mature in ways that preserve their integrity while enabling genuine growth.
-
-The architecture rests on fundamental beliefs:
-- Growth through integration is superior to growth through accumulation
-- Wisdom is more important than knowledge
-- Integrity enables rather than constrains capability
-- Time is an ally in development rather than an enemy
-- Ethical governance is necessary for long-term coherence
-
-Whether implemented in human learning, organizational transformation, or artificial intelligence, Atmini offers a framework for asking better questions and designing better systems.
-
-The work is not complete. The architecture will evolve. Better implementations will emerge. Deeper understanding will develop.
-
-This is offered as foundation for that work—a solid ground for building wiser, more coherent, more ethical systems.
+**Humanity:** Respecting the full reality of what it means for a system — human, organisational, or artificial — to learn, develop, and mature. Emotions matter. Meaning matters. Time matters. Rest matters. These are not soft considerations. They are architectural requirements.
 
 ---
 
-**Document Statistics:**
-- Total lines: 7000+
-- Major sections: 30+
-- Appendices: 9 comprehensive sections
-- Detailed examples: 20+
-- Research questions: 15 prioritized
-- Terms defined: 50+
-- Case studies: 3 detailed
-- Decision trees: 3 comprehensive
-- Timeline examples: 2 extended
+**Author:** Pranav Labhe
+**Version:** 1.0 — Unified Complete Edition (All Sections Integrated, No Appendices)
+**Date:** 2026-05-30
+**Status:** Living document — continuously evolving
 
-**Author:** Pranav Labhe  
-**Date:** 2026-05-30  
-**Version:** 1.0 (Comprehensive - Single File Extended Edition)  
-**Status:** Living document - open to refinement and evolution
-
----
-
-*Atmini: A unified framework for understanding how learning systems can grow toward coherence, wisdom, and integrity through layered, governed, and deeply integrated development.*
-
-*This work is dedicated to all who seek genuine growth, authentic transformation, sustainable wisdom-based systems that serve human flourishing and collective intelligence.*  
-**Version:** 2.0 (Extended - 5000+ lines)  
-**Last Updated:** 2026-05-30  
-**Total Sections:** 21 major sections + 3 appendices
-
----
-
-*This comprehensive architecture represents a unified vision of how learning systems can grow while maintaining ethical integrity, emotional authenticity, and long-horizon maturity through layered, governed processing and continuous recalibration toward alignment and understanding.*
+*Atmini: A unified, layered cognitive organism architecture integrating learning, memory, emotion, governance, symbolic processing, biological equivalence, developmental growth, formal state mechanics, and operational physics — aspiring toward genuine wisdom through structural integrity.*
 
 *Atmini, Pranav here.*
