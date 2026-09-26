@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Note: AVD's own <target> animations run once, not infinitely. For a
+     true infinite idle loop, drive these same groups from Kotlin instead
+     using an AnimatorSet with repeatMode=REVERSE, repeatCount=INFINITE —
+     see AtminiExpressionController.startIdle(). This AVD variant is kept
+     for cases where you just want a single "gust of wind" pulse instead
+     of continuous sway (e.g. triggered occasionally rather than always on). -->
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/vector_atmini">
+    <target android:name="hair_strand_1" android:animation="@animator/anim_idle_sway_a"/>
+    <target android:name="hair_strand_2" android:animation="@animator/anim_idle_sway_b"/>
+    <target android:name="hair_strand_3" android:animation="@animator/anim_idle_sway_a"/>
+    <target android:name="cloak_1" android:animation="@animator/anim_idle_sway_b"/>
+    <target android:name="cloak_2" android:animation="@animator/anim_idle_sway_a"/>
+</animated-vector>

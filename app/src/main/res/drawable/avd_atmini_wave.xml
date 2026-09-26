@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/ic_atmini_without_bg">
+    <target
+        android:name="arm_right"
+        android:animation="@animator/anim_wave_rotate"/>
+</animated-vector>

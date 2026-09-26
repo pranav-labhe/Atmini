@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/ic_atmini_without_bg">
+    <target android:name="hair_strand_1" android:animation="@animator/anim_idle_sway_a"/>
+    <target android:name="hair_strand_2" android:animation="@animator/anim_idle_sway_b"/>
+    <target android:name="hair_strand_3" android:animation="@animator/anim_idle_sway_a"/>
+    <target android:name="cloak_1" android:animation="@animator/anim_idle_sway_b"/>
+    <target android:name="cloak_2" android:animation="@animator/anim_idle_sway_a"/>
+</animated-vector>

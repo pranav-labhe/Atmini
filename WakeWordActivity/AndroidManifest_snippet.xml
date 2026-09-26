@@ -1,0 +1,28 @@
+<!-- Add inside your existing <manifest> and <application> tags -->
+
+<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+<uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+<!-- Required on Android 14+ (API 34) if you declare a foreground service type -->
+<uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+
+<application>
+    ...
+    <service
+        android:name=".FloatingAtminiService"
+        android:exported="false"
+        android:foregroundServiceType="specialUse" />
+</application>
+
+<!--
+  Before starting the service, request the overlay permission at runtime:
+
+    if (!Settings.canDrawOverlays(this)) {
+        val intent = Intent(
+            Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
+            Uri.parse("package:$packageName")
+        )
+        startActivityForResult(intent, REQUEST_OVERLAY_PERMISSION)
+    } else {
+        startService(Intent(this, FloatingAtminiService::class.java))
+    }
+-->

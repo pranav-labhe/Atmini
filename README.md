@@ -6,6 +6,8 @@
 **Date:** 2026-05-30
 **Wake Word:** *"Atmini, Pranav here."* — sole authority for fallback recalibration and ROM updates
 
+> 💡 **Developer Quick Link**: For an exhaustive, function-by-function guide to the Android codebase, module structure, and step-by-step developer instructions for making changes, see [**PROJECT_DOCUMENTATION.md**](file:///C:/Android/Atmini/PROJECT_DOCUMENTATION.md).
+
 ---
 
 ## TABLE OF CONTENTS

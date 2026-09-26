@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Same idea as anim_idle_sway_a but a different duration/direction so
+     segments using this drift out of phase with the ones using sway_a —
+     that's what reads as "wind" instead of one rigid unit swinging. -->
+<objectAnimator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:propertyName="rotation"
+    android:valueFrom="0"
+    android:valueTo="-3"
+    android:duration="2600"
+    android:interpolator="@android:interpolator/fast_out_slow_in"/>

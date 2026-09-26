@@ -1,0 +1,50 @@
+USE IN: Midjourney, Stable Diffusion, DALL-E, or any image generator that
+accepts an image + text prompt. Feed it your original reference photo
+alongside this description so it has both the visual anchor and the
+explicit detail list.
+
+---
+
+Full-body character reference sheet, front view, T-pose or neutral
+standing pose, arms slightly away from body, plain flat neutral-gray
+background, soft even studio lighting, no cast shadows on background.
+
+Character: female humanoid in dark sci-fi bio-armor.
+- Head: tight slicked-back dark hair, no loose fringe, small dark-red
+  circular forehead mark/rune, neutral expressionless face, faint teal
+  bio-luminescent vein tracery radiating subtly from the forehead mark
+  across the temples
+- Armor: matte dark gunmetal plating, rounded pauldrons on both
+  shoulders, ribbed horizontal bands across the torso, a thin bronze
+  vertical accent line down the chest center, high stiff collar
+- Arms: articulated segmented plate armor, gloves with individually
+  defined finger segments, faint teal veins visible at glove seams
+- Legs: plated thigh armor, rounded knee guards with a strap detail,
+  segmented shin guards, dark combat boots
+- Cloak: hooded fabric cloak in muted brown/tan, draped from the
+  shoulders down past the knees, slightly weathered fabric texture
+- Overall mood: quiet, composed, "living armor" cybernetic-organic
+  aesthetic, cinematic but not photographed candidly — this is a
+  reference sheet, not an action shot
+
+Deliverable needed: several separate images/layers if the tool supports
+it —
+  1. base body + armor, no hair, no cloak
+  2. hair only, isolated, transparent background
+  3. cloak only, isolated, transparent background
+  4. face close-up, neutral expression, isolated
+  5. face close-up, same angle, smiling variant
+  6. face close-up, same angle, mouth mid-speech variant
+
+Having hair/cloak/face-expression as separate layers is what makes this
+usable in a 2D rigging tool (Live2D Cubism, Spine) afterward — a single
+flattened image can still be rigged, but with noticeably more manual
+cutout work.
+
+---
+
+NOTE: image generators are inconsistent about preserving an exact
+character design across multiple generations. Expect to regenerate
+several times and/or use inpainting to fix details (the forehead mark,
+the vein tracery, the collar shape) so they stay consistent across the
+1-6 image set above.
