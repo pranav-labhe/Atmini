@@ -5,12 +5,16 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.Manifest
+import android.content.BroadcastReceiver
+import android.content.Context
 import android.content.IntentFilter
 import android.content.pm.PackageManager
+import android.media.MediaPlayer
 import android.os.Build
 import android.os.Handler
 import android.os.Looper
 import android.provider.Settings
+import android.speech.RecognizerIntent
 import android.util.Log
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
@@ -41,7 +45,7 @@ import com.pranav.atmini.feature.voice.overlay.FloatingAtminiService
 import com.pranav.atmini.feature.voice.wake.FeatureExtractor
 import com.pranav.atmini.feature.voice.wake.WakeEnrollmentController
 
-class MainActivity : ComponentActivity() {
+class AtminiSetupActivity : ComponentActivity() {
 
     private lateinit var enrollmentController: WakeEnrollmentController
     private var lastSpeech: Boolean = false
@@ -51,8 +55,8 @@ class MainActivity : ComponentActivity() {
     private lateinit var voiceManager: VoiceManager
     private var viewModelRef: HomeViewModel? = null
 
-    private val wakeReceiver = object : android.content.BroadcastReceiver() {
-        override fun onReceive(context: android.content.Context?, intent: android.content.Intent?) {
+    private val wakeReceiver = object : BroadcastReceiver() {
+        override fun onReceive(context: Context?, intent: Intent?) {
             Log.d("AtminiUI", "🔥 RECEIVED WAKE BROADCAST: ${intent?.action}")
 
             if (intent?.action == "ATMINI_VOICE_HEARD") {
@@ -63,7 +67,7 @@ class MainActivity : ComponentActivity() {
             } else if (intent?.action == "ATMINI_WAKE_DETECTED") {
                 val voiceText = intent.getStringExtra("voice_text")
                 try {
-                    Toast.makeText(this@MainActivity, "Atmini: $voiceText 🎙️", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@AtminiSetupActivity, "Atmini: $voiceText 🎙️", Toast.LENGTH_SHORT).show()
                     playWakeSound()
                 } catch (e: Exception) {
                     Log.d("AtminiUI", "Wake stat error $e")
@@ -73,19 +77,20 @@ class MainActivity : ComponentActivity() {
     }
     private fun startSpeech() {
 
-        val intent = Intent(android.speech.RecognizerIntent.ACTION_RECOGNIZE_SPEECH).apply {
-            putExtra(android.speech.RecognizerIntent.EXTRA_LANGUAGE_MODEL,
-                android.speech.RecognizerIntent.LANGUAGE_MODEL_FREE_FORM)
-            putExtra(android.speech.RecognizerIntent.EXTRA_PROMPT, "Atmini listening...")
+        val intent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH).apply {
+            putExtra(
+                RecognizerIntent.EXTRA_LANGUAGE_MODEL,
+                RecognizerIntent.LANGUAGE_MODEL_FREE_FORM)
+            putExtra(RecognizerIntent.EXTRA_PROMPT, "Atmini listening...")
         }
 
         speechLauncher.launch(intent)
     }
     private fun playWakeSound() {
         try {
-            val mediaPlayer = android.media.MediaPlayer.create(
+            val mediaPlayer = MediaPlayer.create(
                 this,
-                android.provider.Settings.System.DEFAULT_NOTIFICATION_URI
+                Settings.System.DEFAULT_NOTIFICATION_URI
             )
             mediaPlayer.setOnCompletionListener {
                 it.release()
@@ -118,38 +123,12 @@ class MainActivity : ComponentActivity() {
         }
     }
     private fun startWakeService() {
-        // Request overlay permission if needed, then start floating character and wake service
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && !Settings.canDrawOverlays(this)) {
-            val intent = Intent(
-                Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
-                Uri.parse("package:$packageName")
-            )
-            startActivity(intent)
-        } else {
-            val overlayIntent = Intent(this, FloatingAtminiService::class.java)
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                startForegroundService(overlayIntent)
-            } else {
-                startService(overlayIntent)
-            }
-        }
-
         val wakeIntent = Intent(
             this,
             WakeService::class.java
         )
 
-        if (
-            android.os.Build.VERSION.SDK_INT >=
-            android.os.Build.VERSION_CODES.O
-        ) {
-
-            startForegroundService(wakeIntent)
-
-        } else {
-
-            startService(wakeIntent)
-        }
+        startService(wakeIntent)
     }
     override fun onNewIntent(intent: Intent) {
         super.onNewIntent(intent)
@@ -215,8 +194,8 @@ class MainActivity : ComponentActivity() {
             WakeService::class.java
         )
 
-        if (android.os.Build.VERSION.SDK_INT >=
-            android.os.Build.VERSION_CODES.O
+        if (Build.VERSION.SDK_INT >=
+            Build.VERSION_CODES.O
         ) {
             ensureAudioPermission()
         } else {
@@ -238,7 +217,7 @@ class MainActivity : ComponentActivity() {
                 if (result.resultCode == RESULT_OK) {
 
                     val text = result.data
-                        ?.getStringArrayListExtra(android.speech.RecognizerIntent.EXTRA_RESULTS)
+                        ?.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS)
                         ?.firstOrNull()
                         ?.lowercase()
                         ?.trim()
@@ -262,34 +241,6 @@ class MainActivity : ComponentActivity() {
         setContent {
             AtminiTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { padding ->
-                    //ToDo : Remove later
-                    //Column(
-                    //    modifier =  Modifier.fillMaxSize()
-                    //        .fillMaxSize()
-                    //        .padding(24.dp),
-                    //    verticalArrangement = Arrangement.spacedBy(16.dp)
-                    //) {
-                    //    Button(
-                    //        onClick = {
-
-                    //            Log.d("Atmini", "Clicked on temp button startWakeService")
-                    //            startWakeService()
-                    //        }
-                    //    ) {
-                    //        Text("Start Wake")
-                    //    }
-                    //    Button(onClick = @androidx.annotation.RequiresPermission(android.Manifest.permission.RECORD_AUDIO) {
-                    //        enrollmentController.start()
-                    //    }) {
-                    //       Text("Start Record")
-                    //   }
-
-                    //    Button(onClick = {
-                    //        enrollmentController.save()
-                    //    }) {
-                    //        Text("Save Atmini")
-                    //    }
-                    //}
                     HomeScreen(
                         viewModel = viewModel,
                         onVoiceClick = {

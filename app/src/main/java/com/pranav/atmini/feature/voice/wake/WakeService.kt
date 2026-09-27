@@ -4,38 +4,48 @@ import android.Manifest
 import android.R
 import android.annotation.SuppressLint
 import android.app.Notification
-import android.app.NotificationChannel
-import android.app.NotificationManager
 import android.app.Service
+import android.content.BroadcastReceiver
+import android.content.Context
 import android.content.Intent
+import android.content.IntentFilter
 import android.content.pm.PackageManager
-import android.os.Build
 import android.os.IBinder
 import android.util.Log
 import androidx.annotation.RequiresPermission
-import androidx.core.app.NotificationCompat
 import androidx.core.content.ContextCompat
 import com.pranav.atmini.core.VoiceCommandEngine
+import com.pranav.atmini.core.l0.ai.FastRuleIntentModel
+import com.pranav.atmini.feature.voice.overlay.FloatingAtminiService
 import com.pranav.atmini.feature.voice.speech.SpeechEngine
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
+import java.util.ArrayDeque
 
 class WakeService : Service() {
-
-    companion object {
-        private const val CHANNEL_ID = "atmini_stealth_channel"
-        private const val NOTIFICATION_ID = 999
-    }
 
     private val mainScope = CoroutineScope(Dispatchers.Main)
     private var speechEngine: SpeechEngine? = null
     private val audioCapture = AudioCapture()
     private val vad = VoiceActivityDetector()
-    private val tracker = SpeechWindowTracker()
     private val wakeBuffer = WakeBuffer()
-    private val wakeGate = WakeGate(cooldownMs = 3000)
+    private val commandEngine by lazy { VoiceCommandEngine(applicationContext) }
+    private val intentModel by lazy { FastRuleIntentModel() }
+
     private var isListeningSession = false
+    private var isResuming = false
+
+    private val overlayClosedReceiver = object : BroadcastReceiver() {
+        override fun onReceive(context: Context?, intent: Intent?) {
+            if (intent?.action == "ATMINI_OVERLAY_CLOSED") {
+                Log.d("AtminiWake", "🔄 Overlay closed. Resuming Tier 1 passive listening.")
+                resumePassiveListening()
+            }
+        }
+    }
 
     private fun hasMicPermission(): Boolean {
         return ContextCompat.checkSelfPermission(
@@ -53,99 +63,113 @@ class WakeService : Service() {
         }
         super.onCreate()
 
-        createNotificationChannel()
+        val filter = IntentFilter("ATMINI_OVERLAY_CLOSED")
+        ContextCompat.registerReceiver(this, overlayClosedReceiver, filter, ContextCompat.RECEIVER_NOT_EXPORTED)
 
-        // Start foreground with minimal silent notification complying with OS restrictions
-        startForeground(
-            NOTIFICATION_ID,
-            buildStealthNotification()
-        )
-
-        Log.d("AtminiWake", "WakeService started in stealth mode")
-        startAudioProcessingLoop()
+        Log.d("AtminiWake", "WakeService running as pure silent background service (no notifications)")
+        startPassiveAudioLoop()
     }
 
+    override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
+        return START_STICKY
+    }
+
+    /**
+     * Tier 1: Low-Power Passive Audio Monitoring (Consumes < 0.1% CPU/Battery).
+     */
     @SuppressLint("MissingPermission")
-    private fun startAudioProcessingLoop() {
+    private fun startPassiveAudioLoop() {
+        if (!hasMicPermission() || isListeningSession) return
+
         audioCapture.start { frame ->
-            if (isListeningSession) {
-                return@start
-            }
+            if (isListeningSession) return@start
 
             val rms = vad.calculateRms(frame.samples)
-
-            if (rms < 120.0 && wakeBuffer.size < 5) {
-                return@start
-            }
+            if (rms < 5.0) return@start
 
             wakeBuffer.add(frame)
+            val speechDetected = vad.isSpeech(wakeBuffer.getWindow())
 
-            val speech = vad.isSpeech(frames = wakeBuffer.getWindow())
-            val stable = tracker.update(speech)
-            if (!stable) {
-                return@start
-            }
-
-            if (wakeBuffer.size < 10) {
-                return@start
-            }
-
-            val allowWakeFlag = wakeGate.allowWake(frame.timestamp)
-
-            if (allowWakeFlag && !isListeningSession) {
+            if (speechDetected && !isListeningSession) {
                 isListeningSession = true
                 wakeBuffer.reset()
-                Log.d("AtminiWake", "🚀 VOICE DETECTED -> LISTENING")
+                Log.d("AtminiWake", "⚡ Tier 1 Sound Triggered -> Activating Tier 2 On-Demand STT Verification")
 
                 audioCapture.stop()
-
-                mainScope.launch {
-                    val commandEngine = VoiceCommandEngine(applicationContext)
-
-                    speechEngine = SpeechEngine(
-                        context = applicationContext,
-                        onResult = { recognizedText ->
-                            Log.d("AtminiSpeech", "Heard Phrase: $recognizedText")
-
-                            if (!recognizedText.isNullOrBlank()) {
-                                val lower = recognizedText.lowercase().trim()
-
-                                val heardBroadcast = Intent("ATMINI_VOICE_HEARD").apply {
-                                    putExtra("voice_text", recognizedText)
-                                    setPackage(packageName)
-                                }
-                                sendBroadcast(heardBroadcast)
-
-                                if (lower.contains("atmini") || lower.contains("mini") || lower.contains("open") || lower.contains("call") || lower.contains("timer") || lower.contains("navigate") || lower.contains("alarm")) {
-                                    val wakeBroadcast = Intent("ATMINI_WAKE_DETECTED").apply {
-                                        putExtra("timestamp", System.currentTimeMillis())
-                                        putExtra("voice_text", recognizedText)
-                                        setPackage(packageName)
-                                    }
-                                    sendBroadcast(wakeBroadcast)
-
-                                    val cleanedCommand = lower.replace("atmini", "").trim()
-                                    if (cleanedCommand.isNotBlank()) {
-                                        commandEngine.processTranscript(cleanedCommand) { statusMsg ->
-                                            Log.d("AtminiSpeech", "Command Status: $statusMsg")
-                                        }
-                                    }
-                                }
-                            }
-                            resumeBackgroundListening()
-                        },
-                        onError = { error ->
-                            Log.e("AtminiSpeech", "Speech error: $error")
-                            resumeBackgroundListening()
-                        }
-                    )
-                    speechEngine?.startListening()
-                }
+                triggerTier2SttVerification()
             }
         }
     }
 
-    private fun resumeBackgroundListening() {
+    /**
+     * Tier 2: On-Demand STT Verification (Runs only when speech energy is present, then shuts down).
+     */
+    private fun triggerTier2SttVerification() {
+        mainScope.launch {
+            try {
+                speechEngine?.destroy()
+                speechEngine = null
+            } catch (_: Exception) {}
+
+            speechEngine = SpeechEngine(
+                context = applicationContext,
+                onResult = { recognizedText ->
+                    Log.d("AtminiSpeech", "🎙️ TRANSCRIBED: '$recognizedText'")
+
+                    if (!recognizedText.isNullOrBlank()) {
+                        val lower = recognizedText.lowercase().trim()
+                        val isWakeWord = runBlocking { intentModel.isWakeWord(recognizedText) }
+
+                        if (isWakeWord) {
+                            Log.d("AtminiWake", "✅ WAKE WORD CONFIRMED ('$recognizedText') -> LAUNCHING OVERLAY")
+
+                            try {
+                                val overlayIntent = Intent(applicationContext, FloatingAtminiService::class.java)
+                                applicationContext.startService(overlayIntent)
+                            } catch (e: Exception) {
+                                Log.e("AtminiWake", "Failed to start FloatingAtminiService", e)
+                            }
+
+                            val heardBroadcast = Intent("ATMINI_VOICE_HEARD").apply {
+                                putExtra("voice_text", recognizedText)
+                                setPackage(packageName)
+                            }
+                            sendBroadcast(heardBroadcast)
+
+                            val cleanedCommand = lower
+                                .replace("atmini", "")
+                                .replace("mini", "")
+                                .replace("atmani", "")
+                                .replace("at mini", "")
+                                .replace("admin", "")
+                                .replace("at me", "")
+                                .replace("atm", "")
+                                .trim()
+
+                            if (cleanedCommand.isNotBlank()) {
+                                commandEngine.processTranscript(cleanedCommand) { statusMsg ->
+                                    Log.d("AtminiSpeech", "Command Status: $statusMsg")
+                                }
+                            }
+                        } else {
+                            Log.d("AtminiWake", "❌ Ignored: Speech '$recognizedText' does not contain wake word.")
+                        }
+                    }
+                    resumePassiveListening()
+                },
+                onError = { errCode ->
+                    Log.d("AtminiSpeech", "Tier 2 STT ended/timeout code: $errCode (Returning to Tier 1 passive sleep)")
+                    resumePassiveListening()
+                }
+            )
+            speechEngine?.startListening()
+        }
+    }
+
+    private fun resumePassiveListening() {
+        if (isResuming) return
+        isResuming = true
+
         mainScope.launch {
             try {
                 speechEngine?.destroy()
@@ -153,17 +177,27 @@ class WakeService : Service() {
             } catch (_: Exception) {}
 
             isListeningSession = false
+            delay(350)
+
             try {
                 if (hasMicPermission()) {
-                    startAudioProcessingLoop()
+                    audioCapture.stop()
+                    startPassiveAudioLoop()
+                    Log.d("AtminiWake", "💤 Resumed Tier 1 passive background sleep mode.")
                 }
             } catch (e: Exception) {
-                Log.e("AtminiWake", "Failed to resume audio capture", e)
+                Log.e("AtminiWake", "Failed to resume passive audio capture", e)
+            } finally {
+                isResuming = false
             }
         }
     }
 
     override fun onDestroy() {
+        try {
+            unregisterReceiver(overlayClosedReceiver)
+        } catch (_: Exception) {}
+
         audioCapture.stop()
         try {
             speechEngine?.destroy()
@@ -174,30 +208,4 @@ class WakeService : Service() {
     }
 
     override fun onBind(intent: Intent?): IBinder? = null
-
-    private fun createNotificationChannel() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            val channel = NotificationChannel(
-                CHANNEL_ID,
-                "Atmini Service",
-                NotificationManager.IMPORTANCE_MIN
-            ).apply {
-                setShowBadge(false)
-                description = "Background Voice Engine"
-            }
-            val manager = getSystemService(NotificationManager::class.java)
-            manager.createNotificationChannel(channel)
-        }
-    }
-
-    private fun buildStealthNotification(): Notification {
-        return NotificationCompat.Builder(this, CHANNEL_ID)
-            .setContentTitle("Atmini")
-            .setContentText("Running in background")
-            .setSmallIcon(R.drawable.ic_btn_speak_now)
-            .setPriority(NotificationCompat.PRIORITY_MIN)
-            .setVisibility(NotificationCompat.VISIBILITY_SECRET)
-            .setOngoing(true)
-            .build()
-    }
 }

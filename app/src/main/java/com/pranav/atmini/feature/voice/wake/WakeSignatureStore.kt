@@ -24,17 +24,24 @@ class WakeSignatureStore(private val context: Context) {
     }
 
     fun load(): WakeSignature? {
-
         val file = File(context.filesDir, fileName)
-        if (!file.exists()) return null
+        val jsonString = if (file.exists()) {
+            file.readText()
+        } else {
+            try {
+                context.assets.open("core/l0/memory/wake_signature.json").bufferedReader().use { it.readText() }
+            } catch (e: Exception) {
+                Log.e("Atmini-SIG", "Failed to load wake signature from assets", e)
+                return null
+            }
+        }
 
-        val json = JSONObject(file.readText())
-
+        val json = JSONObject(jsonString)
         return WakeSignature(
-            energyPattern = json.getJSONArray("energy").toListInt(),
-            zcrPattern = json.getJSONArray("zcr").toListInt(),
-            energyDeltaPattern = json.getJSONArray("delta").toListInt(),
-            delta_normalized = json.getJSONArray("delta_normalized").toListDouble()
+            energyPattern = json.optJSONArray("energy")?.toListInt() ?: emptyList(),
+            zcrPattern = json.optJSONArray("zcr")?.toListInt() ?: emptyList(),
+            energyDeltaPattern = json.optJSONArray("delta")?.toListInt() ?: emptyList(),
+            delta_normalized = json.optJSONArray("delta_normalized")?.toListDouble() ?: emptyList()
         )
     }
 }

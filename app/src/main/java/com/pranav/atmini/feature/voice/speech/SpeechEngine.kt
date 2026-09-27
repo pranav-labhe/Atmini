@@ -42,7 +42,17 @@ class SpeechEngine(
                     .getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION)
                     ?.firstOrNull()
 
+                Log.d("AtminiSpeech", "🎤 RAW STT RESULT -> '$text'")
                 onResult(text)
+            }
+
+            override fun onPartialResults(partialResults: Bundle) {
+                val partial = partialResults
+                    .getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION)
+                    ?.firstOrNull()
+                if (!partial.isNullOrBlank()) {
+                    Log.d("AtminiSpeech", "⚡ PARTIAL STT -> '$partial'")
+                }
             }
 
             override fun onError(error: Int) {
@@ -52,7 +62,7 @@ class SpeechEngine(
                 
                 // Prevent recursive callback loops safely
                 try {
-                    onError(error)
+                    this@SpeechEngine.onError(error)
                 } catch (_: Exception) {}
             }
 
@@ -61,7 +71,6 @@ class SpeechEngine(
             override fun onRmsChanged(rmsdB: Float) {}
             override fun onBufferReceived(buffer: ByteArray?) {}
             override fun onEndOfSpeech() {}
-            override fun onPartialResults(partialResults: Bundle) {}
             override fun onEvent(eventType: Int, params: Bundle?) {}
         })
     }

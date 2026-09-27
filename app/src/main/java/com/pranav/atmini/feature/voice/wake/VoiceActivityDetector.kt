@@ -51,13 +51,11 @@ class VoiceActivityDetector(
         val transient = transientDetector.isTransientInFrames(frames)
         val variation = variationDetector.hasVariation(avgEnergy.toInt())
 
-        val isSpeechDetected = avgEnergy > threshold &&
-                avgZcr > zcrThreshold &&
-                variation &&
+        val isSpeechDetected = avgEnergy > 50000 &&
                 !transient
 
         if (isSpeechDetected) {
-            Log.d("AtminiVAD", "Speech detected! avgEnergy=$avgEnergy (req > $threshold), avgZcr=$avgZcr (req > $zcrThreshold)")
+            Log.d("AtminiVAD", "🗣️ Speech/Wake Candidate Detected! avgEnergy=$avgEnergy, avgZcr=$avgZcr")
         }
 
         return isSpeechDetected

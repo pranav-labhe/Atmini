@@ -3,7 +3,7 @@ package com.pranav.atmini.feature.voice.wake
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import android.os.Build
+import android.util.Log
 
 class BootReceiver : BroadcastReceiver() {
 
@@ -11,30 +11,14 @@ class BootReceiver : BroadcastReceiver() {
         context: Context,
         intent: Intent
     ) {
+        val action = intent.action
+        Log.d("AtminiBoot", "Received system broadcast action: $action -> Starting WakeService")
 
-        if (intent.action ==
-            Intent.ACTION_BOOT_COMPLETED
-        ) {
-
-            val serviceIntent = Intent(
-                context,
-                WakeService::class.java
-            )
-
-            if (Build.VERSION.SDK_INT >=
-                Build.VERSION_CODES.O
-            ) {
-
-                context.startForegroundService(
-                    serviceIntent
-                )
-
-            } else {
-
-                context.startService(
-                    serviceIntent
-                )
-            }
+        val serviceIntent = Intent(context, WakeService::class.java)
+        try {
+            context.startService(serviceIntent)
+        } catch (e: Exception) {
+            Log.e("AtminiBoot", "Failed to start WakeService from BootReceiver", e)
         }
     }
 }

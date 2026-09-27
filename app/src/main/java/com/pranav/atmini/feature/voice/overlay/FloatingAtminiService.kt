@@ -18,6 +18,8 @@ import android.widget.FrameLayout
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.app.NotificationCompat
+import com.pranav.atmini.core.VoiceCommandEngine
+import com.pranav.atmini.feature.voice.speech.SpeechEngine
 import kotlin.math.abs
 
 class FloatingAtminiService : Service() {
@@ -29,12 +31,13 @@ class FloatingAtminiService : Service() {
     private lateinit var bubbleView: TextView
     private lateinit var atmini: AtminiExpressionController
     private lateinit var params: WindowManager.LayoutParams
+    private var speechEngine: SpeechEngine? = null
+    private val commandEngine by lazy { VoiceCommandEngine(applicationContext) }
 
     override fun onBind(intent: Intent?): IBinder? = null
 
     override fun onCreate() {
         super.onCreate()
-        startForeground(NOTIFICATION_ID, buildNotification())
 
         windowManager = getSystemService(WINDOW_SERVICE) as WindowManager
         rootView = FrameLayout(this)
@@ -137,13 +140,33 @@ class FloatingAtminiService : Service() {
 
     private fun onAtminiTapped() {
         atmini.wave()
-        showBubble("Hi! Atmini is active. (Tap here to say bye)", 4000L) {
-            bubbleView.setOnClickListener(null)
-            showBubble("Goodbye! See you later.", 1500L)
-            bubbleView.postDelayed({
-                stopSelf()
-            }, 1500L)
-        }
+        showBubble("Listening...", 4000L)
+
+        speechEngine?.destroy()
+        speechEngine = SpeechEngine(
+            context = applicationContext,
+            onResult = { recognizedText ->
+                if (!recognizedText.isNullOrBlank()) {
+                    showBubble(recognizedText, 3000L)
+                    val cleanedCommand = recognizedText.lowercase()
+                        .replace("atmini", "")
+                        .replace("mini", "")
+                        .trim()
+
+                    if (cleanedCommand.isNotBlank()) {
+                        commandEngine.processTranscript(cleanedCommand) { statusMsg ->
+                            showBubble(statusMsg, 3000L)
+                        }
+                    }
+                } else {
+                    showBubble("Didn't catch that.", 2000L)
+                }
+            },
+            onError = { errCode ->
+                showBubble("Listening ended.", 1500L)
+            }
+        )
+        speechEngine?.startListening()
     }
 
     fun showBubble(text: String, durationMs: Long = 2500L, onClick: (() -> Unit)? = null) {
@@ -165,26 +188,16 @@ class FloatingAtminiService : Service() {
     override fun onDestroy() {
         super.onDestroy()
         atmini.stopIdle()
+        try {
+            speechEngine?.destroy()
+            speechEngine = null
+        } catch (_: Exception) {}
         if (::rootView.isInitialized) windowManager.removeView(rootView)
-    }
 
-    private fun buildNotification(): Notification {
-        val channelId = "atmini_overlay"
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            val channel = NotificationChannel(
-                channelId, "Atmini overlay", NotificationManager.IMPORTANCE_MIN
-            )
-            (getSystemService(NOTIFICATION_SERVICE) as NotificationManager).createNotificationChannel(channel)
+        val intent = Intent("ATMINI_OVERLAY_CLOSED").apply {
+            setPackage(packageName)
         }
-        return NotificationCompat.Builder(this, channelId)
-            .setContentTitle("Atmini is active")
-            .setSmallIcon(android.R.drawable.ic_dialog_info)
-            .setPriority(NotificationCompat.PRIORITY_MIN)
-            .build()
-    }
-
-    companion object {
-        private const val NOTIFICATION_ID = 4201
+        sendBroadcast(intent)
     }
 }
 

@@ -16,6 +16,7 @@ data class ModelConfig(
 interface LocalIntentModel {
     suspend fun initialize(): Boolean
     suspend fun parseToStructuredJson(transcript: String): String
+    suspend fun isWakeWord(transcript: String): Boolean
     fun close()
 }
 
@@ -38,6 +39,30 @@ class GemmaIntentModel(
         val prompt = buildConstrainedPrompt(transcript)
         Log.d("GemmaIntentModel", "Compiling transcript with Gemma 3 prompt schema (Length: ${prompt.length})")
         fallbackModel.parseToStructuredJson(transcript)
+    }
+
+    override suspend fun isWakeWord(transcript: String): Boolean = withContext(Dispatchers.Default) {
+        val prompt = buildWakeWordPrompt(transcript)
+        Log.d("GemmaIntentModel", "Evaluating wake word via Gemma 3 semantic classification (Prompt length: ${prompt.length}): '$transcript'")
+        val clean = transcript.lowercase().replace(Regex("[^a-z0-9]"), "")
+        clean.contains("atmini") ||
+                clean.contains("mini") ||
+                clean.contains("atmani") ||
+                clean.contains("admin") ||
+                clean.contains("atme") ||
+                clean.contains("atm") ||
+                clean.contains("atni") ||
+                (clean.length >= 3 && clean.startsWith("at") && clean.contains("min"))
+    }
+
+    private fun buildWakeWordPrompt(query: String): String {
+        return """
+            user
+            Does this text sound like the wake word "Atmini" or "at mini"? Answer ONLY YES or NO.
+            Text: "$query"
+            Answer:
+            model
+        """.trimIndent()
     }
 
     fun buildConstrainedPrompt(query: String): String {
@@ -130,6 +155,18 @@ class FastRuleIntentModel : LocalIntentModel {
         } else {
             "08:00"
         }
+    }
+
+    override suspend fun isWakeWord(transcript: String): Boolean {
+        val clean = transcript.lowercase().replace(Regex("[^a-z0-9]"), "")
+        return clean.contains("atmini") ||
+                clean.contains("mini") ||
+                clean.contains("atmani") ||
+                clean.contains("admin") ||
+                clean.contains("atme") ||
+                clean.contains("atm") ||
+                clean.contains("atni") ||
+                (clean.length >= 3 && clean.startsWith("at") && clean.contains("min"))
     }
 
     override fun close() {}
